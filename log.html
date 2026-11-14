@@ -95,7 +95,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 
 /* ---------- Hero ---------- */
 .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line-2);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:48px 48px;background-position:-1px -1px}
-.hero-inner{max-width:var(--maxw);margin:0 auto;padding:clamp(2.5rem,7vw,5rem) var(--gutter) 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,410px);gap:clamp(2rem,5vw,4.5rem);align-items:start;position:relative;z-index:2}
+.hero-inner{max-width:var(--maxw);margin:0 auto;padding:clamp(2.5rem,7vw,5rem) var(--gutter) 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,450px);gap:clamp(2rem,5vw,4.5rem);align-items:start;position:relative;z-index:2}
 .wordmark{font-size:clamp(4.4rem,13.5vw,10rem);font-weight:700;letter-spacing:-.06em;line-height:.8;margin:0 0 0 -.04em}
 .wordmark .slash{font-weight:300;color:var(--signal);margin:0 .01em}
 .wordmark .lab{font-weight:300;letter-spacing:-.05em}
@@ -110,7 +110,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .latest span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 .pi-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.35rem;box-shadow:var(--shadow);position:relative}
-.pi-top{display:grid;grid-template-columns:140px minmax(0,1fr);gap:1.1rem;align-items:end}
+.pi-top{display:grid;grid-template-columns:180px minmax(0,1fr);gap:1.1rem;align-items:end}
 .portrait{aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:var(--surface-2);border:1px solid var(--line-2)}
 .portrait img{width:100%;height:100%;object-fit:cover}
 .pi-name{font-size:1.3rem;font-weight:700;letter-spacing:-.015em;margin:0;line-height:1.25}
@@ -127,7 +127,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .chip-link:hover{border-color:var(--signal);color:var(--ink)}
 .chip-link svg{width:15px;height:15px;flex:none;color:var(--signal)}
 
-.hero-chart{position:relative;z-index:1;height:clamp(190px,19vw,250px);margin-top:clamp(1.5rem,3.5vw,2.8rem);pointer-events:none}
+.hero-chart{position:relative;z-index:1;height:clamp(190px,19vw,250px);margin-top:clamp(-2.2rem,-2.6vw,-.5rem);pointer-events:none}
 .hero-chart svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
 .series-line{fill:none;stroke:var(--accent);stroke-width:1.6;vector-effect:non-scaling-stroke;stroke-linejoin:round}
 .series-area{fill:var(--accent);opacity:.07}
@@ -621,7 +621,7 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
   .pub{grid-template-columns:minmax(0,1fr);gap:.2rem}
   .search{flex:1 1 100%}
   .rlist li{grid-template-columns:minmax(0,1fr);gap:.1rem}
-  .pi-top{grid-template-columns:112px minmax(0,1fr)}
+  .pi-top{grid-template-columns:136px minmax(0,1fr)}
   .members{grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem}
   .member{grid-template-columns:36px minmax(0,1fr);gap:.55rem;padding:.55rem .6rem}
   .avatar{width:36px;height:36px;font-size:.78rem}
@@ -719,6 +719,7 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
           <li>Incheon, Republic of Korea</li>
           <li>Est. 2021</li>
         </ul>
+        <div id="latest-slot"></div>
       </div>
 
       <aside class="pi-card" aria-label="연구책임자">
@@ -1016,7 +1017,7 @@ document.documentElement.lang = LANG;
 </script>
 <!-- DATA:BEGIN -->
 <!-- 홈페이지 내용(DATA)은 엑셀 → build.py → site/data.js 로 자동 생성됩니다. 이 파일은 템플릿이라 단독으로 열면 내용이 비어 보입니다. site/index.html을 여세요. -->
-<script src="data.js?v=202611142200"></script>
+<script src="data.js?v=202611142208"></script>
 <!-- DATA:END -->
 <script>
 /* =====================================================================
@@ -1330,6 +1331,11 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
         "</ul></details>" : "") +
       '</div><span class="news-src">' + esc(n.src) + "</span></li>";
   }).join("");
+  const latest = DATA.news.find(n => !n.pinned);
+  if (latest) {
+    $("#latest-slot").innerHTML = '<a class="latest" href="#news"><span class="' + kindClass(latest.kind) + '">Latest</span><span>' + esc(latest.title) + "</span></a>";
+  }
+
   /* ---------- Decision Log page (log.html): news + papers + projects + awards + talks ---------- */
   if (PAGE === "log") {
   const ym = d => { const m = String(d || "").match(/(\d{4})(?:[.\-](\d{1,2}))?/); return m ? m[1] + (m[2] ? "." + m[2].padStart(2, "0") : "") : ""; };
