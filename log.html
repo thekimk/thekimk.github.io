@@ -127,7 +127,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .chip-link:hover{border-color:var(--signal);color:var(--ink)}
 .chip-link svg{width:15px;height:15px;flex:none;color:var(--signal)}
 
-.hero-chart{position:relative;z-index:1;height:clamp(110px,13vw,160px);margin-top:clamp(-6.5rem,-6vw,-1rem);pointer-events:none}
+.hero-chart{position:relative;z-index:1;height:clamp(190px,19vw,250px);margin-top:clamp(1.5rem,3.5vw,2.8rem);pointer-events:none}
 .hero-chart svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
 .series-line{fill:none;stroke:var(--accent);stroke-width:1.6;vector-effect:non-scaling-stroke;stroke-linejoin:round}
 .series-area{fill:var(--accent);opacity:.07}
@@ -137,11 +137,17 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .anno{position:absolute;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;background:var(--bg);border:2px solid var(--gold)}
 .anno-txt{position:absolute;left:50%;bottom:calc(100% + 6px);transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0;padding:.15rem .5rem .2rem;border-left:0;white-space:nowrap;font-size:.72rem;line-height:1.25;color:var(--ink-2);background:color-mix(in srgb,var(--bg) 82%,transparent);border-radius:6px}
 .anno-txt::after{content:"";position:absolute;left:50%;top:100%;width:1px;height:6px;background:var(--gold)}
-.anno.below .anno-txt{bottom:auto;top:calc(100% + 6px)}
-.anno.below .anno-txt::after{top:auto;bottom:100%}
 .anno-txt b{font-size:1.35rem;font-weight:700;color:var(--gold);letter-spacing:-.02em;line-height:1.1}
 .anno-txt b small{font-size:.6em;font-weight:500;color:var(--ink-3)}
-@media (max-width:860px){.annos{display:none}}
+@media (max-width:860px){
+  .hero-chart{height:auto}
+  .hero-chart svg{position:relative;display:block;height:150px}
+  .hero-chart .cp-label{display:none}
+  .annos{position:static;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem .6rem;padding:1rem var(--gutter) 1.4rem}
+  .anno{position:static;width:auto;height:auto;margin:0;border:0;border-radius:0;background:none}
+  .anno-txt{position:static;transform:none;align-items:flex-start;white-space:normal;background:none;padding:0}
+  .anno-txt::after{display:none}
+}
 .cp-label{position:absolute;bottom:.55rem;transform:translateX(.45rem);font-size:.85rem;font-weight:600;color:var(--signal-ink);background:var(--signal-soft);padding:.05rem .45rem;border-radius:6px;white-space:nowrap}
 @media (prefers-reduced-motion:no-preference){
   .series{clip-path:inset(0 100% 0 0);animation:reveal 2s cubic-bezier(.35,.65,.2,1) .25s forwards}
@@ -234,6 +240,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .fig-src{position:absolute;left:0;right:0;bottom:0;padding:.25rem .8rem;font-size:.72rem;color:#5b6472;background:#fff;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .kp-count{margin:0 0 .45rem;font-size:.82rem;color:var(--ink-3)}
 .kp-count b{font-size:1.15rem;color:var(--gold);font-weight:700}
+.kp-wp{margin-left:.5rem;font-size:.75rem;color:var(--ink-3)}
 .kp-list{list-style:none;margin:0;padding:0;display:grid;gap:.55rem}
 .rcard .keypaper .kp-list a{display:block;margin:0;font-size:.88rem;font-weight:600;line-height:1.4}
 .kp-venue{display:block;margin-top:.1rem;font-size:.75rem;color:var(--ink-3)}
@@ -712,7 +719,6 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
           <li>Incheon, Republic of Korea</li>
           <li>Est. 2021</li>
         </ul>
-        <div id="latest-slot"></div>
       </div>
 
       <aside class="pi-card" aria-label="연구책임자">
@@ -745,10 +751,6 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
     </div>
   </section>
 
-  <!-- ===== Key metrics ===== -->
-  <div class="stats-band">
-    <div class="wrap"><div class="stats" id="stats" aria-label="연구 실적 요약"></div></div>
-  </div>
 
   <!-- ===== 01 About ===== -->
   <section class="section" id="bio" aria-labelledby="bio-title">
@@ -1014,7 +1016,7 @@ document.documentElement.lang = LANG;
 </script>
 <!-- DATA:BEGIN -->
 <!-- 홈페이지 내용(DATA)은 엑셀 → build.py → site/data.js 로 자동 생성됩니다. 이 파일은 템플릿이라 단독으로 열면 내용이 비어 보입니다. site/index.html을 여세요. -->
-<script src="data.js?v=202611142147"></script>
+<script src="data.js?v=202611142200"></script>
 <!-- DATA:END -->
 <script>
 /* =====================================================================
@@ -1271,8 +1273,9 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
     const keyHTML = papers.length
       ? '<div class="keypaper"><p class="kp-count">' + (papers.some(p => p.type === "book")
           ? T("관련 논문·저서 <b>" + papers.length + "</b>편", "<b>" + papers.length + "</b> related papers & books")
-          : T("관련 논문 <b>" + papers.length + "</b>편", "<b>" + papers.length + "</b> related paper" + (papers.length > 1 ? "s" : ""))) + '</p><ol class="kp-list">' +
-        papers.slice(0, 3).map(p => "<li><a" + ext(p.url) + ">" + (p.type === "book" ? "『" + esc(p.title) + "』" : esc(p.title)) + '</a><span class="kp-venue">' + esc(p.venue) + " · " + esc(String(p.date).slice(0, 4)) + "</span></li>").join("") + "</ol></div>"
+          : T("관련 논문 <b>" + papers.length + "</b>편", "<b>" + papers.length + "</b> related paper" + (papers.length > 1 ? "s" : ""))) +
+        (papers.some(p => p.type === "wp") ? '<span class="kp-wp">' + T("심사 중 " + papers.filter(p => p.type === "wp").length + "편 포함", "incl. " + papers.filter(p => p.type === "wp").length + " under review") + "</span>" : "") + '</p><ol class="kp-list">' +
+        papers.slice(0, 3).map(p => "<li><a" + ext(p.url) + ">" + (p.type === "book" ? "『" + esc(p.title) + "』" : esc(p.title)) + '</a><span class="kp-venue">' + esc(p.venue) + (p.type === "wp" ? "" : " · " + esc(String(p.date).slice(0, 4))) + "</span></li>").join("") + "</ol></div>"
       : k ? '<div class="keypaper">' + (k.type === "book" ? T("대표 저서", "Key book") : T("대표 논문", "Key paper")) + " · " + esc(k.type === "book" ? k.venue || "" : k.venue) + " (" + esc(k.date.slice(0, 4)) + ")<a" + ext(k.url) + ">" + (k.type === "book" ? "『" + esc(k.title) + "』" : esc(k.title)) + "</a></div>" : "";
     if (it.img) GAL["rc-" + i] = [it.img];
     const fp = it.figFrom && pubById[it.figFrom];
@@ -1310,7 +1313,6 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
     [DATA.awards.length + DATA.studentAwards.length, T("Awards (지도 학생 포함)", "Awards (incl. advised students)")],
     [evalAvg ? evalAvg.toFixed(2) + "<small>/ 5</small>" : "-", "Avg. Teaching Evaluation"]
   ];
-  $("#stats").innerHTML = stats.map(([n, l]) => '<div class="stat"><b>' + n + "</b><span>" + esc(l) + "</span></div>").join("");
 
   /* ---------- News ---------- */
   const kindClass = k => k === "수상" || k === "Award" ? "tag award" : k === "공지" || k === "Notice" ? "tag pin" : "tag";
@@ -1386,11 +1388,6 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
     drawLog();
   });
   drawLog();
-  }
-
-  const latest = DATA.news.find(n => !n.pinned);
-  if (latest) {
-    $("#latest-slot").innerHTML = '<a class="latest" href="#news"><span class="' + kindClass(latest.kind) + '">Latest</span><span>' + esc(latest.title) + "</span></a>";
   }
 
   /* ---------- Lab life carousel ---------- */
@@ -1634,18 +1631,25 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
 
   /* ---------- Hero series (change point) ---------- */
   (function drawSeries() {
+    // 실적 숫자를 작은 값부터 큰 값 순서로 놓고, 선이 각 숫자의 높이(로그 척도)를 지나가도록 그립니다.
     let a = 20210301;
     const rnd = () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
     const gauss = () => { let u = 0, v = 0; while (!u) u = rnd(); while (!v) v = rnd(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); };
-    const N = 240, tau = Math.round(N * 0.64);
-    const ys = []; let y = 0;
-    for (let i = 0; i < N; i++) {
-      const pre = i < tau;
-      y += (pre ? 0.08 : -0.02) + (pre ? 0.55 : 1.75) * gauss();
-      ys.push(y);
+    const pts = stats.map(([n, l]) => ({ n, l, v: parseFloat(String(n)) })).filter(o => o.v > 0).sort((p, q) => p.v - q.v);
+    const lo = Math.log(pts[0].v), hi = Math.log(pts[pts.length - 1].v);
+    const N = 300, x0 = .1, x1 = .9;
+    const fr = pts.map((_, k) => x0 + k * (x1 - x0) / Math.max(1, pts.length - 1));
+    const lvl = pts.map(o => hi > lo ? (Math.log(o.v) - lo) / (hi - lo) : .5);
+    const anchors = [[0, -.18], ...fr.map((f, k) => [f, lvl[k]]), [1, 1.08]].map(([f, y]) => [Math.round(f * (N - 1)), y]);
+    const tau = Math.round((fr[fr.length - 2] + fr[fr.length - 1]) / 2 * (N - 1));   // 가장 큰 도약 직전 = 변화점
+    const ys = new Array(N).fill(0);
+    for (let s = 0; s < anchors.length - 1; s++) {
+      const [i0, y0] = anchors[s], [i1, y1] = anchors[s + 1], L = i1 - i0;
+      const w = [0]; for (let j = 1; j <= L; j++) w.push(w[j - 1] + gauss() * ((i0 + j) > tau ? .05 : .028));
+      for (let j = 0; j <= L; j++) ys[i0 + j] = y0 + (y1 - y0) * j / L + w[j] - w[L] * j / L;   // Brownian bridge
     }
     const min = Math.min(...ys), max = Math.max(...ys);
-    const W = 1000, H = 200, top = 26, bottom = 22;
+    const W = 1000, H = 200, top = 70, bottom = 14;
     const X = i => i / (N - 1) * W;
     const Y = v => top + (1 - (v - min) / (max - min)) * (H - top - bottom);
     const d = ys.map((v, i) => (i ? "L" : "M") + X(i).toFixed(1) + " " + Y(v).toFixed(1)).join(" ");
@@ -1657,11 +1661,9 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
     $("#cp-line").setAttribute("x1", cx.toFixed(1));
     $("#cp-line").setAttribute("x2", cx.toFixed(1));
     $("#cp-label").style.left = (cx / W * 100).toFixed(2) + "%";
-    // 실적 숫자를 그래프 위 주석(관측점)으로 표시합니다. 통계띠는 그대로 둡니다.
-    const fr = [.04, .14, .24, .34, .44, .56];
-    $("#annos").innerHTML = stats.map(([n, l], k) => {
-      const i = Math.round(fr[k] * (N - 1)), px = X(i) / W * 100, py = Y(ys[i]) / H * 100;
-      return '<span class="anno' + (py < 68 ? " below" : "") + '" style="left:' + px.toFixed(2) + "%;top:" + py.toFixed(2) + '%"><span class="anno-txt"><b>' + n + "</b>" + esc(l) + "</span></span>";
+    $("#annos").innerHTML = pts.map((o, k) => {
+      const i = anchors[k + 1][0];
+      return '<span class="anno" style="left:' + (X(i) / W * 100).toFixed(2) + "%;top:" + (Y(ys[i]) / H * 100).toFixed(2) + '%"><span class="anno-txt"><b>' + o.n + "</b>" + esc(o.l) + "</span></span>";
     }).join("");
   })();
 

@@ -109,7 +109,8 @@ const DATA_I18N = {
     "J3",
     "J2",
     "J1",
-    "C1"
+    "C1",
+    "W4"
    ],
    "img": "images/rcards/K8.png",
    "figFrom": "K8"
@@ -139,7 +140,8 @@ const DATA_I18N = {
     "K1",
     "J11",
     "C6",
-    "C5"
+    "C5",
+    "W5"
    ],
    "img": "images/rcards/K7.png",
    "figFrom": "K7"
@@ -159,7 +161,11 @@ const DATA_I18N = {
     "B4",
     "B2",
     "J7",
-    "C2"
+    "C2",
+    "W6",
+    "W3",
+    "W2",
+    "W1"
    ],
    "img": "images/rcards/B5.png",
    "figFrom": "B5"
@@ -2846,7 +2852,8 @@ const DATA_I18N = {
     "J3",
     "J2",
     "J1",
-    "C1"
+    "C1",
+    "W4"
    ],
    "img": "images/rcards/K8.png",
    "figFrom": "K8"
@@ -2876,7 +2883,8 @@ const DATA_I18N = {
     "K1",
     "J11",
     "C6",
-    "C5"
+    "C5",
+    "W5"
    ],
    "img": "images/rcards/K7.png",
    "figFrom": "K7"
@@ -2896,7 +2904,11 @@ const DATA_I18N = {
     "B4",
     "B2",
     "J7",
-    "C2"
+    "C2",
+    "W6",
+    "W3",
+    "W2",
+    "W1"
    ],
    "img": "images/rcards/B5.png",
    "figFrom": "B5"
