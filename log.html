@@ -686,63 +686,11 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
 .brand-logo{height:45px;width:45px;object-fit:contain}
 .brand-logo[hidden]{display:none}
 @media (max-width:640px){.news-side{grid-column:1 / -1;flex-direction:row;align-items:center;justify-content:space-between}.news-thumbs button{width:56px;height:40px}.news-thumb{width:64px;height:44px}.pub-cover{width:52px}.proj-imgs img{width:60px;height:44px}}
-/* ========== 편집(학술지) 디자인 (v1.0): 위의 기본 스타일을 덮어씁니다 ========== */
-:root{
-  --serif:"Noto Serif KR","Nanum Myeongjo","Times New Roman",serif;
-  --bg:#f7f5ef; --surface:#fbfaf6; --surface-2:#efebe1;
-  --line:#d8d2c4; --line-2:#e5e0d4; --grid:transparent;
-  --shadow:none;
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13120f;--surface:#191813;--surface-2:#211f19;--line:#3a362c;--line-2:#2b2821;--grid:transparent}}
-:root[data-theme="dark"]{--bg:#13120f;--surface:#191813;--surface-2:#211f19;--line:#3a362c;--line-2:#2b2821;--grid:transparent}
-
-body{font-size:16.5px;line-height:1.75}
-.hero{background-image:none}
-
-/* 제목은 세리프, 본문은 그대로 */
+/* ========== 제목 글꼴: 명조체(Noto Serif KR). 본문은 기본 글꼴 그대로 ========== */
+:root{--serif:"Noto Serif KR","Nanum Myeongjo","Times New Roman",serif}
 .sec-head h2,.lab-name,.pi-name,.rcard h3,.pcard-title,.life-caption h3,.members-head h3,.track h3,.acard h3,
 .stmt,.statement,#bio h3,.bio-title,.prospect h3{font-family:var(--serif);font-weight:600;letter-spacing:-.01em}
-.sec-head h2{font-weight:500;font-size:clamp(2rem,4.2vw,3rem)}
-.section{padding-top:clamp(4.5rem,9vw,7rem);padding-bottom:clamp(4.5rem,9vw,7rem)}
-.section.alt{background:var(--bg)}
-.sec-head::before{opacity:1;background:var(--ink)}
-
-/* 카드 → 지면: 둥근 모서리·그림자·상자 대신 위쪽 굵은 선 하나 */
-.rcard,.pcard,.area,.track,.member,.acard,.pi-card,.prospect,.svc-group,.impact,.teach-impact{
-  border-radius:0!important;box-shadow:none!important;background:transparent!important;
-  border:0!important;border-top:2px solid var(--ink)!important}
-.acard.feat{background:transparent!important;color:var(--ink)!important}
-.acard.feat *{color:inherit!important}
-.rcard-body,.pcard,.area,.track,.member,.acard,.pi-card{padding-left:0!important;padding-right:0!important}
-.rcard-art{border:1px solid var(--line-2);border-radius:0}
-.portrait,.avatar,.stage,.thumb,.news-thumbs button,.rcard-art,.proj-imgs img,.pub-cover{border-radius:0!important}
-.prospect{padding:1.2rem 0!important;border-left:0!important}
-
-/* 알약 태그 → 본문 속 표기 */
-.tag,.rtags span,.chips li,.affil li,.chip-link,.kp-wp,.pi-tag,.rcard-no,.latest{
-  border-radius:0!important;background:none!important;border:0!important;padding:0!important;box-shadow:none!important}
-.tag{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)!important;font-weight:600}
-.tag.pin{color:var(--ink)!important}
-.pi-tag{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)!important}
-.rcard-no{font-family:var(--serif);font-style:italic;background:var(--surface)!important;padding:.1rem .45rem!important}
-.latest{border-top:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important;padding:.45rem 0!important}
-.rtags,.chips,.affil{gap:.1rem .2rem!important}
-.rtags span{font-weight:500;font-style:italic;color:var(--ink-2)!important}
-.rtags span+span::before,.chips li+li::before,.affil li+li::before{content:"·";margin:0 .45rem;color:var(--ink-3);font-style:normal}
-.chips li{color:var(--ink-2)}
-.chip-link{border-bottom:1px solid var(--line)!important;padding-bottom:.05rem!important}
-.chip-link svg{display:none}
-.pi-links{gap:.3rem 1.1rem!important}
-
-/* 버튼·필터는 각지게 */
-.btn,.log-filters button,.filters button,.pub-filters button,.icon-btn,.lang-sw{border-radius:2px!important}
-
-/* 작은 제목은 스몰캡 */
-.eyebrow,.ri-group{font-variant:small-caps;letter-spacing:.06em;text-transform:lowercase;font-size:1rem!important}
-
-
-.medal{border-radius:0!important;background:none!important;width:auto!important;height:auto!important;color:var(--gold)!important;justify-items:start!important;place-items:start!important}
-.stage-ctrl .count{border-radius:2px}
+.sec-head h2{font-weight:500}
 </style>
 </head>
 <body>
@@ -1091,7 +1039,7 @@ document.documentElement.lang = LANG;
 </script>
 <!-- DATA:BEGIN -->
 <!-- 홈페이지 내용(DATA)은 엑셀 → build.py → site/data.js 로 자동 생성됩니다. 이 파일은 템플릿이라 단독으로 열면 내용이 비어 보입니다. site/index.html을 여세요. -->
-<script src="data.js?v=202611150016"></script>
+<script src="data.js?v=202611150022"></script>
 <!-- DATA:END -->
 <script>
 /* 구성원은 Researchers_KK.xlsx + Image/Researchers/ 에서 build.py가 자동으로 만듭니다 (DATA.members). */
