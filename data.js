@@ -1811,7 +1811,7 @@ const DATA_I18N = {
    "org": "동국대학교 사회복지학과",
    "title": "AX 중심 디지털 서비스화를 위한 설명가능한 인공지능 프레임워크",
    "when": "2026.06.30",
-   "role": "초청 연사"
+   "role": "초청 강연"
   },
   {
    "org": "한빛+ 월간AX 4월호",
@@ -1848,7 +1848,7 @@ const DATA_I18N = {
    "org": "한양대학교 산업공학과",
    "title": "Digital Asset and Real Applications of Data Science",
    "when": "2022.11.01",
-   "role": "초청 연사"
+   "role": "초청 강연"
   },
   {
    "org": "삼성생명",
@@ -1860,49 +1860,49 @@ const DATA_I18N = {
    "org": "강원대학교 경영대학 경제정보통계학부",
    "title": "AI Business in Digital Economy",
    "when": "2022.01.12",
-   "role": "초청 연사"
+   "role": "초청 강연"
   },
   {
    "org": "인천대학교 소상공인대학원",
    "title": "데이터시대에 따른 디지털전환 및 새로운 비즈니스 모델",
    "when": "2021.11.25, 2021.12.07",
-   "role": "초청 연사"
+   "role": "초청 강연"
   },
   {
    "org": "인천대학교 소상공인대학원",
    "title": "공공데이터 분석 및 소상공인 데이터 활용법",
    "when": "2021.11.30",
-   "role": "초청 연사"
+   "role": "초청 강연"
   },
   {
    "org": "인천대학교 온라인특성화대학",
    "title": "Data Science and its Role in Digital Economy",
    "when": "2021.10.25",
-   "role": "초청 연사"
+   "role": "초청 강연"
   },
   {
    "org": "한양대학교 산업공학과",
    "title": "Multivariate Nonlinear Time Sequence Analysis",
    "when": "2021.04.15",
-   "role": "초청 연사"
+   "role": "초청 강연"
   },
   {
    "org": "한양대학교 산업공학과",
    "title": "Digital Asset and Real Applications of Data Science",
    "when": "2020.10.14",
-   "role": "초청 연사"
+   "role": "초청 강연"
   },
   {
    "org": "서울과학기술대학교 데이터사이언스학과",
    "title": "Predicted Analytics on Time Sequential Data",
    "when": "2020.09.23",
-   "role": "초청 연사"
+   "role": "초청 강연"
   },
   {
    "org": "강원대학교 경영대학 경제정보통계학부",
    "title": "The Real Data Science and AI",
    "when": "2019.04.24",
-   "role": "초청 연사"
+   "role": "초청 강연"
   }
  ],
  "experience": [
@@ -2001,24 +2001,33 @@ const DATA_I18N = {
  "studentAwards": [
   {
    "date": "2026.09",
-   "title": "제1회 무역통계 활용·분석 경진대회 최우수상 (1위, 관세청장상)",
-   "org": "학부생팀 ‘노웨이아웃’, 무역흐름 지표 기반 반덤핑관세 우회 의심 케이스의 관측치 단위 사전 스크리닝",
-   "url": "https://www.newspim.com/news/view/20260904000699"
+   "title": "제1회 무역통계 활용분석 경진대회 최우수상(1위, 관세청장상+300만원)",
+   "org": "무역 흐름 지표 기반 반덤핑관세 우회 의심 케이스의 관측치 단위 사전 스크리닝"
+  },
+  {
+   "date": "2026.08",
+   "title": "2026년 국가데이터 활용대회 우수상(2위, 150만원)",
+   "org": "소득분위 계층별 소비구조 변화와 체감물가 부담의 분배적 분석"
   },
   {
    "date": "2025.09",
-   "title": "공간정보 활용·아이디어 경진대회 최우수상 (2위, 진흥원장상)",
-   "org": "차명주, “안기다 버스”(안기다리고 타는 버스): 탑승 가능성 기반 광역버스 정류장 추천 서비스"
+   "title": "공간정보 활용·아이디어 경진대회 최우수상(2위, 진흥원장상+100만원)",
+   "org": "탑승 가능성 기반 광역버스 정류장 추천 서비스 안기다 버스(안기다리고 타는 버스)"
   },
   {
    "date": "2025.08",
-   "title": "인문사회융합인재사업단 AI경진대회 장려상 (3위)",
-   "org": "유효정, 이현서, 뿌리 기업 맞춤형 정책 지원 챗봇"
+   "title": "실리콘밸리 하계 테커 부트캠프 최우수상(1위)",
+   "org": "AI 가상피팅 쇼핑몰"
+  },
+  {
+   "date": "2025.08",
+   "title": "인문사회융합인재사업단 AI경진대회 장려상(3위)",
+   "org": "뿌리 기업 맞춤형 정책 지원 챗봇"
   },
   {
    "date": "2025.07",
-   "title": "인천대 산학 캡스톤디자인 경진대회 금상 (2위)",
-   "org": "이준형, 인천 e음 카드 소비 패턴 예측 및 캐시백 최적화"
+   "title": "인천대 산학 캡스톤디자인 경진대회 금상(2위)",
+   "org": "인천 e음 카드 소비 패턴 예측 및 캐시백 최적화"
   }
  ],
  "grants": [
@@ -4673,7 +4682,7 @@ const DATA_I18N = {
    "org": "Dongguk University, Department of Social Welfare",
    "title": "An Explainable AI Framework for AX-Centric Digital Transformation",
    "when": "2026.06.30",
-   "role": "Guest Speaker"
+   "role": "Invited Lecturer"
   },
   {
    "org": "Hanbit+ Monthly AX",
@@ -4710,7 +4719,7 @@ const DATA_I18N = {
    "org": "Hanyang University, Department of Industrial Engineering",
    "title": "Digital Asset and Real-world Applications of Advanced Data Science",
    "when": "2022.11.01",
-   "role": "Guest Speaker"
+   "role": "Invited Lecturer"
   },
   {
    "org": "Samsung Life Insurance",
@@ -4722,49 +4731,49 @@ const DATA_I18N = {
    "org": "Kangwon National University, School of Business",
    "title": "AI Business Models and Core Competencies in the Digital Economy",
    "when": "2022.01.12",
-   "role": "Guest Speaker"
+   "role": "Invited Lecturer"
   },
   {
    "org": "Incheon National University, Graduate School of Small Business",
    "title": "Digital Transformation and New Business Model Implementations",
    "when": "2021.11.25, 2021.12.07",
-   "role": "Guest Speaker"
+   "role": "Invited Lecturer"
   },
   {
    "org": "Incheon National University, Graduate School of Small Business",
    "title": "Public Data Analytics and Data Utilization Strategies for Small Businesses",
    "when": "2021.11.30",
-   "role": "Guest Speaker"
+   "role": "Invited Lecturer"
   },
   {
    "org": "Incheon National University",
    "title": "Data Science and its Strategic Role in the Modern Digital Economy",
    "when": "2021.10.25",
-   "role": "Guest Speaker"
+   "role": "Invited Lecturer"
   },
   {
    "org": "Hanyang University, Department of Industrial Engineering",
    "title": "Multivariate Nonlinear Time Sequence Analysis for Industrial Frameworks",
    "when": "2021.04.15",
-   "role": "Guest Speaker"
+   "role": "Invited Lecturer"
   },
   {
    "org": "Hanyang University, Department of Industrial Engineering",
    "title": "Digital Asset Frameworks and Real-world Applications of Data Science",
    "when": "2020.10.14",
-   "role": "Guest Speaker"
+   "role": "Invited Lecturer"
   },
   {
    "org": "Seoul National University of Science and Technology, Department of Data Science",
    "title": "Predictive Analytics and Optimization Methods on Time Sequential Data",
    "when": "2020.09.23",
-   "role": "Guest Speaker"
+   "role": "Invited Lecturer"
   },
   {
    "org": "Kangwon National University, School of Business",
    "title": "The Real Data Science Paradigm and Core Artificial Intelligence Trends",
    "when": "2019.04.24",
-   "role": "Guest Speaker"
+   "role": "Invited Lecturer"
   }
  ],
  "experience": [
@@ -4863,24 +4872,33 @@ const DATA_I18N = {
  "studentAwards": [
   {
    "date": "2026.09",
-   "title": "Grand Prize (1st place, Commissioner of Korea Customs Service Award), 1st Trade Statistics Utilization & Analysis Competition",
-   "org": "Undergraduate team ‘No Way Out’, Observation-level pre-screening of suspected anti-dumping duty circumvention cases using trade-flow indicators",
-   "url": "https://www.newspim.com/news/view/20260904000699"
+   "title": "Grand Prize (1st place, Commissioner of the Korea Customs Service Award, KRW 3M), 1st Trade Statistics Analytics Competition",
+   "org": "Observation-level pre-screening of suspected anti-dumping duty circumvention using trade-flow indicators"
+  },
+  {
+   "date": "2026.08",
+   "title": "Excellence Award (2nd place, KRW 1.5M), 2026 National Data Utilization Contest",
+   "org": "Distributional analysis of consumption shifts and perceived inflation burden by income quintile"
   },
   {
    "date": "2025.09",
-   "title": "Excellence Award (2nd place, President’s Award), Spatial Information Utilization & Idea Competition",
-   "org": "Myeongju Cha, “Angida Bus”: express-bus stop recommendation service based on boarding availability"
+   "title": "Excellence Award (2nd place, President of the Spatial Information Industry Promotion Agency Award, KRW 1M), Spatial Information Idea Competition",
+   "org": "Angida Bus: an express-bus stop recommendation service based on boarding availability"
   },
   {
    "date": "2025.08",
-   "title": "Encouragement Award (3rd place), AI Competition of the Humanities & Social Sciences Convergence Talent Program",
-   "org": "Hyojeong Yu, Hyeonseo Lee, Policy-support chatbot tailored to root-industry companies"
+   "title": "Grand Prize (1st place), Techeer Silicon Valley Summer Bootcamp",
+   "org": "AI virtual try-on shopping mall"
+  },
+  {
+   "date": "2025.08",
+   "title": "Encouragement Award (3rd place), HUSS AI Competition",
+   "org": "al-Poli: a policy support chatbot tailored to root-industry companies"
   },
   {
    "date": "2025.07",
    "title": "Gold Prize (2nd place), INU Industry-Academia Capstone Design Competition",
-   "org": "Junhyeong Lee, Spending-pattern prediction and cashback optimization for the Incheon e-Eum card"
+   "org": "Predicting Incheon e-Eum card spending patterns and optimizing cashback"
   }
  ],
  "grants": [
@@ -5513,7 +5531,7 @@ const DATA_I18N = {
   {
    "date": "2025.07",
    "kind": "award",
-   "title": "인천대 산학 캡스톤디자인 경진대회 금상(2위)",
+   "title": "Gold Prize (2nd place), INU Industry-Academia Capstone Design Competition",
    "text": "Predicting Incheon e-Eum card spending patterns and optimizing cashback",
    "img": "images/life/2025_07_인천_e음_카드_소비_패턴_예측_및_캐시백_최적화.png",
    "links": []
