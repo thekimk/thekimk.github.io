@@ -350,7 +350,7 @@ const DATA_I18N = {
   },
   {
    "date": "2026.09",
-   "kind": "언론",
+   "kind": "선정",
    "title": "인천대 출판부 도서 2종, '2026 세종도서 학술부문' 선정",
    "src": "인천투데이",
    "url": "https://www.incheontoday.com/news/articleView.html?idxno=323273",
@@ -399,11 +399,15 @@ const DATA_I18N = {
      "title_en": "INU lists two titles among the Sejong Books for the first time in seven years",
      "src_en": "Maeil Ilbo"
     }
-   ]
+   ],
+   "imgs": [
+    "images/news/7-1.png"
+   ],
+   "img": "images/news/7-1.png"
   },
   {
    "date": "2026.04",
-   "kind": "언론",
+   "kind": "강연",
    "title": "AI가 고르는 시대… 브랜드 노출·이커머스 매출 공식 바뀌었다 [월간AX 4월호]",
    "src": "IT조선",
    "url": "https://it.chosun.com/news/articleView.html?idxno=2023092161169",
@@ -417,16 +421,24 @@ const DATA_I18N = {
      "title_en": "Prof. Kyungwon Kim (INU): “AI adoption fails not for lack of technology but for lack of a business question” [Monthly AX, April]",
      "src_en": "IT Chosun"
     }
-   ]
+   ],
+   "imgs": [
+    "images/news/6-1.jpg"
+   ],
+   "img": "images/news/6-1.jpg"
   },
   {
    "date": "2026.01",
-   "kind": "언론",
+   "kind": "출판",
    "title": "인천대학교 출판부, 2025년 신간 도서 5종 출간",
    "src": "서울일보",
    "url": "https://www.seoulilbo.com/news/articleView.html?idxno=798830",
    "title_en": "INU Press publishes five new books in 2025",
-   "src_en": "Seoul Ilbo"
+   "src_en": "Seoul Ilbo",
+   "imgs": [
+    "images/news/5-1.png"
+   ],
+   "img": "images/news/5-1.png"
   },
   {
    "date": "2025.11",
@@ -595,7 +607,11 @@ const DATA_I18N = {
      "title_en": "INU Prof. Kyungwon Kim presents a method for predicting high-risk suicide groups",
      "src_en": "Golden Times"
     }
-   ]
+   ],
+   "imgs": [
+    "images/news/1-1.png"
+   ],
+   "img": "images/news/1-1.png"
   }
  ],
  "pubs": [
@@ -3093,7 +3109,7 @@ const DATA_I18N = {
   },
   {
    "date": "2026.09",
-   "kind": "Press",
+   "kind": "Selected",
    "title": "Two INU Press titles selected as 2026 Sejong Books (Academic)",
    "src": "Incheon Today",
    "url": "https://www.incheontoday.com/news/articleView.html?idxno=323273",
@@ -3142,11 +3158,15 @@ const DATA_I18N = {
      "title_en": "INU lists two titles among the Sejong Books for the first time in seven years",
      "src_en": "Maeil Ilbo"
     }
-   ]
+   ],
+   "imgs": [
+    "images/news/7-1.png"
+   ],
+   "img": "images/news/7-1.png"
   },
   {
    "date": "2026.04",
-   "kind": "Press",
+   "kind": "Talk",
    "title": "When AI does the choosing, the formula for brand exposure and e-commerce sales changes [Monthly AX, April]",
    "src": "IT Chosun",
    "url": "https://it.chosun.com/news/articleView.html?idxno=2023092161169",
@@ -3160,16 +3180,24 @@ const DATA_I18N = {
      "title_en": "Prof. Kyungwon Kim (INU): “AI adoption fails not for lack of technology but for lack of a business question” [Monthly AX, April]",
      "src_en": "IT Chosun"
     }
-   ]
+   ],
+   "imgs": [
+    "images/news/6-1.jpg"
+   ],
+   "img": "images/news/6-1.jpg"
   },
   {
    "date": "2026.01",
-   "kind": "Press",
+   "kind": "Book",
    "title": "INU Press publishes five new books in 2025",
    "src": "Seoul Ilbo",
    "url": "https://www.seoulilbo.com/news/articleView.html?idxno=798830",
    "title_en": "INU Press publishes five new books in 2025",
-   "src_en": "Seoul Ilbo"
+   "src_en": "Seoul Ilbo",
+   "imgs": [
+    "images/news/5-1.png"
+   ],
+   "img": "images/news/5-1.png"
   },
   {
    "date": "2025.11",
@@ -3338,7 +3366,11 @@ const DATA_I18N = {
      "title_en": "INU Prof. Kyungwon Kim presents a method for predicting high-risk suicide groups",
      "src_en": "Golden Times"
     }
-   ]
+   ],
+   "imgs": [
+    "images/news/1-1.png"
+   ],
+   "img": "images/news/1-1.png"
   }
  ],
  "pubs": [
