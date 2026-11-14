@@ -358,9 +358,9 @@ const DATA_I18N = {
    "title_en": "Undergraduate team (DIVE) advised by INU Prof. Kyungwon Kim wins 2nd place nationwide at the 2026 National Data Utilization Contest",
    "src_en": "Press release",
    "imgs": [
-    "images/news/r8-1.png"
+    "images/news/r9-1.png"
    ],
-   "img": "images/news/r8-1.png"
+   "img": "images/news/r9-1.png"
   },
   {
    "date": "2026.09",
@@ -2846,7 +2846,7 @@ const DATA_I18N = {
   {
    "date": "2025.07",
    "kind": "award",
-   "title": "인천대 산학 캡스톤디지인 경진대회 금상(2위)",
+   "title": "인천대 산학 캡스톤디자인 경진대회 금상(2위)",
    "text": "인천 e음 카드 소비 패턴 예측 및 캐시백 최적화",
    "img": "images/life/2025_07_인천_e음_카드_소비_패턴_예측_및_캐시백_최적화.png",
    "links": []
@@ -3243,9 +3243,9 @@ const DATA_I18N = {
    "title_en": "Undergraduate team (DIVE) advised by INU Prof. Kyungwon Kim wins 2nd place nationwide at the 2026 National Data Utilization Contest",
    "src_en": "Press release",
    "imgs": [
-    "images/news/r8-1.png"
+    "images/news/r9-1.png"
    ],
-   "img": "images/news/r8-1.png"
+   "img": "images/news/r9-1.png"
   },
   {
    "date": "2026.09",
@@ -5513,7 +5513,7 @@ const DATA_I18N = {
   {
    "date": "2025.07",
    "kind": "award",
-   "title": "Gold Prize (2nd place), INU Industry-Academia Capstone Design Competition",
+   "title": "인천대 산학 캡스톤디자인 경진대회 금상(2위)",
    "text": "Predicting Incheon e-Eum card spending patterns and optimizing cashback",
    "img": "images/life/2025_07_인천_e음_카드_소비_패턴_예측_및_캐시백_최적화.png",
    "links": []
