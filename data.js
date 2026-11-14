@@ -1,4 +1,4 @@
-/* 자동 생성 파일입니다 — 직접 고치지 마세요. 엑셀을 수정한 뒤 build.py를 실행하세요. */
+/* 자동 생성 파일입니다. 직접 고치지 마세요. 엑셀을 수정한 뒤 build.py를 실행하세요. */
 const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScWGLWgGfGMFT8fkvSRSA-bgmcd6IUw1TA234tH05XEQOQCzw/viewform?usp=sf_link";
 const DATA_I18N = {
 "ko": {
@@ -670,7 +670,7 @@ const DATA_I18N = {
    "venue": "IEEE Access",
    "doi": "https://doi.org/10.1109/ACCESS.2022.3162399",
    "abstract": "The aim of this research is to propose a binary segmentation algorithm to detect the change points in financial time-series based on the Iterative Cumulative Sum of Squares (ICSS). The proposed algorithm, entitled KW-ICSS, utilizes the non-parametric Kruskal-Wallis test in cross-validation procedures. In this regard, KW-ICSS can quickly detect the change points in non-normally distributed time-series with a small number of observations after the change points than the state-of-the-art ICSS algorithm, entitled AIT-ICSS. For the simulated financial time-series whose true location of the change point is known, KW-ICSS detects the change points with the average true positive rate of 81% for the different number of change points, whereas AIT-ICSS only exhibits 72.57%. Also, KW-ICSS’s mean absolute deviation between the true and detected change points is less than that of AIT-ICSS for different significance levels. The experiment also finds that the significance level, the model parameter, should be set to less than 10%. For the real-world financial time-series whose true location of change points is unknown, KW-ICSS’s robust detection of change points is observed from fewer detected change points and longer intervals between them. Furthermore, KW-ICSS’s trend prediction for the short-term future performs with an average of 92.47% accuracy, whereas AIT-ICSS shows 90.69%. Therefore, we claim that KW-ICSS successfully improves AIT-ICSS.",
-   "detail": "10, 34690–34705"
+   "detail": "10, 34690-34705"
   },
   {
    "id": "J8",
@@ -702,7 +702,7 @@ const DATA_I18N = {
    "venue": "IEEE Access",
    "doi": "https://doi.org/10.1109/ACCESS.2021.3049827",
    "abstract": "Online advertising is becoming an important direction in the advertising industry with its strengths in diverse users, strong interactions, real-time feedback, and expandability. Online advertisement (Ads) can show great marketing ability by processing data from multiple channels to convey information, understanding what users want, and approaching them easily. Moreover, predicting the click-through rate (CTR) can increase advertisement revenue and user satisfaction. However, advertising data contains many features, and the amount is growing rapidly. This can be alleviated through the segmentation of users with similar interests. We assumed that the change of interest of a user could be predicted by other users’ change of interest. More specifically, similar users will change their interest in a similar direction. On the basis of this idea, we proposed a novel model, the Deep User Segment Interest Network, to improve CTR prediction. We suggested three novel layers for improving performance: i) an individual interest extractor, ii) a segment interest extractor, and iii) a segment interest activation. These layers captures the latent interest of each user and creates the expressive interest representation of the segment by aggregating each user’s interest. We conducted experiments using TaoBao data, which are a kind of real commercial data from an advertising platform, to confirm the CTR prediction improvement by reflecting the segment interest. The proposed algorithm obtained an AUC gain of 0.0029 with a behavior sequence length of 100. This performance exhibited the greatest improvement over other baselines, indicating the proposed method’s potential contribution to business improvement.",
-   "detail": "9, 9812–9821"
+   "detail": "9, 9812-9821"
   },
   {
    "id": "J6",
@@ -718,7 +718,7 @@ const DATA_I18N = {
    "venue": "IEEE Access",
    "doi": "https://doi.org/10.1109/ACCESS.2020.3037240",
    "abstract": "The volatility clustering has critical implications in financial risk management. This paper aims to analyze the existence and cause of volatility clustering in financial time-series using different measures simultaneously. Specifically, we utilize the clustering indices, asymmetry measures, and the power of the scale freeness in the visibility graph. For the experiment, we utilize four representing financial time-series, including the S&P500, one-year US Treasury Constant Maturity rate, Euro-Dollar exchange rate, and Crude oil for the stock, bond, exchange, and commodity markets, respectively. The duration of the experiment is from 2009 to 2018, which is divided into two sub-periods: crisis and post-crisis periods. At first, we identify the positive and slowly decaying non-linear autocorrelation in all markets, which indicates the power-law decay. Also, the autocorrelation of the simulated time-series suggests that the order of return-series with respect to its magnitude contributes more to the volatility clustering than the heavy-tailed distributions. Secondly, we detect that the scale of the return contributes more to volatility clustering than the sign of the return. Lastly, we observe that the clustering and asymmetry measures are more robust measures to the return distribution changes than the PSVG to analyze the volatility clustering.",
-   "detail": "8, 208779–208795"
+   "detail": "8, 208779-208795"
   },
   {
    "id": "J5",
@@ -766,7 +766,7 @@ const DATA_I18N = {
    "venue": "Physica A: Statistical Mechanics and its Applications",
    "doi": "https://doi.org/10.1016/j.physa.2017.03.012",
    "abstract": "A research for distributional property of financial asset is the subject of intense interest not only for financial theory but also for practitioner. Such respect is no exception to CDS market. The CDS market, which began to receive attention since the global financial debacle, is not well researched despite of the importance of research necessity. This research introduces creation of CDS market and use Ising system utilizing occurrence characteristics (to shift risk) as an important factor. Therefore the results of this paper would be of great assistance to both financial theory and practice. From this study, not only distributional property of the CDS market but also various statistics like multifractal characteristics could promote understanding about the market. A salient point in this study is that countries are mainly clustering into 2 groups and it might be because of market situation and geographical characteristics of each country. This paper suggested 2 simulation parameters representing this market based on understanding such CDS market situation. The estimated parameters are suitable for high and low risk event of CDS market respectively and these two parameters are complementary and can cover not only basic statistics but also multifractal properties of most countries. Therefore these estimated parameters can be used in researches preparing for a certain event (high or low risk). Finally this research will serve as a momentum double-checking indirectly the performance of Ising system based on these results.",
-   "detail": "479, 324–340"
+   "detail": "479, 324-340"
   },
   {
    "id": "J2",
@@ -782,7 +782,7 @@ const DATA_I18N = {
    "venue": "Chaos Solitons & Fractals",
    "doi": "https://doi.org/10.1016/j.chaos.2014.01.002",
    "abstract": "The purpose of this paper is to study the structural change in Credit Default Swap volatility. We use statistical properties and a network approach to better understand the behavior of CDS volatility. We hypothesize that structural change occurs in CDS index during a financial crisis and it requires subperiod analysis, rather than full period analysis, to investigate properly. Our results show that the probability of large volatility is related to the structure of volatility but it is more significantly related to the size of volatility. Both the memory property and the size of volatility are confirmed to have dependence on the structure of volatility. The linked degree of CDS volatilities is highly related to the probability of large volatility and its predictability, regardless of structural change in volatility. Another interesting result is that the CDS volatility of a country is more related to the behavior of other volatilities, not the geographical location.",
-   "detail": "60, 56–67"
+   "detail": "60, 56-67"
   },
   {
    "id": "J1",
@@ -798,7 +798,7 @@ const DATA_I18N = {
    "venue": "Physica A: Statistical Mechanics and its Applications",
    "doi": "https://doi.org/10.1016/j.physa.2013.06.016",
    "abstract": "The volatility of financial markets is often assumed constant, but phenomena such as volatility clustering and jumps in volatility suggest that this assumption is rarely true. Numerous studies have been conducted to investigate the jump or breakpoint of the volatility phenomenon, and their findings have been applied in modeling volatility. However, few studies address the issue from a practical point of view. Specifically, a financial crisis accompanied by markedly increased volatility can be approached from this perspective to suggest the persistence or termination of a crisis. This paper develops the ICSS-CRISIS algorithm, a new approach to identify a crisis period along with the conditions for the ICSS algorithm which represents the structural breakpoints of volatility. This algorithm recommends a guideline to determine whether an existing crisis in the market resulted from financial volatility, was terminated, or is continuing. The method is tested along with the ICSS algorithm to prove the effectiveness of Credit Default Swap index data.",
-   "detail": "392(20), 4977–4988"
+   "detail": "392(20), 4977-4988"
   },
   {
    "id": "K8",
@@ -812,7 +812,7 @@ const DATA_I18N = {
    "venue": "재무관리연구",
    "doi": "https://doi.org/10.22510/kjofm.2026.43.2.005",
    "abstract": "환율 결정 메커니즘은 거시경제 펀더멘털의 구조적 힘과 시장 미시 구조 내의 심리적 충격이 복잡하게 얽혀 있는 동태적 시스템이다. 기존 연구들은 주로 정형화된 거시 변수에 의존하여, 급변하는 시장의 비정형 정보와 정보 위계의 시차적 변화를 포착하는 데 한계를 보였다. 본 연구는 이러한 간극을 메우기 위해 GDELT 기반의 글로벌 이벤트 지표와 대규모 언어 모델(LLM)을 통해 정교화된 감성 정보를 거시 변수와 통합한 딥러닝 기반의 융합 예측 프레임워크를 제안한다. 2020년부터 2024년까지의 원/달러 환율 데이터를 대상으로 LSTM, GRU, CNN-LSTM, CNN-GRU 아키텍처를 비교 분석한 결과, 본 연구는 다음의 세 가지 학술적 발견을 도출하였다. 첫째, 환율 예측의 지배적 요인은 예측 윈도우에 따라 단기적 감성에서 중기적 복합을 거쳐 장기적 펀더멘털로 이동하는 동태적 구조 전환(Dynamic Structural Shift)을 보였다. 둘째, 데이터의 복잡도와 모델 구조 간의 최적 적합성이 입증되었다. 특히, 거시, 이벤트 및 감성 정보가 모두 통합된 CNN-GRU 모델은 20일의 골든 윈도우에서 전역 최적(Global Optimum) 성능(RMSE 6.875)을 달성하며, 비정형 데이터의 노이즈 필터링과 시계열 학습의 시너지를 증명하였다. 나아가 Diebold-Mariano 통계 검정을 통해, 제안 모형이 강력한 시장 기준선인 Random Walk 및 기계학습 모형 대비 통계적으로 유의미한 예측력 우위를 가짐을 실증하였다. 셋째, 설명 가능한 AI인 SHAP 분석을 통해 시장의 이중적 역학을 규명하였다. 모델은 뉴스 발생량의 폭증을 불확실성에 따른 공포 신호로, 뉴스 톤(Tone)의 개선과 경상수지 흑자를 시장 안정 신호로 해석하여 주목도 이론을 실증적으로 재확인하였다. 본 연구는 환율 예측을 구조적 요인과 심리적 요인의 통합적 의사결정 문제로 재정의함으로써, 학술적으로는 효율적 시장 가설의 적응적 진화를 지지하고, 실무적으로는 고도화된 리스크 관리를 위한 새로운 방법론적 패러다임을 제시한다.",
-   "detail": "43(2), 127–168"
+   "detail": "43(2), 127-168"
   },
   {
    "id": "K7",
@@ -826,7 +826,7 @@ const DATA_I18N = {
    "venue": "노인복지연구",
    "doi": "https://doi.org/10.21194/kjgsw.81.1.202603.143",
    "abstract": "우리나라는 2025년, 65세 이상 인구가 전체 인구의 20%를 초과하는 초고령사회에 공식적으로 진입하였다. 이러한 인구학적 대전환은 단순한 통계적 수치의 변화를 넘어, 세대 간 갈등 구조의 심화와 노인에 대한 사회적 인식의 근본적 재편을 야기하고 있다. 본 연구는 과거 약 12년(2013-2025)간의 웹 크롤링을 통한 뉴스 빅데이터를 통해, 한국 사회 내 '연령차별(Ageism)'의 발현 양상과 그 의미 구조의 변화를 실증적으로 분석하였다. 잠재 디리클레 할당(LDA) 토픽 모델링과 감성 분석을 적용한 결과, 노인에 대한 미디어 담론은 초기의 '복지와 시혜' 중심에서 중기의 '부양 부담과 갈등'으로 이동하였으며, 최근에는 '디지털 소외'와 '액티브 시니어'라는 이중적 프레임으로 분화되고 있음을 확인하였다. 더불어 본 연구는 ARIMA 및 Prophet 시계열 예측 모델을 통해 2026년부터 2030년까지의 미래 키워드를 예측하였으며, 그 결과 '정년연장', '지하철 무임승차 연령 상향(70세)', '돌봄 로봇(Age-Tech)', '국민연금 개혁'이 세대갈등의 핵심 키워드가 될 것임을 전망하였다. 본 연구에서는 이러한 분석을 바탕으로 접촉 이론과 프레이밍 이론에 근거한 정책적, 사회적 개입 전략을 제언한다.",
-   "detail": "81(1), 143–173"
+   "detail": "81(1), 143-173"
   },
   {
    "id": "K6",
@@ -840,7 +840,7 @@ const DATA_I18N = {
    "venue": "한국사회복지행정학",
    "doi": "https://doi.org/10.22944/kswa.2026.28.1.005",
    "abstract": "본 연구는 최근 한국 사회에서 관찰되는 기부 총량의 증가와 기부 참여율 하락이라는 ‘기부의 역설’ 현상에 주목하여, 기부 행동을 유발하는 다차원적 요인을 규명하고 잠재적 기부자를 정밀하게 예측하는 것을 목적으로 한다. 이를 위해 2015년부터 2023년까지 축적된 통계청 ‘사회조사’의 대규모 빅데이터(N=184,915)를 활용하였으며, 기존의 선형 회귀분석이 갖는 예측력의 한계를 극복하고자 머신러닝 및 딥러닝 알고리즘을 적용하였다. 또한, 인공지능 모델의 불투명성(Black Box) 문제를 해결하고 사회복지 실천 현장에서의 적용 가능성을 높이기 위해 설명가능한 인공지능(Explainable AI, XAI) 기법인 SHAP(SHapley Additive exPlanations)를 도입하여 예측의 근거를 실증적으로 제시하였다. 연구 결과, 부스팅 계열의 LightGBM 알고리즘이 F1-Score 81.7%, AUC 88.3%를 나타내며 로지스틱 회귀분석 및 딥러닝 모델(MLP, CNN) 대비 가장 우수한 예측 성능을 보였다. SHAP 분석을 통해 도출된 핵심 영향 요인으로는 ‘자원봉사 경험’과 같은 기존의 예측 변수 외에도 ‘독서 여부’가 강력한 주요 변수로 식별되었다. 이는 독서와 같은 문화적 자본이 공감 능력을 매개로 친사회적 행동으로 이어진다는 이론적 논의를 뒷받침한다. 또한, 객관적 소득보다 ‘주관적 계층의식’이, 단순한 사회적 관계망보다 ‘사회적 신뢰’가 기부 행동에 더 큰 영향을 미치는 것으로 나타났다. 본 연구는 이러한 분석 결과를 바탕으로 데이터 기반의 정밀 모금 전략, 문화적 소양 함양을 통한 기부 저변 확대, 사회복지 행정 및 정책적 함의를 제언한다.",
-   "detail": "28(1), 121–147"
+   "detail": "28(1), 121-147"
   },
   {
    "id": "K5",
@@ -854,7 +854,7 @@ const DATA_I18N = {
    "venue": "한국경영과학회지",
    "doi": "https://doi.org/10.7737/JKORMS.2026.51.1.031",
    "abstract": "고령화와 디지털 전환이 가속화되는 사회에서 학위 취득을 목적으로 하지 않은 성인 학습자의 다양한 비형식 평생학습 참여를 촉진하는 복합적·상호작용적 요인을 정밀하게 이해하는 것은 포용적이고 효과적인 교육정책 수립의 핵심 과제이다. 본 연구는 비형식 평생학습 참여 여부를 예측하기 위해 머신러닝과 딥러닝 기반 예측 모델에 설명가능한 인공지능(XAI)을 결합하고, 그 결정 요인을 해석하였다. 연구는 비형식 학습을 선택한 이유가 고령화 사회에서 성인 학습자의 자발적이고 다양한 학습 형태인 비형식 교육이 중요한 사회적 참여 및 삶의 질 향상에 기여한다고 판단되었기 때문이다. 이를 통해 사회적 맥락 속에서 참여 요인을 규명하고, 실제 예측력을 검증함으로써 요인의 신뢰성을 확보하였다. 특히 2018~2022년 국가조사 데이터를 활용하여 머신러닝과 XAI 알고리즘을 결합함으로써 요인을 시계열 및 인구통계학적 관점에서 정량화하였다. 분석 결과, 프로그램 접근성, 직장 규모, 무형식 신체활동, 생활만족도 등은 참여 가능성을 높이는 반면, 사회경제적 취약성, 구식 학습 매체, 일부 방송·미디어 기반 학습은 참여를 저해하는 요인으로 나타났다. 또한 팬데믹 이후 디지털 기기 기반 학습의 영향력이 뚜렷하게 강화되었으며, 고연령층의 학습 동기는 경제적 성과 중심에서 건강과 문화적 풍요 중심으로 이동하였다. 나아가 구조적, 행태적, 사회적, 심리적 요인 간의 상호작용과 기여 방향을 정량적으로 설명하여 기존 연구를 확장하였다. 정책적 시사점으로는 (1) 취약계층 및 중소기업 근로자 대상 구조적 지원 확대, (2) 세대별 맞춤형 디지털 역량 강화와 학습자 주도성 제고, (3) 지역사회 참여와 학습을 연계한 커뮤니티 기반 학습 모델 구축, (4) 학습과 삶의 질을 결합한 웰빙 지향형 프로그램 설계가 필요함을 제안한다. 또한 예측 성능 검증 결과, CatBoost 알고리즘이 가장 안정적이고 일반화된 성능을 보여주었으며, 주요 설명 요인 기반 프로그램을 통해 실제 미래 참여 여부를 효과적으로 예측할 수 있음을 입증하였다. 이러한 결과는 해석과 예측이 일관되게 연결될 때 정책 신뢰성과 활용성이 확보된다는 점을 강조한다. 본 연구는 디지털·고령 사회에서 포용적 평생학습 체제를 구축하기 위한 데이터 기반 정책 설계의 방법론적 틀을 제시함으로써, 연령·환경별 맞춤형 프로그램 설계와 교육격차 해소를 위한 실증적 근거를 제공하는 동시에 학문적 혁신성과 실질적 정책 기여를 함께 제공한다.",
-   "detail": "51(1), 31–50"
+   "detail": "51(1), 31-50"
   },
   {
    "id": "K4",
@@ -867,8 +867,8 @@ const DATA_I18N = {
    "en": "Sustainable Lifelong Learning: Explainable AI-Driven Analytics for Informal Learning Effectiveness and Personalized Recommendations",
    "venue": "한국빅데이터학회 학회지",
    "doi": "https://doi.org/10.36498/kbigdt.2025.10.2.41",
-   "abstract": "디지털 전환과 인공지능의 확산은 4차 산업혁명의 핵심 동력으로서, 사회, 경제 구조 전반에 전례 없는 변화를 이끌고 있다. 특히 저출산과 초고령화, 코로나19 팬데믹 이후의 사회적 가속 변화는 평생학습을 국가적 필수 과제로 부각시켰다. 기존 연구들이 참여 여부나 단편적 효과에 국한된 분석을 제시한 데 반해, 본 연구는 머신러닝과 설명가능한 인공지능을 결합하여 참여자 특성과 결정 요인을 정교하게 규명하고, 맞춤형 학습 추천을 위한 데이터 기반 방법론을 제안하였다. 본 연구는 설명가능한 인공지능으로 비형식학습의 예측, 설명, 추천을 잇는 통합 프레임을 제시한다. 머신러닝 및 딥러닝 등 다중 모델로 학습, 검증, 잠재집단을 분리 평가한 결과, Train에서는 CatBoost(Accuracy 99.01%)가, Validate에서는 XGBoost(Accuracy 92.13%)가 최적 성능을 보였다. SHAP 해석은 효과성이 \"얼마나 배웠는가\"보다 \"왜, 어떻게 배우는가\"에 좌우됨을 밝혔다: 학습지향성, 생활만족도, 사회적 연결(친목과 사회참여), 직업목표, 학습정보 접근성은 일관된 양(+)의 기여를, 외부지원과 장시간 참여는 상대적으로 음(–)의 기여를 보였다. 12,514명의 미참여자 중 63.31%가 고효과 예측군으로 분류되어 개인화 추천의 정책적 실효성을 뒷받침한다. 또한 시기별 비교에서 변수 순위 및 기여 방향의 이동이 확인되어 과거 규칙의 경직된 적용이 성과를 저해할 수 있음을 경고한다. 우리는 데이터 거버넌스, 개인정보 보호, 디지털 격차 완화, 지역 맞춤 거버넌스를 결합한 적응형 평생학습 로드맵을 제안한다.",
-   "detail": "10(2), 41–80"
+   "abstract": "디지털 전환과 인공지능의 확산은 4차 산업혁명의 핵심 동력으로서, 사회, 경제 구조 전반에 전례 없는 변화를 이끌고 있다. 특히 저출산과 초고령화, 코로나19 팬데믹 이후의 사회적 가속 변화는 평생학습을 국가적 필수 과제로 부각시켰다. 기존 연구들이 참여 여부나 단편적 효과에 국한된 분석을 제시한 데 반해, 본 연구는 머신러닝과 설명가능한 인공지능을 결합하여 참여자 특성과 결정 요인을 정교하게 규명하고, 맞춤형 학습 추천을 위한 데이터 기반 방법론을 제안하였다. 본 연구는 설명가능한 인공지능으로 비형식학습의 예측, 설명, 추천을 잇는 통합 프레임을 제시한다. 머신러닝 및 딥러닝 등 다중 모델로 학습, 검증, 잠재집단을 분리 평가한 결과, Train에서는 CatBoost(Accuracy 99.01%)가, Validate에서는 XGBoost(Accuracy 92.13%)가 최적 성능을 보였다. SHAP 해석은 효과성이 \"얼마나 배웠는가\"보다 \"왜, 어떻게 배우는가\"에 좌우됨을 밝혔다: 학습지향성, 생활만족도, 사회적 연결(친목과 사회참여), 직업목표, 학습정보 접근성은 일관된 양(+)의 기여를, 외부지원과 장시간 참여는 상대적으로 음(-)의 기여를 보였다. 12,514명의 미참여자 중 63.31%가 고효과 예측군으로 분류되어 개인화 추천의 정책적 실효성을 뒷받침한다. 또한 시기별 비교에서 변수 순위 및 기여 방향의 이동이 확인되어 과거 규칙의 경직된 적용이 성과를 저해할 수 있음을 경고한다. 우리는 데이터 거버넌스, 개인정보 보호, 디지털 격차 완화, 지역 맞춤 거버넌스를 결합한 적응형 평생학습 로드맵을 제안한다.",
+   "detail": "10(2), 41-80"
   },
   {
    "id": "K3",
@@ -882,7 +882,7 @@ const DATA_I18N = {
    "venue": "한국빅데이터학회 학회지",
    "doi": "https://doi.org/10.36498/kbigdt.2025.10.1.15",
    "abstract": "2022년 기준 하루 평균 대중교통 이용 건수 약 1,025만 건 중에서 약 50.3%를 차지할 정도로 서울시민 중 절반 이상이 매일 지하철을 이용한다. 본 연구는 시민들이 승하차하는 과정에서 느낄 수 있는 혼잡도를 실시간으로 빠르고 정확하게 예측 및 설명함으로써 빅데이터 기반 실제 비즈니스의 활용도를 높이는 비즈니스 애널리틱스 방법론을 제시하는 것을 목적으로 한다. 6개 공공데이터베이스를 융합하여 대표적인 머신러닝 및 딥러닝 알고리즘으로 혼잡도를 예측하였고, 설명 가능한 인공지능인 SHAP 알고리즘으로 예측된 혼잡도의 근거를 실시간 효과적으로 제시하였다. Random Forest 알고리즘으로 95% 이상의 미래 혼잡도 예측 성능을 달성하였다. 혼잡도를 낮추기 위해 환승노선을 늘리는 사업이 확충되거나 비섬식형태의 승강장 플랫폼을 확충하는 것이 방법일 수 있다. 또한, 출근이 집중되는 월요일과 화요일에 혼잡도가 높아지기 때문에 근무 유연화를 통해 혼잡도의 개선이 가능할 것으로 생각된다.",
-   "detail": "10(1), 15–32"
+   "detail": "10(1), 15-32"
   },
   {
    "id": "K2",
@@ -896,7 +896,7 @@ const DATA_I18N = {
    "venue": "한국빅데이터학회 학회지",
    "doi": "https://doi.org/10.36498/kbigdt.2025.10.1.1",
    "abstract": "고속철도의 수요 변화를 정밀하게 예측하는 것은 운영 효율성 개선 및 교통 정책 수립과 지속 가능한 인프라 구축을 위한 핵심 요소다. 본 연구는 설명 가능한 인공지능을 사용하여 2025년도 KTX 수요를 정밀하게 예측하고, 실질적인 의사결정을 지원하는 것을 주된 목적으로 한다. 대표적인 AI 알고리즘을 활용하여 KTX 수요예측 오류를 최대 2.49%까지 낮추며 정확도를 향상시켰다. 또한, SHAP 알고리즘을 활용하여 예측 결과와 변수들의 기여 정도를 시각화함으로써, 비즈니스 정책 설계 및 자원 배분 의사결정 과정에 신뢰도를 높였다. KTX 노선에 따라 변수들의 기여도는 다양하게 변화될 수 있음을 제시하며 실시간 활용 가능한 비즈니스 애널리틱스 플랫폼의 필요성을 확인하였다. 2025년 KTX 수요는 작년보다는 최대 9.45% 정도 감소할 수 있지만, 코로나 이전보다 최대 18.47%까지 상승하는 수치로 수요가 점진적으로 증가 및 안정화 될 것으로 예상된다.",
-   "detail": "10(1), 1–13"
+   "detail": "10(1), 1-13"
   },
   {
    "id": "K1",
@@ -910,7 +910,7 @@ const DATA_I18N = {
    "venue": "한국융합과학회지",
    "doi": "https://doi.org/10.24826/KSCS.12.12.28",
    "abstract": "연구목적 환경복지가 강조되고 있는 시대에서는 조경의 의미가 단순히 도심 내 경관(landscape)을 만드는 개념에서 나아가, 심미적 아름다움, 쾌적한 환경이 제공하는 건강과 안전, 복지증진까지 영향을 주고 있다. 도시공원과 지역사회 복지의 관계에 있어 중요하게 고려해 볼 사항은 도시공원을 통해 지역주민 그 중에서도 미래 세대인 아동들의 복지향상에 실제로 긍정적인 영향이 끼치냐는 것이다. 도시 내 쾌적하고 아름다운 공원 조성이 갖는 공공성의 의미에 대해서는 어느 정도 동의하지만 이를 학술적으로 살펴본 연구는 아직까지 미진한 실정이다. 따라서 본 연구에서는 우리가 생활하는 서울이라는 도심 속에서 도시공원이 갖는 가치와 생태적으로 경관을 조성했을 때에 갖게 되는 아동발달적 지역복지적 의미에 대해 탐색해보았다. 연구방법 도시공원과 아동돌봄 시설 중 어린이집이 맞닿아 있는 국내 사례를 심층적으로 사례조사함으로써 향후 개발될 도시공원이 나아가야 할 방향성과 생태환경적 함의를 도출해보고자 하였다. 세평적 사례 선택을 통해 추천된 기관의 종사자들로부터 개별 심층 인터뷰 및 질적 설문조사를 실시하였다. 전사된 녹취록과 취합된 반구조화된 질문지를 통한 설문 결과는 텍스트 데이터 마이닝 분석을 통해 워드 클라우드의 형태로 가시화되어 주요 토픽 및 키워드를 통한 의미를 파악하였다. 결과 어린이집 교사들은 도시공원의 환경 조성에 있어 영유아 및 아동들의 신체정신적 건강 뿐 아니라 언어적, 사회적, 수리적 발달을 위해 생태교육과 자연물 체험이 가능하게끔 도시공원이 조성될 것을 강조하였다. 결론 도시공원에 대한 빅데이터나 정부에서 수집된 정량적 데이터를 활용하지 못한 부분에 대해서는 아쉬움이 남지만, 도시공원의 사회적 가치가 지역사회복지 중에서도 아동복지의 질적 향상을 위해 어떻게 상호 간 연계 효과를 지니면 좋을지 방향성을 제안하고 정책적 함의를 도출했다는 점에서 의의를 지닌다.",
-   "detail": "12(12), 449–466"
+   "detail": "12(12), 449-466"
   },
   {
    "id": "C12",
@@ -940,7 +940,7 @@ const DATA_I18N = {
    "title": "기부자 행동 예측을 위한 인공지능 기반 분석: 공공데이터와 XAI 기반 예측 연구",
    "en": "AI Analytics to Predict Donor Behavior: Public Data and XAI-Based Research",
    "venue": "한국경영과학회 춘계공동학술대회 (KORMS)",
-   "detail": "3356–3356"
+   "detail": "3356-3356"
   },
   {
    "id": "C9",
@@ -951,7 +951,7 @@ const DATA_I18N = {
    "title": "고성능 시계열 딥러닝 알고리즘을 활용한 미래 교통수요 예측",
    "en": "Forecasting Future Transportation Demand with High-Performance Time-Series Deep Learning",
    "venue": "한국경영과학회 춘계공동학술대회 (KORMS)",
-   "detail": "2668–2681"
+   "detail": "2668-2681"
   },
   {
    "id": "C8",
@@ -961,7 +961,7 @@ const DATA_I18N = {
    "url": "https://www-dbpia-co-kr-ssl.access.inu.ac.kr/journal/articleDetail?nodeId=NODE12355817",
    "title": "초고령사회 한국의 노인을 향한 사회적 시선: 뉴스 빅데이터 기반 노인 혐오의 감성분석",
    "venue": "비판과 대안을 위한 사회복지학회 춘계학술대회 (JCSW)",
-   "detail": "155–170"
+   "detail": "155-170"
   },
   {
    "id": "C7",
@@ -987,7 +987,7 @@ const DATA_I18N = {
    "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11472132",
    "title": "머신러닝을 활용한 노인 자살생각 예측",
    "venue": "한국노인복지학회 학술대회 (KSGSW)",
-   "detail": "2023(5), 68–87"
+   "detail": "2023(5), 68-87"
   },
   {
    "id": "C4",
@@ -1006,7 +1006,7 @@ const DATA_I18N = {
    "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08009260",
    "title": "Estimating Arbitrage Opportunity in the Real Estate Market via Binomial American Option Pricing Approach",
    "venue": "대한산업공학회 춘계공동학술대회 (KIIE)",
-   "detail": "1380–1399"
+   "detail": "1380-1399"
   },
   {
    "id": "C2",
@@ -1017,7 +1017,7 @@ const DATA_I18N = {
    "title": "Squeezed Convolutional Variational AutoEncoder for Unsupervised Anomaly Detection in Edge Device Industrial Internet of Things",
    "venue": "International Conference on Information and Computer Technologies (ICICT)",
    "doi": "https://doi.org/10.1109/infoct.2018.8356842",
-   "detail": "67–71"
+   "detail": "67-71"
   },
   {
    "id": "C1",
@@ -1027,7 +1027,7 @@ const DATA_I18N = {
    "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE02381899",
    "title": "Modeling Crisis Period and Testing Contagion Effect on Recent Financial Crisis with the Asia Credit Default Swap Markets",
    "venue": "한국경영과학회 춘계공동학술대회 (KORMS)",
-   "detail": "1947–1958"
+   "detail": "1947-1958"
   },
   {
    "id": "B5",
@@ -1075,7 +1075,7 @@ const DATA_I18N = {
    "url": "https://www.kipa.re.kr/site/kipa/research/selectPublishView.do?gubun=FO&pblcteId=PUBL_000000000000966",
    "title": "집중조명 1: 빅데이터와 인공지능, 그리고 초거대 AI의 등장",
    "venue": "행정포커스, 한국행정연구원",
-   "detail": "171, 8–15",
+   "detail": "171, 8-15",
    "cover": "images/book/B2.png"
   },
   {
@@ -1095,7 +1095,7 @@ const DATA_I18N = {
  "projects": {
   "external": [
    {
-    "period": "2025.04–2025.07",
+    "period": "2025.04-2025.07",
     "title": "공공갈등 관리 전략 연구: 정책갈등 대응전략에 대한 빅데이터 분석",
     "org": "경제인문사회연구회 한국행정연구원",
     "fund": 5000000,
@@ -1127,7 +1127,7 @@ const DATA_I18N = {
     "role": "연구책임자"
    },
    {
-    "period": "2024.04–2024.08",
+    "period": "2024.04-2024.08",
     "title": "고성능 인공지능 알고리즘 활용 2025년도 KTX 수송수요 예측 연구",
     "org": "한국철도공사 철도연구원",
     "fund": 10000000,
@@ -1143,7 +1143,7 @@ const DATA_I18N = {
     "role": "연구책임자"
    },
    {
-    "period": "2024.01–2024.12",
+    "period": "2024.01-2024.12",
     "title": "기부 빅데이터 기반 설명가능한 인공지능을 활용한 개인 기부자 예측 연구",
     "org": "사랑의열매 나눔문화연구소",
     "fund": 10000000,
@@ -1158,7 +1158,7 @@ const DATA_I18N = {
     "role": "연구책임자"
    },
    {
-    "period": "2023.08–2024.04",
+    "period": "2023.08-2024.04",
     "title": "AI 기반 갈등관리 DB 구축 및 운영방안 연구",
     "org": "경제인문사회연구회 한국행정연구원",
     "fund": 3000000,
@@ -1171,7 +1171,7 @@ const DATA_I18N = {
     "role": "공동연구원"
    },
    {
-    "period": "2023.02–2024.05",
+    "period": "2023.02-2024.05",
     "title": "Ageism 문제의식 공감대 확산을 위한 한국 사회의 세대간 갈등 이해를 위한 온라인 미디어 빅데이터 기반 텍스트 마이닝 분석",
     "org": "티앤씨재단 융복합 연구공모",
     "fund": 100000000,
@@ -1191,7 +1191,7 @@ const DATA_I18N = {
     "role": "연구책임자"
    },
    {
-    "period": "2022.07–2022.11",
+    "period": "2022.07-2022.11",
     "title": "텍스트 데이터 마이닝을 통한 도시공원의 사회적가치와 지역사회복지 인프라 간 연계효과 분석",
     "org": "서울특별시 용산공원 연구공모",
     "fund": 2000000,
@@ -1206,49 +1206,49 @@ const DATA_I18N = {
   ],
   "internal": [
    {
-    "period": "2026.05–2027.04",
+    "period": "2026.05-2027.04",
     "title": "설명 가능한 인공지능(XAI)을 활용한 생성형 AI 디지털 격차 진단 및 포용적 사용자 경험(UX) 설계 가이드라인 구축",
     "org": "인천대학교 (INU)",
     "no": "2026-0119",
     "role": "연구책임자"
    },
    {
-    "period": "2025.05–2026.04",
+    "period": "2025.05-2026.04",
     "title": "정부의 정책 활동은 공공갈등 해결에 효과적으로 기여했는가?",
     "org": "인천대학교 (INU)",
     "no": "2025-0232",
     "role": "연구책임자"
    },
    {
-    "period": "2024.05–2025.04",
+    "period": "2024.05-2025.04",
     "title": "복지재원 증대를 위해 사회적 자본을 활용한 XAI 기반 개인 기부 예측 및 유도 전략",
     "org": "인천대학교 (INU)",
     "no": "2024-0172",
     "role": "연구책임자"
    },
    {
-    "period": "2023.05–2024.04",
+    "period": "2023.05-2024.04",
     "title": "금융공학과 인공지능의 융합: 시장 효율성과 예측 불확실성을 반영한 차세대 포트폴리오 전략",
     "org": "인천대학교 (INU)",
     "no": "2023-0035",
     "role": "연구책임자"
    },
    {
-    "period": "2022.05–2023.04",
+    "period": "2022.05-2023.04",
     "title": "디지털 시대의 스마트폰 과의존: 데이터로 풀어낸 XAI 기반 예측 및 해결책",
     "org": "인천대학교 (INU)",
     "no": "2022-0089",
     "role": "연구책임자"
    },
    {
-    "period": "2021.05–2022.04",
+    "period": "2021.05-2022.04",
     "title": "데이터 속의 고통: 인간의 심리적 건강을 위한 AI 예측과 사회과학적 데이터 통찰",
     "org": "인천대학교 (INU)",
     "no": "2021-0400",
     "role": "연구책임자"
    },
    {
-    "period": "2021.05–2022.04",
+    "period": "2021.05-2022.04",
     "title": "비정상적 금융 시계열 데이터에서의 실시간 비지도 변화점 탐지 모델 개발",
     "org": "인천대학교 (INU)",
     "no": "2021-0118",
@@ -1257,98 +1257,98 @@ const DATA_I18N = {
   ],
   "industry": [
    {
-    "period": "2020.01–2020.10",
+    "period": "2020.01-2020.10",
     "title": "실시간 채널 별 광고효과 추론 및 최적 입찰(Bidding) 가격 예측",
     "org": "삼성리서치 (Samsung Research)",
     "dept": "인공지능센터",
     "role": "책임 데이터 사이언티스트"
    },
    {
-    "period": "2019.05–2020.02",
+    "period": "2019.05-2020.02",
     "title": "마케팅 프로모션 효과 증대를 위한 광고추천분석 및 매출기여 효과검증",
     "org": "삼성리서치 (Samsung Research)",
     "dept": "인공지능센터",
     "role": "책임 데이터 사이언티스트"
    },
    {
-    "period": "2019.01–2019.12",
+    "period": "2019.01-2019.12",
     "title": "제품부품 부진재고 비용 최소화를 위한 공정 최적화",
     "org": "삼성리서치 (Samsung Research)",
     "dept": "인공지능센터",
     "role": "책임 데이터 사이언티스트"
    },
    {
-    "period": "2018.01–2019.06",
+    "period": "2018.01-2019.06",
     "title": "빅데이터 기반 마케팅 채널 매출기여도 분석 및 최적 투자 포트폴리오 추천",
     "org": "삼성리서치 (Samsung Research)",
     "dept": "인공지능센터",
     "role": "책임 데이터 사이언티스트"
    },
    {
-    "period": "2018.01–2018.09",
+    "period": "2018.01-2018.09",
     "title": "매출 최대화 및 비용 최소화를 위한 제품 판매 수요 중장기 예측",
     "org": "삼성리서치 (Samsung Research)",
     "dept": "인공지능센터",
     "role": "책임 데이터 사이언티스트"
    },
    {
-    "period": "2018.01–2018.09",
+    "period": "2018.01-2018.09",
     "title": "동남아 시장 약 4억명 고객 대상 프로모션 효과 예측 및 ROI 향상 전략",
     "org": "삼성리서치 (Samsung Research)",
     "dept": "인공지능센터",
     "role": "책임 데이터 사이언티스트"
    },
    {
-    "period": "2017.09–2018.06",
+    "period": "2017.09-2018.06",
     "title": "모바일 생산 자동화를 위한 베트남 공장의 데이터 기반 플랫폼 최적화",
     "org": "삼성전자 (Samsung Electronics)",
     "dept": "소프트웨어센터",
     "role": "데이터 사이언티스트"
    },
    {
-    "period": "2017.01–2017.12",
+    "period": "2017.01-2017.12",
     "title": "고객 불만 사전대응 및 감소를 위한 고객VOC 경보시스템 구축",
     "org": "삼성전자 (Samsung Electronics)",
     "dept": "빅데이터랩",
     "role": "데이터 사이언티스트"
    },
    {
-    "period": "2016.12–2017.04",
+    "period": "2016.12-2017.04",
     "title": "모바일 불량 원인 파악을 위한 생산라인 이상기기 탐지 및 수명 예측",
     "org": "삼성전자 (Samsung Electronics)",
     "dept": "빅데이터랩",
     "role": "데이터 사이언티스트"
    },
    {
-    "period": "2016.10–2016.12",
+    "period": "2016.10-2016.12",
     "title": "개인화 맞춤 프로모션을 위한 마케팅 전략",
     "org": "삼성전자 (Samsung Electronics)",
     "dept": "빅데이터랩",
     "role": "데이터 사이언티스트"
    },
    {
-    "period": "2016.01–2016.12",
+    "period": "2016.01-2016.12",
     "title": "제품 기능/앱 사용성 향상을 위한 고객 패턴 분석",
     "org": "삼성전자 (Samsung Electronics)",
     "dept": "빅데이터랩",
     "role": "데이터 사이언티스트"
    },
    {
-    "period": "2015.03–2015.12",
+    "period": "2015.03-2015.12",
     "title": "제품 기능/앱 사용 유사성 기반 고객 프로모션 전략",
     "org": "삼성전자 (Samsung Electronics)",
     "dept": "소프트웨어그룹",
     "role": "데이터 사이언티스트"
    },
    {
-    "period": "2014.10–2015.06",
+    "period": "2014.10-2015.06",
     "title": "광고효과 증대를 위한 소비자 나이/성별 예측 및 컨텐츠 추천",
     "org": "삼성전자 (Samsung Electronics)",
     "dept": "소프트웨어그룹",
     "role": "데이터 사이언티스트"
    },
    {
-    "period": "2014.05–2014.12",
+    "period": "2014.05-2014.12",
     "title": "기존 제품 사용성 개선을 위한 이탈 고객 실시간 탐지",
     "org": "삼성전자 (Samsung Electronics)",
     "dept": "소프트웨어그룹",
@@ -1543,7 +1543,7 @@ const DATA_I18N = {
   {
    "org": "한빛+",
    "title": "초개인화 마케팅 의사결정 실무: AI는 분석하고, 사람은 결정하는 고객 데이터 실습",
-   "when": "2026.03–",
+   "when": "2026.03-",
    "role": "주강사",
    "url": "https://www.hanbit.co.kr/product/C5787513960"
   },
@@ -1582,7 +1582,7 @@ const DATA_I18N = {
   {
    "org": "현대모비스",
    "title": "Machine Learning, Vision, NLP 기술 기반 AI 프로젝트 자문",
-   "when": "2024.04–2024.10",
+   "when": "2024.04-2024.10",
    "role": "AI 프로젝트 자문"
   },
   {
@@ -1624,7 +1624,7 @@ const DATA_I18N = {
   {
    "org": "삼성멀티캠퍼스",
    "title": "삼성 Data Scientist 양성을 위한 ProDS 문제 출제",
-   "when": "2022.12–2023.01",
+   "when": "2022.12-2023.01",
    "role": "평가지표 개발",
    "url": "https://certi.multicampus.com/ie/intro/introProds?p_menu=MTMxMDUjTUFJTg==&p_gubun=Qw=="
   },
@@ -1637,14 +1637,14 @@ const DATA_I18N = {
   {
    "org": "패스트캠퍼스",
    "title": "퀀트(금융공학) 플레이북: 실무에서 바로 쓰는 금융 데이터 기반 알고리즘 트레이딩과 리스크 분석",
-   "when": "2022.10–2026.04",
+   "when": "2022.10-2026.04",
    "role": "주강사",
    "url": "https://fastcampus.co.kr/fin_online_pbquant"
   },
   {
    "org": "S-OIL",
    "title": "비즈니스 Digital Transformation(디지털전환)을 위한 전사 데이터분석 플랫폼 개발",
-   "when": "2022.07–2022.11",
+   "when": "2022.07-2022.11",
    "role": "플랫폼 개발"
   },
   {
@@ -1686,7 +1686,7 @@ const DATA_I18N = {
   {
    "org": "패스트캠퍼스",
    "title": "파이썬 활용한 통계추론, 머신러닝 및 시계열 딥러닝 100강의",
-   "when": "2021.01–2022.06",
+   "when": "2021.01-2022.06",
    "role": "주강사"
   },
   {
@@ -1704,7 +1704,7 @@ const DATA_I18N = {
   {
    "org": "패스트캠퍼스",
    "title": "파이썬을 활용한 통계분석 및 시계열분석 입문",
-   "when": "2019.02–2020.12",
+   "when": "2019.02-2020.12",
    "role": "주강사"
   },
   {
@@ -1716,7 +1716,7 @@ const DATA_I18N = {
   {
    "org": "삼성SDS 멀티캠퍼스",
    "title": "외환시스템, 파생상품평가, IT시장분석",
-   "when": "2010.09–2014.01",
+   "when": "2010.09-2014.01",
    "role": "주강사"
   }
  ],
@@ -1821,42 +1821,42 @@ const DATA_I18N = {
  ],
  "experience": [
   {
-   "period": "2025.07 – Present",
+   "period": "2025.07 - Present",
    "role": "Founder & CEO",
-   "org": "DeciPhi Incorporation",
+   "org": "DeciPhi Inc.",
    "note": "마케팅 예산 포트폴리오 추천 AI SaaS",
    "now": true
   },
   {
-   "period": "2026.03 – Present",
+   "period": "2026.03 - Present",
    "role": "Associate Professor",
    "org": "School of Global Trade & Service, Incheon National University",
    "note": "비즈니스 애널리틱스: 디지털 광고·마케팅, 금융시장, 사회적경제 및 학제간 융합\n응용 데이터 사이언스: 시장 효율성, 인과추론, 시계열 예측, AI 기반 의사결정, 투자 전략",
    "now": true
   },
   {
-   "period": "2025.03 – 2026.02",
+   "period": "2025.03 - 2026.02",
    "role": "Associate Professor",
    "org": "School of International Trade and Business, Incheon National University"
   },
   {
-   "period": "2021.03 – 2025.02",
+   "period": "2021.03 - 2025.02",
    "role": "Assistant Professor",
    "org": "School of International Trade and Business, Incheon National University"
   },
   {
-   "period": "2018.01 – 2021.02",
+   "period": "2018.01 - 2021.02",
    "role": "Data Scientist",
    "org": "BigData Team, Global AI Center, Samsung Research",
    "note": "광고, 디지털 마케팅, AI 팩토리, 수요 예측 분야의 비즈니스 컨설팅과 평가"
   },
   {
-   "period": "2017.09 – 2017.12",
+   "period": "2017.09 - 2017.12",
    "role": "Data Scientist",
    "org": "Data Analytics Lab, Software Center, Samsung Electronics"
   },
   {
-   "period": "2014.04 – 2017.08",
+   "period": "2014.04 - 2017.08",
    "role": "Data Scientist (Alternative Military Service)",
    "org": "BigData Lab, Division of Visual Display, Samsung Electronics",
    "note": "서비스 최적화, 개인화 추천, 경보 시스템을 위한 데이터 분석 설계와 플랫폼 운영"
@@ -1864,21 +1864,21 @@ const DATA_I18N = {
  ],
  "education": [
   {
-   "period": "2010.09 – 2014.02",
+   "period": "2010.09 - 2014.02",
    "role": "Ph.D. in Industrial Engineering",
    "org": "Seoul National University",
    "note": "Advisor: Woojin Chang (Financial Risk Engineering Lab)",
    "thesis": "An Empirical Study on the Unstable Period Detection in Financial Markets and the Global Transmission of Financial Crisis"
   },
   {
-   "period": "2008.03 – 2010.02",
+   "period": "2008.03 - 2010.02",
    "role": "M.S. in Computational Science and Technology",
    "org": "Seoul National University",
    "note": "Advisor: Yongdai Kim (Intelligent Data Analysis Lab, Department of Statistics)",
    "thesis": "ANOVA Boosting for Credit Scoring"
   },
   {
-   "period": "2002.03 – 2007.02",
+   "period": "2002.03 - 2007.02",
    "role": "B.S. in Mathematics (Minor in Physics)",
    "org": "Hanyang University"
   }
@@ -1956,31 +1956,31 @@ const DATA_I18N = {
  ],
  "memberships": [
   {
-   "date": "2025.11–",
+   "date": "2025.11-",
    "title": "학술 편집위원",
    "org": "PLOS One",
    "url": "https://journals.plos.org/plosone/static/editorial-board?ae_name=Kyungwon+Kim"
   },
   {
-   "date": "2025.01–2026.12",
+   "date": "2025.01-2026.12",
    "title": "이사",
    "org": "한국물류학회 (KLRA)",
    "url": "http://www.klra21.org/index.asp"
   },
   {
-   "date": "2025.03–",
+   "date": "2025.03-",
    "title": "종신회원",
    "org": "한국재무관리학회 (KFMA)",
    "url": "https://kfma.org/"
   },
   {
-   "date": "2023.01–2024.12",
+   "date": "2023.01-2024.12",
    "title": "이사",
    "org": "한국산업경영시스템학회 (KSIE)",
    "url": "http://ksie.or.kr/index.html"
   },
   {
-   "date": "2022.12–",
+   "date": "2022.12-",
    "title": "종신회원",
    "org": "한국산업경영시스템학회 (KSIE)",
    "url": "http://ksie.or.kr/index.html"
@@ -1998,13 +1998,13 @@ const DATA_I18N = {
    "url": "http://kiie.org/"
   },
   {
-   "date": "2022.01–2024.12",
+   "date": "2022.01-2024.12",
    "title": "사무차장",
    "org": "한국물류학회 (KLRA)",
    "url": "http://www.klra21.org/index.asp"
   },
   {
-   "date": "2021.11–",
+   "date": "2021.11-",
    "title": "종신회원",
    "org": "한국경영과학회 (KORMS)",
    "url": "http://www.korms.or.kr/"
@@ -2039,7 +2039,7 @@ const DATA_I18N = {
    ],
    [
     "2026.03",
-    "국방정보화사업 제안서 인공지능분야 평가위원 (–2028.02)",
+    "국방정보화사업 제안서 인공지능분야 평가위원 (-2028.02)",
     "국방부"
    ],
    [
@@ -2091,7 +2091,7 @@ const DATA_I18N = {
   "학술 프로그램 평가": [
    [
     "2026.02",
-    "G-램프 사업단 2차년도 외부 평가위원 (–2026.03)",
+    "G-램프 사업단 2차년도 외부 평가위원 (-2026.03)",
     "전남대학교"
    ],
    [
@@ -2118,7 +2118,7 @@ const DATA_I18N = {
    ],
    [
     "2025.09",
-    "방송영상 AI 학습용 데이터 협의체 전문가 (–2025.12)",
+    "방송영상 AI 학습용 데이터 협의체 전문가 (-2025.12)",
     "한국전파진흥협회 AI미디어빅데이터사업팀"
    ],
    [
@@ -2258,7 +2258,7 @@ const DATA_I18N = {
  "members": [
   {
    "cohort": 3,
-   "period": "2025–",
+   "period": "2025-",
    "photo": "",
    "github": "mathsjm32",
    "email": "sigtd32@inu.ac.kr",
@@ -2279,7 +2279,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 3,
-   "period": "2025–",
+   "period": "2025-",
    "photo": "",
    "github": "taeyoung256",
    "email": "kim156565@naver.com",
@@ -2294,7 +2294,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 3,
-   "period": "2025–",
+   "period": "2025-",
    "photo": "images/members/ddaf1887.png",
    "github": "jyjakemoon",
    "email": "202200776@inu.ac.kr",
@@ -2309,7 +2309,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 3,
-   "period": "2025–",
+   "period": "2025-",
    "photo": "images/members/0e00a9cd.jpg",
    "github": "nibeahc",
    "email": "kchb30123@inu.ac.kr",
@@ -2330,7 +2330,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 3,
-   "period": "2025–",
+   "period": "2025-",
    "photo": "",
    "github": "",
    "email": "ho19991213@naver.com",
@@ -2347,7 +2347,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 3,
-   "period": "2025–",
+   "period": "2025-",
    "photo": "",
    "github": "hisunhelloo",
    "email": "hisunhelloo@gmail.com",
@@ -2362,7 +2362,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 2,
-   "period": "2024–2025",
+   "period": "2024-2025",
    "photo": "images/members/87e62880.jpg",
    "github": "DataWizardd",
    "email": "james2p@naver.com",
@@ -2401,7 +2401,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 2,
-   "period": "2024–2026",
+   "period": "2024-2026",
    "photo": "images/members/e15e5983.jpg",
    "github": "HyoJungYu",
    "email": "yuhyojung02@naver.com",
@@ -2437,7 +2437,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 2,
-   "period": "2024–",
+   "period": "2024-",
    "photo": "images/members/291d8605.jpg",
    "github": "JONJI-32",
    "email": "jonjilike@inu.ac.kr",
@@ -2473,7 +2473,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 2,
-   "period": "2025–2026",
+   "period": "2025-2026",
    "photo": "images/members/112adb5c.jpg",
    "github": "Gayeon-Bang",
    "email": "bangga5589@naver.com",
@@ -2490,7 +2490,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 2,
-   "period": "2024–2025",
+   "period": "2024-2025",
    "photo": "images/members/2bd77547.jpg",
    "github": "",
    "email": "dmsgk0307@naver.com",
@@ -2511,7 +2511,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 2,
-   "period": "2024–",
+   "period": "2024-",
    "photo": "images/members/aea411da.jpg",
    "github": "leeki0123",
    "email": "leeki0123@naver.com",
@@ -2568,7 +2568,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 2,
-   "period": "2025–",
+   "period": "2025-",
    "photo": "images/members/ca6d99dd.jpg",
    "github": "",
    "email": "jun010914@naver.com",
@@ -2590,7 +2590,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 1,
-   "period": "2022–2023",
+   "period": "2022-2023",
    "photo": "images/members/3d3cefbc.jpg",
    "github": "SONDOEON",
    "email": "zjstpq1234@naver.com",
@@ -2606,7 +2606,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 1,
-   "period": "2022–",
+   "period": "2022-",
    "photo": "images/members/2957deba.jpg",
    "github": "ckaudwn1685",
    "email": "bomin9988@gmail.com",
@@ -2633,7 +2633,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 1,
-   "period": "2022–2024",
+   "period": "2022-2024",
    "photo": "images/members/8a38d408.jpg",
    "github": "",
    "email": "wkdalsw5@naver.com",
@@ -2650,7 +2650,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 1,
-   "period": "2022–2024",
+   "period": "2022-2024",
    "photo": "images/members/5707edb3.png",
    "github": "ckaudwn1685",
    "email": "ckaudwn88611685@gmail.com",
@@ -2746,7 +2746,7 @@ const DATA_I18N = {
   "address": "#14-422, Incheon National University, 119 Academy-ro, Yeonsu-gu, Incheon, Republic of Korea (22012)"
  },
  "recruit": {
-  "targets": "Ph.D., M.S., integrated B.S.–M.S., undergraduate research interns, small groups",
+  "targets": "Ph.D., M.S., integrated B.S.-M.S., undergraduate research interns, small groups",
   "url": "https://docs.google.com/forms/d/e/1FAIpQLScWGLWgGfGMFT8fkvSRSA-bgmcd6IUw1TA234tH05XEQOQCzw/viewform?usp=sf_link",
   "text": "We are looking for highly motivated students who are interested in using big data and artificial intelligence to solve business and social problems.",
   "guide": "https://github.com/thekimk/DIVE-Research"
@@ -3356,7 +3356,7 @@ const DATA_I18N = {
    "venue": "IEEE Access",
    "doi": "https://doi.org/10.1109/ACCESS.2022.3162399",
    "abstract": "The aim of this research is to propose a binary segmentation algorithm to detect the change points in financial time-series based on the Iterative Cumulative Sum of Squares (ICSS). The proposed algorithm, entitled KW-ICSS, utilizes the non-parametric Kruskal-Wallis test in cross-validation procedures. In this regard, KW-ICSS can quickly detect the change points in non-normally distributed time-series with a small number of observations after the change points than the state-of-the-art ICSS algorithm, entitled AIT-ICSS. For the simulated financial time-series whose true location of the change point is known, KW-ICSS detects the change points with the average true positive rate of 81% for the different number of change points, whereas AIT-ICSS only exhibits 72.57%. Also, KW-ICSS’s mean absolute deviation between the true and detected change points is less than that of AIT-ICSS for different significance levels. The experiment also finds that the significance level, the model parameter, should be set to less than 10%. For the real-world financial time-series whose true location of change points is unknown, KW-ICSS’s robust detection of change points is observed from fewer detected change points and longer intervals between them. Furthermore, KW-ICSS’s trend prediction for the short-term future performs with an average of 92.47% accuracy, whereas AIT-ICSS shows 90.69%. Therefore, we claim that KW-ICSS successfully improves AIT-ICSS.",
-   "detail": "10, 34690–34705"
+   "detail": "10, 34690-34705"
   },
   {
    "id": "J8",
@@ -3388,7 +3388,7 @@ const DATA_I18N = {
    "venue": "IEEE Access",
    "doi": "https://doi.org/10.1109/ACCESS.2021.3049827",
    "abstract": "Online advertising is becoming an important direction in the advertising industry with its strengths in diverse users, strong interactions, real-time feedback, and expandability. Online advertisement (Ads) can show great marketing ability by processing data from multiple channels to convey information, understanding what users want, and approaching them easily. Moreover, predicting the click-through rate (CTR) can increase advertisement revenue and user satisfaction. However, advertising data contains many features, and the amount is growing rapidly. This can be alleviated through the segmentation of users with similar interests. We assumed that the change of interest of a user could be predicted by other users’ change of interest. More specifically, similar users will change their interest in a similar direction. On the basis of this idea, we proposed a novel model, the Deep User Segment Interest Network, to improve CTR prediction. We suggested three novel layers for improving performance: i) an individual interest extractor, ii) a segment interest extractor, and iii) a segment interest activation. These layers captures the latent interest of each user and creates the expressive interest representation of the segment by aggregating each user’s interest. We conducted experiments using TaoBao data, which are a kind of real commercial data from an advertising platform, to confirm the CTR prediction improvement by reflecting the segment interest. The proposed algorithm obtained an AUC gain of 0.0029 with a behavior sequence length of 100. This performance exhibited the greatest improvement over other baselines, indicating the proposed method’s potential contribution to business improvement.",
-   "detail": "9, 9812–9821"
+   "detail": "9, 9812-9821"
   },
   {
    "id": "J6",
@@ -3404,7 +3404,7 @@ const DATA_I18N = {
    "venue": "IEEE Access",
    "doi": "https://doi.org/10.1109/ACCESS.2020.3037240",
    "abstract": "The volatility clustering has critical implications in financial risk management. This paper aims to analyze the existence and cause of volatility clustering in financial time-series using different measures simultaneously. Specifically, we utilize the clustering indices, asymmetry measures, and the power of the scale freeness in the visibility graph. For the experiment, we utilize four representing financial time-series, including the S&P500, one-year US Treasury Constant Maturity rate, Euro-Dollar exchange rate, and Crude oil for the stock, bond, exchange, and commodity markets, respectively. The duration of the experiment is from 2009 to 2018, which is divided into two sub-periods: crisis and post-crisis periods. At first, we identify the positive and slowly decaying non-linear autocorrelation in all markets, which indicates the power-law decay. Also, the autocorrelation of the simulated time-series suggests that the order of return-series with respect to its magnitude contributes more to the volatility clustering than the heavy-tailed distributions. Secondly, we detect that the scale of the return contributes more to volatility clustering than the sign of the return. Lastly, we observe that the clustering and asymmetry measures are more robust measures to the return distribution changes than the PSVG to analyze the volatility clustering.",
-   "detail": "8, 208779–208795"
+   "detail": "8, 208779-208795"
   },
   {
    "id": "J5",
@@ -3452,7 +3452,7 @@ const DATA_I18N = {
    "venue": "Physica A: Statistical Mechanics and its Applications",
    "doi": "https://doi.org/10.1016/j.physa.2017.03.012",
    "abstract": "A research for distributional property of financial asset is the subject of intense interest not only for financial theory but also for practitioner. Such respect is no exception to CDS market. The CDS market, which began to receive attention since the global financial debacle, is not well researched despite of the importance of research necessity. This research introduces creation of CDS market and use Ising system utilizing occurrence characteristics (to shift risk) as an important factor. Therefore the results of this paper would be of great assistance to both financial theory and practice. From this study, not only distributional property of the CDS market but also various statistics like multifractal characteristics could promote understanding about the market. A salient point in this study is that countries are mainly clustering into 2 groups and it might be because of market situation and geographical characteristics of each country. This paper suggested 2 simulation parameters representing this market based on understanding such CDS market situation. The estimated parameters are suitable for high and low risk event of CDS market respectively and these two parameters are complementary and can cover not only basic statistics but also multifractal properties of most countries. Therefore these estimated parameters can be used in researches preparing for a certain event (high or low risk). Finally this research will serve as a momentum double-checking indirectly the performance of Ising system based on these results.",
-   "detail": "479, 324–340"
+   "detail": "479, 324-340"
   },
   {
    "id": "J2",
@@ -3468,7 +3468,7 @@ const DATA_I18N = {
    "venue": "Chaos Solitons & Fractals",
    "doi": "https://doi.org/10.1016/j.chaos.2014.01.002",
    "abstract": "The purpose of this paper is to study the structural change in Credit Default Swap volatility. We use statistical properties and a network approach to better understand the behavior of CDS volatility. We hypothesize that structural change occurs in CDS index during a financial crisis and it requires subperiod analysis, rather than full period analysis, to investigate properly. Our results show that the probability of large volatility is related to the structure of volatility but it is more significantly related to the size of volatility. Both the memory property and the size of volatility are confirmed to have dependence on the structure of volatility. The linked degree of CDS volatilities is highly related to the probability of large volatility and its predictability, regardless of structural change in volatility. Another interesting result is that the CDS volatility of a country is more related to the behavior of other volatilities, not the geographical location.",
-   "detail": "60, 56–67"
+   "detail": "60, 56-67"
   },
   {
    "id": "J1",
@@ -3484,7 +3484,7 @@ const DATA_I18N = {
    "venue": "Physica A: Statistical Mechanics and its Applications",
    "doi": "https://doi.org/10.1016/j.physa.2013.06.016",
    "abstract": "The volatility of financial markets is often assumed constant, but phenomena such as volatility clustering and jumps in volatility suggest that this assumption is rarely true. Numerous studies have been conducted to investigate the jump or breakpoint of the volatility phenomenon, and their findings have been applied in modeling volatility. However, few studies address the issue from a practical point of view. Specifically, a financial crisis accompanied by markedly increased volatility can be approached from this perspective to suggest the persistence or termination of a crisis. This paper develops the ICSS-CRISIS algorithm, a new approach to identify a crisis period along with the conditions for the ICSS algorithm which represents the structural breakpoints of volatility. This algorithm recommends a guideline to determine whether an existing crisis in the market resulted from financial volatility, was terminated, or is continuing. The method is tested along with the ICSS algorithm to prove the effectiveness of Credit Default Swap index data.",
-   "detail": "392(20), 4977–4988"
+   "detail": "392(20), 4977-4988"
   },
   {
    "id": "K8",
@@ -3496,7 +3496,7 @@ const DATA_I18N = {
    "title": "From Sentiment to Fundamentals: A Dynamic Deep Learning Framework for Exchange Rate Forecasting Integrating LLM-based Sentiment and Hybrid Architectures",
    "venue": "The Korean Journal of Financial Management",
    "doi": "https://doi.org/10.22510/kjofm.2026.43.2.005",
-   "detail": "43(2), 127–168"
+   "detail": "43(2), 127-168"
   },
   {
    "id": "K7",
@@ -3508,7 +3508,7 @@ const DATA_I18N = {
    "title": "Changes and Prospects in Ageism Discourse in Korea's Super-Aged Society: Keyword Trends, Sentiment Analysis, and Interest Prediction Based on News Big Data",
    "venue": "Korean Journal of Gerontological Social Welfare",
    "doi": "https://doi.org/10.21194/kjgsw.81.1.202603.143",
-   "detail": "81(1), 143–173"
+   "detail": "81(1), 143-173"
   },
   {
    "id": "K6",
@@ -3520,7 +3520,7 @@ const DATA_I18N = {
    "title": "Who Donates and Why: Conditions for Donation Revealed by Social Survey Big Data and Explainable Artificial Intelligence(XAI)",
    "venue": "Journal of Korean Social Welfare Administration",
    "doi": "https://doi.org/10.22944/kswa.2026.28.1.005",
-   "detail": "28(1), 121–147"
+   "detail": "28(1), 121-147"
   },
   {
    "id": "K5",
@@ -3532,7 +3532,7 @@ const DATA_I18N = {
    "title": "Explainable AI Decision Models for Non-formal Lifelong Learning Participation: Predictive Insights and Inclusive Policy in a Digital Aging World",
    "venue": "Journal of the Korean Operations Research and Management Science Society",
    "doi": "https://doi.org/10.7737/JKORMS.2026.51.1.031",
-   "detail": "51(1), 31–50"
+   "detail": "51(1), 31-50"
   },
   {
    "id": "K4",
@@ -3544,7 +3544,7 @@ const DATA_I18N = {
    "title": "Sustainable Lifelong Learning: Explainable AI-Driven Analytics for Informal Learning Effectiveness and Personalized Recommendations",
    "venue": "The Korea Journal of BigData",
    "doi": "https://doi.org/10.36498/kbigdt.2025.10.2.41",
-   "detail": "10(2), 41–80"
+   "detail": "10(2), 41-80"
   },
   {
    "id": "K3",
@@ -3556,7 +3556,7 @@ const DATA_I18N = {
    "title": "Business Analytics to Predict Seoul Subway Congestion and Policy Decision-making using Explainable AI",
    "venue": "The Korea Journal of BigData",
    "doi": "https://doi.org/10.36498/kbigdt.2025.10.1.15",
-   "detail": "10(1), 15–32"
+   "detail": "10(1), 15-32"
   },
   {
    "id": "K2",
@@ -3568,7 +3568,7 @@ const DATA_I18N = {
    "title": "Demand Forecast and Policy Decisions for KTX in 2025: An Empirical Forecasting Study based on XAI",
    "venue": "The Korea Journal of BigData",
    "doi": "https://doi.org/10.36498/kbigdt.2025.10.1.1",
-   "detail": "10(1), 1–13"
+   "detail": "10(1), 1-13"
   },
   {
    "id": "K1",
@@ -3580,7 +3580,7 @@ const DATA_I18N = {
    "title": "The Social Value of Urban Parks and their Connection to Community Child Well-being: Focusing on children's centers",
    "venue": "Journal of the Korea Convergence Society",
    "doi": "https://doi.org/10.24826/KSCS.12.12.28",
-   "detail": "12(12), 449–466"
+   "detail": "12(12), 449-466"
   },
   {
    "id": "C12",
@@ -3607,7 +3607,7 @@ const DATA_I18N = {
    "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12292716",
    "title": "AI Analytics to Predict Donor Behavior: Public Data and XAI-Based Research",
    "venue": "Korean Operations Research and Management Science Society (KORMS) Spring Joint Conference",
-   "detail": "3356–3356"
+   "detail": "3356-3356"
   },
   {
    "id": "C9",
@@ -3617,7 +3617,7 @@ const DATA_I18N = {
    "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12292632",
    "title": "Forecasting Future Transportation Demand with High-Performance Time-Series Deep Learning",
    "venue": "Korean Operations Research and Management Science Society (KORMS) Spring Joint Conference",
-   "detail": "2668–2681"
+   "detail": "2668-2681"
   },
   {
    "id": "C8",
@@ -3627,7 +3627,7 @@ const DATA_I18N = {
    "url": "https://www-dbpia-co-kr-ssl.access.inu.ac.kr/journal/articleDetail?nodeId=NODE12355817",
    "title": "Sentiment Analysis of Ageism in Korea's Super-Aged Society Using News Big Data",
    "venue": "Spring Conference of the Korean Society for Social Welfare Studies for Critique and Alternatives (JCSW)",
-   "detail": "155–170"
+   "detail": "155-170"
   },
   {
    "id": "C7",
@@ -3653,7 +3653,7 @@ const DATA_I18N = {
    "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11472132",
    "title": "Prediction of Suicidal Ideation among Older Adults Using Machine Learning",
    "venue": "Korean Society of Gerontological Social Welfare (KSGSW) Conference",
-   "detail": "2023(5), 68–87"
+   "detail": "2023(5), 68-87"
   },
   {
    "id": "C4",
@@ -3672,7 +3672,7 @@ const DATA_I18N = {
    "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08009260",
    "title": "Estimating Arbitrage Opportunity in the Real Estate Market via Binomial American Option Pricing Approach",
    "venue": "Korean Institute of Industrial Engineers (KIIE) Spring Joint Conference",
-   "detail": "1380–1399"
+   "detail": "1380-1399"
   },
   {
    "id": "C2",
@@ -3683,7 +3683,7 @@ const DATA_I18N = {
    "title": "Squeezed Convolutional Variational AutoEncoder for Unsupervised Anomaly Detection in Edge Device Industrial Internet of Things",
    "venue": "International Conference on Information and Computer Technologies (ICICT)",
    "doi": "https://doi.org/10.1109/infoct.2018.8356842",
-   "detail": "67–71"
+   "detail": "67-71"
   },
   {
    "id": "C1",
@@ -3693,7 +3693,7 @@ const DATA_I18N = {
    "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE02381899",
    "title": "Modeling Crisis Period and Testing Contagion Effect on Recent Financial Crisis with the Asia Credit Default Swap Markets",
    "venue": "Korean Operations Research and Management Science Society (KORMS) Spring Joint Conference",
-   "detail": "1947–1958"
+   "detail": "1947-1958"
   },
   {
    "id": "B5",
@@ -3740,7 +3740,7 @@ const DATA_I18N = {
    "url": "https://www.kipa.re.kr/site/kipa/research/selectPublishView.do?gubun=FO&pblcteId=PUBL_000000000000966",
    "title": "Focus Issue 1: Big Data, Artificial Intelligence, and the Emergence of Large Language Models",
    "venue": "Public Administration Focus, Korea Institute of Public Administration",
-   "detail": "171, 8–15",
+   "detail": "171, 8-15",
    "cover": "images/book/B2.png"
   },
   {
@@ -3759,7 +3759,7 @@ const DATA_I18N = {
  "projects": {
   "external": [
    {
-    "period": "2025.04–2025.07",
+    "period": "2025.04-2025.07",
     "title": "Big Data Analytics for Public Conflict Management and Policy Conflict Response Strategies",
     "org": "Korea Institute of Public Administration (KIPA), National Research Council for Economics, Humanities and Social Sciences (NRC)",
     "fund": 5000000,
@@ -3791,7 +3791,7 @@ const DATA_I18N = {
     "role": "Principal Investigator"
    },
    {
-    "period": "2024.04–2024.08",
+    "period": "2024.04-2024.08",
     "title": "KTX Passenger Demand Forecasting for 2025 Using Advanced Artificial Intelligence Algorithms",
     "org": "Korea Railroad Research Institute, Korea Railroad Corporation (KORAIL)",
     "fund": 10000000,
@@ -3807,7 +3807,7 @@ const DATA_I18N = {
     "role": "Principal Investigator"
    },
    {
-    "period": "2024.01–2024.12",
+    "period": "2024.01-2024.12",
     "title": "Explainable AI-based Prediction of Individual Donors Using Donation Big Data",
     "org": "Sharing Culture Institute, Community Chest of Korea",
     "fund": 10000000,
@@ -3822,7 +3822,7 @@ const DATA_I18N = {
     "role": "Principal Investigator"
    },
    {
-    "period": "2023.08–2024.04",
+    "period": "2023.08-2024.04",
     "title": "Development and Operational Framework of an AI-based Conflict Management Database",
     "org": "Korea Institute of Public Administration (KIPA), National Research Council for Economics, Humanities and Social Sciences (NRC)",
     "fund": 3000000,
@@ -3835,7 +3835,7 @@ const DATA_I18N = {
     "role": "Research Investigator"
    },
    {
-    "period": "2023.02–2024.05",
+    "period": "2023.02-2024.05",
     "title": "Big Data Analytics of Ageism and Intergenerational Conflict in Korean Society",
     "org": "T&C Foundation Interdisciplinary Research Program",
     "fund": 100000000,
@@ -3855,7 +3855,7 @@ const DATA_I18N = {
     "role": "Principal Investigator"
    },
    {
-    "period": "2022.07–2022.11",
+    "period": "2022.07-2022.11",
     "title": "Social Value of Urban Parks and Community Welfare Infrastructure: A Text Mining Approach",
     "org": "Seoul Metropolitan Government Yongsan Park Research Grant Program",
     "fund": 2000000,
@@ -3870,49 +3870,49 @@ const DATA_I18N = {
   ],
   "internal": [
    {
-    "period": "2026.05–2027.04",
+    "period": "2026.05-2027.04",
     "title": "Diagnosing the Generative AI Digital Divide with Explainable AI (XAI) and Building Inclusive User Experience (UX) Design Guidelines",
     "org": "Incheon National University Research Grant",
     "no": "2026-0119",
     "role": "Principal Investigator"
    },
    {
-    "period": "2025.05–2026.04",
+    "period": "2025.05-2026.04",
     "title": "Has Government Policy Activity Effectively Contributed to Resolving Public Conflicts?",
     "org": "Incheon National University Research Grant",
     "no": "2025-0232",
     "role": "Principal Investigator"
    },
    {
-    "period": "2024.05–2025.04",
+    "period": "2024.05-2025.04",
     "title": "XAI-based Donor Prediction and Engagement Strategies Using Social Capital for Sustainable Welfare Financing",
     "org": "Incheon National University Research Grant",
     "no": "2024-0172",
     "role": "Principal Investigator"
    },
    {
-    "period": "2023.05–2024.04",
+    "period": "2023.05-2024.04",
     "title": "Next-generation Portfolio Strategies Integrating Financial Engineering, Artificial Intelligence, Market Efficiency, and Forecast Uncertainty",
     "org": "Incheon National University Research Grant",
     "no": "2023-0035",
     "role": "Principal Investigator"
    },
    {
-    "period": "2022.05–2023.04",
+    "period": "2022.05-2023.04",
     "title": "Explainable AI Approaches to Predicting and Mitigating Problematic Smartphone Use in the Digital Era",
     "org": "Incheon National University Research Grant",
     "no": "2022-0089",
     "role": "Principal Investigator"
    },
    {
-    "period": "2021.05–2022.04",
+    "period": "2021.05-2022.04",
     "title": "AI Prediction and Social Data Analytics for Understanding Psychological Distress and Mental Health",
     "org": "Incheon National University Research Grant",
     "no": "2021-0400",
     "role": "Principal Investigator"
    },
    {
-    "period": "2021.05–2022.04",
+    "period": "2021.05-2022.04",
     "title": "Real-time Unsupervised Change Point Detection for Abnormal Financial Time-series Data",
     "org": "Incheon National University Research Grant",
     "no": "2021-0118",
@@ -3921,98 +3921,98 @@ const DATA_I18N = {
   ],
   "industry": [
    {
-    "period": "2020.01–2020.10",
+    "period": "2020.01-2020.10",
     "title": "Real-time Advertising Effectiveness Inference and Optimal Bidding Price Prediction",
     "org": "Samsung Research AI Center",
     "dept": "인공지능센터",
     "role": "Senior Data Scientist"
    },
    {
-    "period": "2019.05–2020.02",
+    "period": "2019.05-2020.02",
     "title": "Advertising Recommendation Analytics and Marketing Promotion Effectiveness Evaluation",
     "org": "Samsung Research AI Center",
     "dept": "인공지능센터",
     "role": "Senior Data Scientist"
    },
    {
-    "period": "2019.01–2019.12",
+    "period": "2019.01-2019.12",
     "title": "Process Optimization for Minimizing Slow-moving Inventory Costs of Product Components",
     "org": "Samsung Research AI Center",
     "dept": "인공지능센터",
     "role": "Senior Data Scientist"
    },
    {
-    "period": "2018.01–2019.06",
+    "period": "2018.01-2019.06",
     "title": "Marketing Channel Attribution Analysis and Portfolio Optimization Using Big Data",
     "org": "Samsung Research AI Center",
     "dept": "인공지능센터",
     "role": "Senior Data Scientist"
    },
    {
-    "period": "2018.01–2018.09",
+    "period": "2018.01-2018.09",
     "title": "Mid- to Long-term Product Sales Demand Forecasting for Revenue Maximization and Cost Minimization",
     "org": "Samsung Research AI Center",
     "dept": "인공지능센터",
     "role": "Senior Data Scientist"
    },
    {
-    "period": "2018.01–2018.09",
+    "period": "2018.01-2018.09",
     "title": "Promotion Effectiveness Prediction and ROI Improvement Strategy for 400 Million Customers in Southeast Asian Markets",
     "org": "Samsung Research AI Center",
     "dept": "인공지능센터",
     "role": "Senior Data Scientist"
    },
    {
-    "period": "2017.09–2018.06",
+    "period": "2017.09-2018.06",
     "title": "Data-driven Platform Optimization for Mobile Production Automation at a Vietnam Factory",
     "org": "Samsung Electronics Software Center",
     "dept": "소프트웨어센터",
     "role": "Data Scientist"
    },
    {
-    "period": "2017.01–2017.12",
+    "period": "2017.01-2017.12",
     "title": "Customer VOC Early Warning System for Complaint Prevention and Reduction",
     "org": "Samsung Electronics Big Data Lab",
     "dept": "빅데이터랩",
     "role": "Data Scientist"
    },
    {
-    "period": "2016.12–2017.04",
+    "period": "2016.12-2017.04",
     "title": "Manufacturing Anomaly Detection and Equipment Lifetime Prediction for Mobile Production Lines",
     "org": "Samsung Electronics Big Data Lab",
     "dept": "빅데이터랩",
     "role": "Data Scientist"
    },
    {
-    "period": "2016.10–2016.12",
+    "period": "2016.10-2016.12",
     "title": "Marketing Strategy for Personalized Promotions",
     "org": "Samsung Electronics Big Data Lab",
     "dept": "빅데이터랩",
     "role": "Data Scientist"
    },
    {
-    "period": "2016.01–2016.12",
+    "period": "2016.01-2016.12",
     "title": "Customer Pattern Analysis for Improving Product Feature and App Usability",
     "org": "Samsung Electronics Big Data Lab",
     "dept": "빅데이터랩",
     "role": "Data Scientist"
    },
    {
-    "period": "2015.03–2015.12",
+    "period": "2015.03-2015.12",
     "title": "Customer Promotion Strategy Based on Product Feature and App Usage Similarity",
     "org": "Samsung Electronics Software Group",
     "dept": "소프트웨어그룹",
     "role": "Data Scientist"
    },
    {
-    "period": "2014.10–2015.06",
+    "period": "2014.10-2015.06",
     "title": "Consumer Age and Gender Prediction and Content Recommendation for Advertising Effectiveness",
     "org": "Samsung Electronics Software Group",
     "dept": "소프트웨어그룹",
     "role": "Data Scientist"
    },
    {
-    "period": "2014.05–2014.12",
+    "period": "2014.05-2014.12",
     "title": "Real-time Churn Customer Detection for Improving Product Usability",
     "org": "Samsung Electronics Software Group",
     "dept": "소프트웨어그룹",
@@ -4207,7 +4207,7 @@ const DATA_I18N = {
   {
    "org": "Hanbit+",
    "title": "Hyper-Personalized Marketing Decision-Making in Practice: Customer Data Analytics",
-   "when": "2026.03–",
+   "when": "2026.03-",
    "role": "Lead Instructor",
    "url": "https://www.hanbit.co.kr/product/C5787513960"
   },
@@ -4246,7 +4246,7 @@ const DATA_I18N = {
   {
    "org": "Hyundai Mobis",
    "title": "Industrial AI Project Advisory based on Machine Learning, Computer Vision, and NLP Technologies",
-   "when": "2024.04–2024.10",
+   "when": "2024.04-2024.10",
    "role": "AI Project Advisor"
   },
   {
@@ -4288,7 +4288,7 @@ const DATA_I18N = {
   {
    "org": "Samsung Multi-Campus",
    "title": "ProDS Professional Data Scientist Question Authoring and Metric Design",
-   "when": "2022.12–2023.01",
+   "when": "2022.12-2023.01",
    "role": "Evaluation Metric Author",
    "url": "https://certi.multicampus.com/ie/intro/introProds?p_menu=MTMxMDUjTUFJTg==&p_gubun=Qw=="
   },
@@ -4301,14 +4301,14 @@ const DATA_I18N = {
   {
    "org": "Fast Campus",
    "title": "Quant (Financial Engineering) Playbook: Data-Driven Algorithmic Trading & Risk Analysis",
-   "when": "2022.10–2026.04",
+   "when": "2022.10-2026.04",
    "role": "Lead Instructor",
    "url": "https://fastcampus.co.kr/fin_online_pbquant"
   },
   {
    "org": "S-OIL",
    "title": "Enterprise Data Analytics Platform Development for Corporate Digital Transformation",
-   "when": "2022.07–2022.11",
+   "when": "2022.07-2022.11",
    "role": "Platform Developer"
   },
   {
@@ -4350,7 +4350,7 @@ const DATA_I18N = {
   {
    "org": "Fast Campus",
    "title": "Data Science and Statistical Inference, Machine Learning, and Time-Series Deep Learning",
-   "when": "2021.01–2022.06",
+   "when": "2021.01-2022.06",
    "role": "Lead Instructor"
   },
   {
@@ -4368,7 +4368,7 @@ const DATA_I18N = {
   {
    "org": "Fast Campus",
    "title": "Introduction to Statistical Analysis and Time-Series Modeling with Python",
-   "when": "2019.02–2020.12",
+   "when": "2019.02-2020.12",
    "role": "Lead Instructor"
   },
   {
@@ -4380,7 +4380,7 @@ const DATA_I18N = {
   {
    "org": "Samsung SDS Multi-Campus",
    "title": "Foreign Exchange Systems, Financial Derivatives Valuation, and IT Market Analysis",
-   "when": "2010.09–2014.01",
+   "when": "2010.09-2014.01",
    "role": "Lead Instructor"
   }
  ],
@@ -4393,7 +4393,7 @@ const DATA_I18N = {
   },
   {
    "org": "Hanbit+ Monthly AX",
-   "title": "The Era of Data Sovereignty: Human Decides, Machine Analyzes — AI Master Strategy Proving Marketing ROI",
+   "title": "The Era of Data Sovereignty: Human Decides, Machine Analyzes (AI Master Strategy Proving Marketing ROI)",
    "when": "2026.04.28",
    "role": "Keynote Speaker",
    "url": "https://event-us.kr/fkh3nhkjmpgh/event/123699"
@@ -4485,42 +4485,42 @@ const DATA_I18N = {
  ],
  "experience": [
   {
-   "period": "2025.07 – Present",
+   "period": "2025.07 - Present",
    "role": "Founder & CEO",
-   "org": "DeciPhi Incorporation",
+   "org": "DeciPhi Inc.",
    "note": "Marketing Portfolio Recommendation",
    "now": true
   },
   {
-   "period": "2026.03 – Present",
+   "period": "2026.03 - Present",
    "role": "Associate Professor",
    "org": "School of Global Trade & Service, Incheon National University",
    "note": "Business Analytics: Digital Advertising & Marketing, Financial Markets, Social Economy & Interdisciplinary Convergence\nApplied Data Science: Market Efficiency, Causal Inference, Time-Series Forecasting, AI-Driven Decision Making, Investment Strategy",
    "now": true
   },
   {
-   "period": "2025.03 – 2026.02",
+   "period": "2025.03 - 2026.02",
    "role": "Associate Professor",
    "org": "School of International Trade and Business, Incheon National University"
   },
   {
-   "period": "2021.03 – 2025.02",
+   "period": "2021.03 - 2025.02",
    "role": "Assistant Professor",
    "org": "School of International Trade and Business, Incheon National University"
   },
   {
-   "period": "2018.01 – 2021.02",
+   "period": "2018.01 - 2021.02",
    "role": "Data Scientist",
    "org": "BigData Team, Global AI Center, Samsung Research",
    "note": "Business Consulting and Evaluation for Advertising, Digital Marketing, AI Factory, and Demand Forecasting"
   },
   {
-   "period": "2017.09 – 2017.12",
+   "period": "2017.09 - 2017.12",
    "role": "Data Scientist",
    "org": "Data Analytics Lab, Software Center, Samsung Electronics"
   },
   {
-   "period": "2014.04 – 2017.08",
+   "period": "2014.04 - 2017.08",
    "role": "Data Scientist (Alternative Military Service)",
    "org": "BigData Lab, Division of Visual Display, Samsung Electronics",
    "note": "Data Analysis Design and Platform Operation for Service Optimization, Personal Recommendation, and Warning System"
@@ -4528,21 +4528,21 @@ const DATA_I18N = {
  ],
  "education": [
   {
-   "period": "2010.09 – 2014.02",
+   "period": "2010.09 - 2014.02",
    "role": "Ph.D. in Industrial Engineering",
    "org": "Seoul National University",
    "note": "Advisor: Woojin Chang (Financial Risk Engineering Lab)",
    "thesis": "An Empirical Study on the Unstable Period Detection in Financial Markets and the Global Transmission of Financial Crisis"
   },
   {
-   "period": "2008.03 – 2010.02",
+   "period": "2008.03 - 2010.02",
    "role": "M.S. in Computational Science and Technology",
    "org": "Seoul National University",
    "note": "Advisor: Yongdai Kim (Intelligent Data Analysis Lab, Department of Statistics)",
    "thesis": "ANOVA Boosting for Credit Scoring"
   },
   {
-   "period": "2002.03 – 2007.02",
+   "period": "2002.03 - 2007.02",
    "role": "B.S. in Mathematics (Minor in Physics)",
    "org": "Hanyang University"
   }
@@ -4595,7 +4595,7 @@ const DATA_I18N = {
   },
   {
    "date": "2025.07",
-   "title": "Gold Prize (2nd place), INU Industry–Academia Capstone Design Competition",
+   "title": "Gold Prize (2nd place), INU Industry-Academia Capstone Design Competition",
    "org": "Junhyeong Lee, Spending-pattern prediction and cashback optimization for the Incheon e-Eum card"
   }
  ],
@@ -4620,31 +4620,31 @@ const DATA_I18N = {
  ],
  "memberships": [
   {
-   "date": "2025.11–",
+   "date": "2025.11-",
    "title": "Academic Editor",
-   "org": "PLOS One (Public Library of Science One)",
+   "org": "PLOS One",
    "url": "https://journals.plos.org/plosone/static/editorial-board?ae_name=Kyungwon+Kim"
   },
   {
-   "date": "2025.01–2026.12",
+   "date": "2025.01-2026.12",
    "title": "Board of Directors",
    "org": "Korea Logistics Research Association (KLRA)",
    "url": "http://www.klra21.org/index.asp"
   },
   {
-   "date": "2025.03–",
+   "date": "2025.03-",
    "title": "Life Membership",
    "org": "Korean Financial Management Association (KFMA)",
    "url": "https://kfma.org/"
   },
   {
-   "date": "2023.01–2024.12",
+   "date": "2023.01-2024.12",
    "title": "Board of Directors",
    "org": "Korean Society of Industrial and Systems Engineering (KSIE)",
    "url": "http://ksie.or.kr/index.html"
   },
   {
-   "date": "2022.12–",
+   "date": "2022.12-",
    "title": "Life Membership",
    "org": "Korean Society of Industrial and Systems Engineering (KSIE)",
    "url": "http://ksie.or.kr/index.html"
@@ -4662,13 +4662,13 @@ const DATA_I18N = {
    "url": "http://kiie.org/"
   },
   {
-   "date": "2022.01–2024.12",
+   "date": "2022.01-2024.12",
    "title": "General Director",
    "org": "Korea Logistics Research Association (KLRA)",
    "url": "http://www.klra21.org/index.asp"
   },
   {
-   "date": "2021.11–",
+   "date": "2021.11-",
    "title": "Life Membership",
    "org": "Korean Operations Research and Management Science Society (KORMS)",
    "url": "http://www.korms.or.kr/"
@@ -4703,7 +4703,7 @@ const DATA_I18N = {
    ],
    [
     "2026.03",
-    "AI Evaluation Committee Member, National Defense Information System Project Proposal Review (–2028.02)",
+    "AI Evaluation Committee Member, National Defense Information System Project Proposal Review (-2028.02)",
     "Ministry of National Defense"
    ],
    [
@@ -4755,7 +4755,7 @@ const DATA_I18N = {
   "Academic Programs": [
    [
     "2026.02",
-    "External Evaluator, 2nd-Year G-LAMP Project Evaluation (–2026.03)",
+    "External Evaluator, 2nd-Year G-LAMP Project Evaluation (-2026.03)",
     "Chonnam National University"
    ],
    [
@@ -4782,7 +4782,7 @@ const DATA_I18N = {
    ],
    [
     "2025.09",
-    "Expert Member, Broadcasting and Video AI Training Data Consortium (–2025.12)",
+    "Expert Member, Broadcasting and Video AI Training Data Consortium (-2025.12)",
     "Korea Radio Promotion Association"
    ],
    [
@@ -4922,7 +4922,7 @@ const DATA_I18N = {
  "members": [
   {
    "cohort": 3,
-   "period": "2025–",
+   "period": "2025-",
    "photo": "",
    "github": "mathsjm32",
    "email": "sigtd32@inu.ac.kr",
@@ -4935,7 +4935,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 3,
-   "period": "2025–",
+   "period": "2025-",
    "photo": "",
    "github": "taeyoung256",
    "email": "kim156565@naver.com",
@@ -4948,7 +4948,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 3,
-   "period": "2025–",
+   "period": "2025-",
    "photo": "images/members/ddaf1887.png",
    "github": "jyjakemoon",
    "email": "202200776@inu.ac.kr",
@@ -4961,7 +4961,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 3,
-   "period": "2025–",
+   "period": "2025-",
    "photo": "images/members/0e00a9cd.jpg",
    "github": "nibeahc",
    "email": "kchb30123@inu.ac.kr",
@@ -4974,7 +4974,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 3,
-   "period": "2025–",
+   "period": "2025-",
    "photo": "",
    "github": "",
    "email": "ho19991213@naver.com",
@@ -4987,7 +4987,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 3,
-   "period": "2025–",
+   "period": "2025-",
    "photo": "",
    "github": "hisunhelloo",
    "email": "hisunhelloo@gmail.com",
@@ -5000,7 +5000,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 2,
-   "period": "2024–2025",
+   "period": "2024-2025",
    "photo": "images/members/87e62880.jpg",
    "github": "DataWizardd",
    "email": "james2p@naver.com",
@@ -5013,7 +5013,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 2,
-   "period": "2024–2026",
+   "period": "2024-2026",
    "photo": "images/members/e15e5983.jpg",
    "github": "HyoJungYu",
    "email": "yuhyojung02@naver.com",
@@ -5026,7 +5026,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 2,
-   "period": "2024–",
+   "period": "2024-",
    "photo": "images/members/291d8605.jpg",
    "github": "JONJI-32",
    "email": "jonjilike@inu.ac.kr",
@@ -5039,7 +5039,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 2,
-   "period": "2025–2026",
+   "period": "2025-2026",
    "photo": "images/members/112adb5c.jpg",
    "github": "Gayeon-Bang",
    "email": "bangga5589@naver.com",
@@ -5052,7 +5052,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 2,
-   "period": "2024–2025",
+   "period": "2024-2025",
    "photo": "images/members/2bd77547.jpg",
    "github": "",
    "email": "dmsgk0307@naver.com",
@@ -5065,7 +5065,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 2,
-   "period": "2024–",
+   "period": "2024-",
    "photo": "images/members/aea411da.jpg",
    "github": "leeki0123",
    "email": "leeki0123@naver.com",
@@ -5091,7 +5091,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 2,
-   "period": "2025–",
+   "period": "2025-",
    "photo": "images/members/ca6d99dd.jpg",
    "github": "",
    "email": "jun010914@naver.com",
@@ -5104,7 +5104,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 1,
-   "period": "2022–2023",
+   "period": "2022-2023",
    "photo": "images/members/3d3cefbc.jpg",
    "github": "SONDOEON",
    "email": "zjstpq1234@naver.com",
@@ -5117,7 +5117,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 1,
-   "period": "2022–",
+   "period": "2022-",
    "photo": "images/members/2957deba.jpg",
    "github": "ckaudwn1685",
    "email": "bomin9988@gmail.com",
@@ -5130,7 +5130,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 1,
-   "period": "2022–2024",
+   "period": "2022-2024",
    "photo": "images/members/8a38d408.jpg",
    "github": "",
    "email": "wkdalsw5@naver.com",
@@ -5143,7 +5143,7 @@ const DATA_I18N = {
   },
   {
    "cohort": 1,
-   "period": "2022–2024",
+   "period": "2022-2024",
    "photo": "images/members/5707edb3.png",
    "github": "ckaudwn1685",
    "email": "ckaudwn88611685@gmail.com",
