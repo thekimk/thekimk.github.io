@@ -61,7 +61,8 @@ const DATA_I18N = {
  "recruit": {
   "targets": "소그룹, 학부연구생, 학석사연계과정, 석사과정, 박사과정",
   "url": "https://docs.google.com/forms/d/e/1FAIpQLScWGLWgGfGMFT8fkvSRSA-bgmcd6IUw1TA234tH05XEQOQCzw/viewform?usp=sf_link",
-  "text": "DAX Lab에 멤버가 되고 싶다면 (박사과정, 석사과정, 학석사연계과정, 학부연구생, 소그룹 등), 구글 폼을 작성해주면 빠르게 안내를 도와주겠습니다."
+  "text": "DAX Lab에 멤버가 되고 싶다면 (박사과정, 석사과정, 학석사연계과정, 학부연구생, 소그룹 등), 구글 폼을 작성해주면 빠르게 안내를 도와주겠습니다.",
+  "guide": "https://github.com/thekimk/DIVE-Research"
  },
  "statement": {
   "ko": "AI의 복잡한 의사결정 과정을 투명하게 해부하는 AI 디시전 사이언티스트",
@@ -2747,7 +2748,8 @@ const DATA_I18N = {
  "recruit": {
   "targets": "Ph.D., M.S., integrated B.S.–M.S., undergraduate research interns, small groups",
   "url": "https://docs.google.com/forms/d/e/1FAIpQLScWGLWgGfGMFT8fkvSRSA-bgmcd6IUw1TA234tH05XEQOQCzw/viewform?usp=sf_link",
-  "text": "We are looking for highly motivated students who are interested in using big data and artificial intelligence to solve business and social problems."
+  "text": "We are looking for highly motivated students who are interested in using big data and artificial intelligence to solve business and social problems.",
+  "guide": "https://github.com/thekimk/DIVE-Research"
  },
  "statement": {
   "ko": "AI의 복잡한 의사결정 과정을 투명하게 해부하는 AI 디시전 사이언티스트",

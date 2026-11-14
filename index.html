@@ -190,6 +190,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .prospect{margin:0 0 clamp(2rem,5vw,2.8rem);border-left:3px solid var(--signal);padding:.9rem 1.2rem;background:var(--bg);border-radius:0 12px 12px 0}
 .prospect-head{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem 1.2rem;margin-bottom:.45rem}
 .prospect-head .btn{flex:none;padding:.42rem .95rem;font-size:.86rem}
+.btn-row{display:flex;flex-wrap:wrap;gap:.5rem}
+.notice-body .btn-row .btn{flex:1 1 0;width:auto}
 .prospect h3{margin:0;font-size:1.05rem}
 .prospect p{margin:0;color:var(--ink-2);font-size:.95rem}
 /* 소개 본문: 전체 폭 2단 */
@@ -853,7 +855,10 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
       <div class="prospect">
         <div class="prospect-head">
           <h3>For prospective students</h3>
-          <a class="btn primary" id="form-link-1" href="#" target="_blank" rel="noopener" data-en="Apply now">지원 양식 작성하기</a>
+          <span class="btn-row">
+            <a class="btn primary" id="form-link-1" href="#" target="_blank" rel="noopener" data-en="Apply now">지원 양식 작성하기</a>
+            <a class="btn" id="guide-link-1" href="#" target="_blank" rel="noopener" data-en="Recruitment guide">모집요강 보기</a>
+          </span>
         </div>
         <p data-en="We are looking for students who want to do research that connects industry and academia, technology and society. Ph.D., M.S., integrated B.S.–M.S. students, undergraduate research interns and small groups are all welcome.">산업과 학문, 기술과 사회를 잇는 연구를 함께할 학생을 찾습니다. 박사과정, 석사과정, 학석사연계과정, 학부연구생, 소그룹 모두 지원할 수 있습니다.</p>
       </div>
@@ -915,7 +920,10 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
         <dt data-en="Admission">모집 방식</dt><dd data-en="Rolling, year-round">상시 모집</dd>
       </dl>
       <p id="notice-text">지원 양식을 작성해 주시면 확인하는 대로 개별 안내해 드립니다.</p>
-      <a class="btn primary" id="form-link-3" href="#" target="_blank" rel="noopener" data-en="Apply now">지원 양식 작성하기</a>
+      <div class="btn-row">
+        <a class="btn primary" id="form-link-3" href="#" target="_blank" rel="noopener" data-en="Apply now">지원 양식 작성하기</a>
+        <a class="btn" id="guide-link-3" href="#" target="_blank" rel="noopener" data-en="Recruitment guide">모집요강 보기</a>
+      </div>
     </div>
     <div class="notice-foot">
       <button type="button" id="notice-today" data-en="Don’t show again today">오늘 하루 보지 않기</button>
@@ -939,7 +947,7 @@ document.documentElement.lang = LANG;
 </script>
 <!-- DATA:BEGIN -->
 <!-- 홈페이지 내용(DATA)은 엑셀 → build.py → site/data.js 로 자동 생성됩니다. 이 파일은 템플릿이라 단독으로 열면 내용이 비어 보입니다. site/index.html을 여세요. -->
-<script src="data.js?v=202611141933"></script>
+<script src="data.js?v=202611141938"></script>
 <!-- DATA:END -->
 <script>
 /* =====================================================================
@@ -1103,6 +1111,7 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
   const LINK_ICON = '<path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1"/>';
   $("#pi-links").innerHTML = pi.links.map(([k, u]) => '<a class="chip-link"' + ext(u) + '><svg viewBox="0 0 24 24" aria-hidden="true">' + (ICON[k.toLowerCase()] || LINK_ICON) + "</svg>" + esc(k) + "</a>").join("");
   ["#form-link-1", "#form-link-3"].forEach(s => { $(s).href = FORM_URL; });
+  ["#guide-link-1", "#guide-link-3"].forEach(s => { if (DATA.recruit.guide) $(s).href = DATA.recruit.guide; else $(s).remove(); });
 
   const mails = pi.contact.filter(c => c[2].startsWith("mailto:"));
   const tel = pi.contact.find(c => c[2].startsWith("tel:"));
