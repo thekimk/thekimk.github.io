@@ -1014,7 +1014,7 @@ document.documentElement.lang = LANG;
 </script>
 <!-- DATA:BEGIN -->
 <!-- 홈페이지 내용(DATA)은 엑셀 → build.py → site/data.js 로 자동 생성됩니다. 이 파일은 템플릿이라 단독으로 열면 내용이 비어 보입니다. site/index.html을 여세요. -->
-<script src="data.js?v=202611142138"></script>
+<script src="data.js?v=202611142147"></script>
 <!-- DATA:END -->
 <script>
 /* =====================================================================
@@ -1269,8 +1269,10 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
     const papers = (it.papers || []).map(id => pubById[id]).filter(Boolean);
     const k = pubById[it.key];
     const keyHTML = papers.length
-      ? '<div class="keypaper"><p class="kp-count">' + T("관련 논문 <b>" + papers.length + "</b>편", "<b>" + papers.length + "</b> related paper" + (papers.length > 1 ? "s" : "")) + '</p><ol class="kp-list">' +
-        papers.slice(0, 3).map(p => "<li><a" + ext(p.url) + ">" + esc(p.title) + '</a><span class="kp-venue">' + esc(p.venue) + " · " + esc(String(p.date).slice(0, 4)) + "</span></li>").join("") + "</ol></div>"
+      ? '<div class="keypaper"><p class="kp-count">' + (papers.some(p => p.type === "book")
+          ? T("관련 논문·저서 <b>" + papers.length + "</b>편", "<b>" + papers.length + "</b> related papers & books")
+          : T("관련 논문 <b>" + papers.length + "</b>편", "<b>" + papers.length + "</b> related paper" + (papers.length > 1 ? "s" : ""))) + '</p><ol class="kp-list">' +
+        papers.slice(0, 3).map(p => "<li><a" + ext(p.url) + ">" + (p.type === "book" ? "『" + esc(p.title) + "』" : esc(p.title)) + '</a><span class="kp-venue">' + esc(p.venue) + " · " + esc(String(p.date).slice(0, 4)) + "</span></li>").join("") + "</ol></div>"
       : k ? '<div class="keypaper">' + (k.type === "book" ? T("대표 저서", "Key book") : T("대표 논문", "Key paper")) + " · " + esc(k.type === "book" ? k.venue || "" : k.venue) + " (" + esc(k.date.slice(0, 4)) + ")<a" + ext(k.url) + ">" + (k.type === "book" ? "『" + esc(k.title) + "』" : esc(k.title)) + "</a></div>" : "";
     if (it.img) GAL["rc-" + i] = [it.img];
     const fp = it.figFrom && pubById[it.figFrom];
@@ -1278,7 +1280,7 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
       ? '<button type="button" class="rcard-fig" data-gal="rc-' + i + '" data-i="0" aria-label="' + T("대표 논문 그림 크게 보기", "Enlarge key-paper figure") + '"><img src="' + esc(it.img) + '" alt="" loading="lazy"></button>'
       : '<svg viewBox="0 0 300 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">' + (ART[it.art] || ART.regime)() + "</svg>";
     return '<article class="rcard"><div class="rcard-art' + (it.img ? " has-fig" : "") + '"><span class="rcard-no">' + String(i + 1).padStart(2, "0") + "</span>" + art +
-      (fp ? '<span class="fig-src">' + T("그림: ", "Figure: ") + esc(fp.venue) + " (" + esc(String(fp.date).slice(0, 4)) + ")</span>" : "") + "</div>" +
+      (fp ? '<span class="fig-src">' + (fp.type === "book" ? T("표지: ", "Cover: ") : T("그림: ", "Figure: ")) + esc(fp.venue) + " (" + esc(String(fp.date).slice(0, 4)) + ")</span>" : "") + "</div>" +
       '<div class="rcard-body"><h3>' + esc(it.title) + "</h3><p>" + esc(it.text) + '</p><div class="rtags">' + it.tags.map(t => "<span>" + esc(t) + "</span>").join("") + "</div>" + keyHTML + "</div></article>";
   }).join("");
   $("#lab-areas").innerHTML = DATA.labAreas.map(a =>

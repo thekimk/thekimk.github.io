@@ -93,18 +93,23 @@ const DATA_I18N = {
    "art": "regime",
    "papers": [
     "K8",
+    "C12",
     "J13",
+    "C9",
     "K3",
     "K2",
     "J10",
     "J9",
+    "C4",
     "J8",
     "J6",
     "J5",
+    "C3",
     "J4",
     "J3",
     "J2",
-    "J1"
+    "J1",
+    "C1"
    ],
    "img": "images/rcards/K8.png",
    "figFrom": "K8"
@@ -123,10 +128,18 @@ const DATA_I18N = {
     "K7",
     "K6",
     "K5",
+    "B3",
     "K4",
+    "C11",
+    "C10",
+    "C8",
+    "C7",
+    "B1",
     "J12",
     "K1",
-    "J11"
+    "J11",
+    "C6",
+    "C5"
    ],
    "img": "images/rcards/K7.png",
    "figFrom": "K7"
@@ -142,10 +155,14 @@ const DATA_I18N = {
    "key": "J7",
    "art": "wave",
    "papers": [
-    "J7"
+    "B5",
+    "B4",
+    "B2",
+    "J7",
+    "C2"
    ],
-   "img": "images/rcards/J7.png",
-   "figFrom": "J7"
+   "img": "images/rcards/B5.png",
+   "figFrom": "B5"
   }
  ],
  "lab": {
@@ -2813,18 +2830,23 @@ const DATA_I18N = {
    "art": "regime",
    "papers": [
     "K8",
+    "C12",
     "J13",
+    "C9",
     "K3",
     "K2",
     "J10",
     "J9",
+    "C4",
     "J8",
     "J6",
     "J5",
+    "C3",
     "J4",
     "J3",
     "J2",
-    "J1"
+    "J1",
+    "C1"
    ],
    "img": "images/rcards/K8.png",
    "figFrom": "K8"
@@ -2843,10 +2865,18 @@ const DATA_I18N = {
     "K7",
     "K6",
     "K5",
+    "B3",
     "K4",
+    "C11",
+    "C10",
+    "C8",
+    "C7",
+    "B1",
     "J12",
     "K1",
-    "J11"
+    "J11",
+    "C6",
+    "C5"
    ],
    "img": "images/rcards/K7.png",
    "figFrom": "K7"
@@ -2862,10 +2892,14 @@ const DATA_I18N = {
    "key": "J7",
    "art": "wave",
    "papers": [
-    "J7"
+    "B5",
+    "B4",
+    "B2",
+    "J7",
+    "C2"
    ],
-   "img": "images/rcards/J7.png",
-   "figFrom": "J7"
+   "img": "images/rcards/B5.png",
+   "figFrom": "B5"
   }
  ],
  "lab": {
