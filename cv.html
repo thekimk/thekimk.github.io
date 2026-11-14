@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>KIM, Kyungwon — Curriculum Vitae</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* 자동 생성 CV — 디자인을 바꾸려면 이 템플릿(templates/cv.html.j2)을 수정합니다. */
+@page {
+  size: A4;
+  margin: 15mm 15mm 16mm 15mm;
+  @bottom-left { content: "KIM, Kyungwon · Curriculum Vitae"; font: 7.5pt "IBM Plex Sans KR", "Malgun Gothic", sans-serif; color: #7a8698; }
+  @bottom-right { content: counter(page) " / " counter(pages); font: 7.5pt "IBM Plex Sans KR", "Malgun Gothic", sans-serif; color: #7a8698; }
+}
+@page :first { @bottom-left { content: "Last updated November 14, 2026"; } }
+:root { --accent:#0b5cad; --accent-soft:#e8f0fa; --ink:#0f1a2b; --ink-2:#46546b; --ink-3:#7a8698; --line:#d9e0ea; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; font: 8.9pt/1.42 "IBM Plex Sans KR", "Noto Sans KR", "Malgun Gothic", sans-serif; color: var(--ink); }
+a { color: inherit; text-decoration: none; }
+b { font-weight: 600; }
+
+/* ---------- header ---------- */
+.head { display: grid; grid-template-columns: 1fr 1fr; gap: 1mm 6mm; align-items: end; padding-bottom: 3.5mm; border-bottom: 2.2pt solid var(--accent); }
+.head h1 { grid-column: 1 / -1; font: 600 26pt/1 "IBM Plex Serif", Georgia, serif; letter-spacing: -.01em; margin: 0 0 1.5mm; white-space: nowrap; }
+.head .title { font-size: 9.4pt; color: var(--ink-2); line-height: 1.5; }
+.head .title b { color: var(--accent); }
+.head .contact { text-align: right; font-size: 8pt; color: var(--ink-2); line-height: 1.55; }
+.head .contact a { color: var(--accent); }
+
+/* ---------- metrics band ---------- */
+.metrics { display: grid; grid-template-columns: repeat(6, 1fr); margin: 4mm 0 3.5mm; background: var(--accent-soft); border-radius: 2.5mm; }
+.metric { padding: 2.6mm 2mm 2.3mm; text-align: center; border-left: .6pt solid #c9d7ea; }
+.metric:first-child { border-left: 0; }
+.metric .n { display: block; font: 600 15pt/1.05 "IBM Plex Serif", Georgia, serif; color: var(--accent); }
+.metric .l { display: block; font-size: 6.6pt; letter-spacing: .02em; text-transform: uppercase; color: var(--ink-2); margin-top: .8mm; }
+
+.intro { display: grid; grid-template-columns: 1.55fr 1fr; gap: 6mm; margin-bottom: 1mm; }
+.intro p { margin: 0; text-align: justify; color: var(--ink); }
+.highlights { margin: 0; padding: 0; list-style: none; }
+.highlights li { position: relative; padding-left: 3.6mm; margin-bottom: 1.4mm; font-size: 8.3pt; color: var(--ink); }
+.highlights li::before { content: ""; position: absolute; left: 0; top: 1.7mm; width: 1.6mm; height: 1.6mm; background: var(--accent); border-radius: 50%; }
+.kicker { font-size: 7pt; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0 0 1.4mm; }
+
+/* ---------- sections ---------- */
+h2 { font: 600 11.5pt/1.2 "IBM Plex Serif", Georgia, serif; color: var(--ink); margin: 5.2mm 0 2mm; padding-bottom: 1.1mm; border-bottom: .7pt solid var(--line); break-after: avoid; display: flex; justify-content: space-between; align-items: baseline; }
+h2 small { font: 500 7.4pt "IBM Plex Sans KR", sans-serif; color: var(--ink-3); letter-spacing: .02em; }
+h3 { font-size: 7.4pt; font-weight: 600; letter-spacing: .11em; text-transform: uppercase; color: var(--accent); margin: 3mm 0 1.4mm; break-after: avoid; }
+
+.row { display: grid; grid-template-columns: 24mm 1fr; gap: 3mm; margin-bottom: 1.9mm; break-inside: avoid; }
+.row .when { color: var(--ink-3); font-size: 7.9pt; font-variant-numeric: tabular-nums; padding-top: .3mm; }
+.row .what .t { font-weight: 600; }
+.row .what .o { color: var(--ink-2); }
+.row .what .m { color: var(--ink-3); font-size: 7.9pt; }
+.row ul { margin: .6mm 0 0; padding-left: 3.6mm; color: var(--ink-2); }
+.role { font-size: 6.9pt; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.tag { display: inline-block; font-size: 6.6pt; font-weight: 600; padding: .2mm 1.4mm; border-radius: 1mm; background: var(--accent-soft); color: var(--accent); margin-left: 1mm; vertical-align: .3mm; }
+.tag.gold { background: #fbefd2; color: #8a5a00; }
+
+/* ---------- publications ---------- */
+.legend { font: 400 7.4pt "IBM Plex Sans KR", sans-serif; color: var(--ink-3); }
+.pub { display: grid; grid-template-columns: 9mm 1fr; gap: 2mm; margin-bottom: 1.9mm; break-inside: avoid; }
+.pub .id { color: var(--accent); font-weight: 600; font-size: 8pt; font-variant-numeric: tabular-nums; }
+.pub .au { color: var(--ink-2); }
+.pub .ti { font-weight: 500; color: var(--ink); }
+.pub .ve { color: var(--ink-2); }
+.pub .ve i { color: var(--ink); }
+sup { font-size: 6.4pt; line-height: 0; }
+
+.two { columns: 2; column-gap: 7mm; }
+.two .row { grid-template-columns: 17mm 1fr; }
+.compact .row { margin-bottom: 1.2mm; }
+.reviewer { display: grid; grid-template-columns: 22mm 1fr; gap: 1.2mm 3mm; }
+.reviewer .k { font-weight: 600; color: var(--accent); font-size: 7.8pt; }
+.course { display: grid; grid-template-columns: 1fr auto; gap: 3mm; margin-bottom: 1.2mm; break-inside: avoid; }
+.course .ev { color: var(--accent); font-weight: 600; font-variant-numeric: tabular-nums; font-size: 8pt; white-space: nowrap; }
+.course .m { color: var(--ink-3); font-size: 7.8pt; }
+</style>
+</head>
+<body>
+
+<header class="head">
+  <h1>Kyungwon Kim</h1>
+  <div class="title"><b>Associate Professor</b><br>School of Global Trade &amp; Service, Incheon National University<br>Decision Intelligence &amp; AX Lab (DAX Lab)</div>
+  <div class="contact">
+    #14-422, Incheon National University, 119 Academy-ro, Yeonsu-gu, Incheon, Republic of Korea (22012)<br>
+    <a href="mailto:thekimk@inu.ac.kr">thekimk@inu.ac.kr</a> · <a href="mailto:thekimk.kr@gmail.com">thekimk.kr@gmail.com</a> · +82-32-835-8525<br>
+    <a href="https://scholar.google.com/citations?hl=ko&amp;user=nHPe-4UAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a> · <a href="https://orcid.org/0000-0001-6530-8426">ORCID</a> · <a href="https://github.com/thekimk">GitHub</a> · <a href="https://www.youtube.com/channel/UCEYxJNI5dhnn_CdC9BEWTuA">YouTube</a> · <a href="https://thekimk.github.io">thekimk.github.io</a>
+  </div>
+</header>
+
+<section class="metrics">
+  <div class="metric"><span class="n">13</span><span class="l">SCIE / SSCI articles</span></div><div class="metric"><span class="n">95%</span><span class="l">first / corresp. author</span></div><div class="metric"><span class="n">8</span><span class="l">KCI articles</span></div><div class="metric"><span class="n">5</span><span class="l">books &amp; reports</span></div><div class="metric"><span class="n">₩131M</span><span class="l">external research funding</span></div><div class="metric"><span class="n">4.63</span><span class="l">avg. teaching eval. / 5</span></div>
+</section>
+
+<section class="intro">
+  <div>
+    <p class="kicker">Research Interests</p>
+    <p>My research establishes human-centric AX (AI Transformation) standards that connect advanced computational methods with strategic decision-making. I focus on Trustworthy AI — explainable and statistically verified models, including generative AI, whose outputs can be tested and trusted — and on causal inference, moving beyond prediction to identify what actually drives business and policy outcomes. My goal is transparent AI that helps people make better decisions in business and society.</p>
+  </div>
+  <div>
+    <p class="kicker">Selected Highlights</p>
+    <ul class="highlights"><li>2026 Sejong Book Selection, Academic Category (AI Decision Making: We Decide, Machine Analyses)</li><li>Best Paper Award (1st Place), Fall Conference Competition Track</li><li>Academic Editor, PLOS One (Public Library of Science One) (since 2025.11)</li><li>Founder &amp; CEO, DeciPhi Incorporation (since 2025.07)</li></ul>
+  </div>
+</section>
+
+<h2>Education</h2>
+
+<div class="row"><div class="when">2010.09 – 2014.02</div><div class="what">
+  <span class="t">Ph.D. in Industrial Engineering (Financial Engineering)</span>, <span class="o">Seoul National University, Seoul, Korea</span> <span class="m">· GPA 3.66/4.30</span>
+  <div class="m">Financial Risk Engineering Lab — Advisor: Woojin Chang</div><div class="m">Dissertation: An Empirical Study on the Unstable Period Detection in Financial Markets and the Global Transmission of Financial Crisis</div>
+</div></div>
+
+<div class="row"><div class="when">2008.03 – 2010.02</div><div class="what">
+  <span class="t">M.S. in Computational Science and Technology (Data Mining)</span>, <span class="o">Seoul National University, Seoul, Korea</span> <span class="m">· GPA 3.50/4.30</span>
+  <div class="m">Intelligent Data Analysis Lab., Department of Statistics — Advisor: Yongdai Kim</div><div class="m">Dissertation: ANOVA Boosting for Credit Scoring</div>
+</div></div>
+
+<div class="row"><div class="when">2002.03 – 2007.02</div><div class="what">
+  <span class="t">B.S. in Mathematics, Minor in Physics</span>, <span class="o">Hanyang University, Seoul, Korea</span> <span class="m">· GPA 3.60/4.50</span>
+  
+</div></div>
+
+
+<h2>Professional Experience</h2>
+
+<div class="row"><div class="when">2025.07 – Present</div><div class="what">
+  <span class="t">Founder &amp; CEO</span>, <span class="o">DeciPhi Incorporation</span> <span class="m">· Incheon, Korea</span>
+  <ul><li>Marketing Portfolio Recommendation</li></ul>
+</div></div>
+
+<div class="row"><div class="when">2026.03 – Present</div><div class="what">
+  <span class="t">Associate Professor</span>, <span class="o">School of Global Trade &amp; Service, Incheon National University</span> <span class="m">· Incheon, Korea</span>
+  <ul><li>Business Analytics: Digital Advertising &amp; Marketing, Financial Markets, Social Economy &amp; Interdisciplinary Convergence</li><li>Applied Data Science: Market Efficiency, Causal Inference, Time-Series Forecasting, AI-Driven Decision Making, Investment Strategy</li></ul>
+</div></div>
+
+<div class="row"><div class="when">2025.03 – 2026.02</div><div class="what">
+  <span class="t">Associate Professor</span>, <span class="o">School of International Trade and Business, Incheon National University</span> <span class="m">· Incheon, Korea</span>
+  
+</div></div>
+
+<div class="row"><div class="when">2021.03 – 2025.02</div><div class="what">
+  <span class="t">Assistant Professor</span>, <span class="o">School of International Trade and Business, Incheon National University</span> <span class="m">· Incheon, Korea</span>
+  
+</div></div>
+
+<div class="row"><div class="when">2018.01 – 2021.02</div><div class="what">
+  <span class="t">Data Scientist</span>, <span class="o">BigData Team, Global AI Center, Samsung Research</span> <span class="m">· Seoul, Korea</span>
+  <ul><li>Business Consulting and Evaluation for Advertising, Digital Marketing, AI Factory, and Demand Forecasting</li></ul>
+</div></div>
+
+<div class="row"><div class="when">2017.09 – 2017.12</div><div class="what">
+  <span class="t">Data Scientist</span>, <span class="o">Data Analytics Lab, Software Center, Samsung Electronics</span> <span class="m">· Seoul, Korea</span>
+  
+</div></div>
+
+<div class="row"><div class="when">2014.04 – 2017.08</div><div class="what">
+  <span class="t">Data Scientist (Alternative Military Service)</span>, <span class="o">BigData Lab, Division of Visual Display, Samsung Electronics</span> <span class="m">· Suwon, Korea</span>
+  <ul><li>Data Analysis Design and Platform Operation for Service Optimization, Personal Recommendation, and Warning System</li></ul>
+</div></div>
+
+
+<h2>Publications <small class="legend"><b>bold</b> = self · † first author · * corresponding author</small></h2>
+
+<h3>International Journals (SCIE / SSCI) — 13</h3>
+
+<div class="pub"><div class="id">[J13]</div><div>
+  <span class="au">Poongjin Cho<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Novel Approach for Deep Learning-based Market Forecasting and Portfolio Selection incorporating Market Efficiency</span>.
+  <span class="ve"><i>Expert Systems with Applications</i>, 292, 128610 (2025.11) · SCIE, IF 7.500, JCR 2023 Top 5.2%</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[J12]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>†</sup>, Yoewon Yoon, Soomin Shin<sup>*</sup></span>. <span class="ti">Explainable Prediction of Problematic Smartphone Use among South Korea&#39;s Children and Adolescents using a Machine Learning Approach</span>.
+  <span class="ve"><i>International Journal of Medical Informatics</i>, 186, 105441 (2024.06) · SCIE, IF 4.900, JCR 2022 Q1</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[J11]</div><div>
+  <span class="au">Soomin Shin<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Prediction of Suicidal Ideation in Children and Adolescents using Machine Learning and Deep Learning Algorithm: A Case Study in South Korea where Suicide is the Leading Cause of Death</span>.
+  <span class="ve"><i>Asian Journal of Psychiatry</i>, 88, 103725 (2023.10) · SCIE, IF 13.890, JCR 2021 Top 4.19%</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[J10]</div><div>
+  <span class="au">Poongjin Cho<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Global Collective Dynamics of Financial Market Efficiency Using Attention Entropy with Hierarchical Clustering</span>.
+  <span class="ve"><i>Fractal and Fractional</i>, 6(10), 562 (2022.10) · SCIE, IF 3.313, JCR 2020 Q1</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[J9]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>†</sup>, Jiwhan Park, Minhyuk Lee, Jae Wook Song<sup>*</sup></span>. <span class="ti">Unsupervised Change Point Detection and Trend Prediction for Financial Time-Series Using a New CUSUM-Based Approach</span>.
+  <span class="ve"><i>IEEE Access</i>, 10, 34690–34705 (2022.03) · SCIE, IF 3.367, JCR 2020 Q2</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[J8]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>†</sup>, Minhyuk Lee<sup>*</sup></span>. <span class="ti">The Impact of the COVID-19 Pandemic on the Unpredictable Dynamics of the Cryptocurrency Market</span>.
+  <span class="ve"><i>Entropy</i>, 23(9), 1234 (2021.09) · SCIE, IF 2.494, JCR 2019 Q2</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[J7]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>†</sup>, Kwon Eun, Jaram Park<sup>*</sup></span>. <span class="ti">Deep User Segment Interest Network Modeling for Click-through Rate Prediction of Online Advertising</span>.
+  <span class="ve"><i>IEEE Access</i>, 9, 9812–9821 (2021.01) · SCIE, IF 3.745, JCR 2019 Q1</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[J6]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>†</sup>, Jae Wook Song<sup>*</sup></span>. <span class="ti">Analyses on Volatility Clustering in Financial Time-series using Clustering Indices, Asymmetry, and the Power of the Scale Freeness in Visibility Graph</span>.
+  <span class="ve"><i>IEEE Access</i>, 8, 208779–208795 (2020.11) · SCIE, IF 4.098, JCR 2018 Q1</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[J5]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>†</sup>, Jae Wook Song<sup>*</sup></span>. <span class="ti">Detecting Possible Reduction of the Housing Bubble in Korea for Different Residential Types and Regions</span>.
+  <span class="ve"><i>Sustainability</i>, 12(3), 1220 (2020.02) · SSCI, IF 2.592, JCR 2018 Q2</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[J4]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>†</sup>, Jae Wook Song<sup>*</sup></span>. <span class="ti">Managing Bubbles in the Korean Real Estate Market: A Real Options Framework</span>.
+  <span class="ve"><i>Sustainability</i>, 10(8), 2875 (2018.08) · SSCI, IF 1.789, JCR 2016 Q2</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[J3]</div><div>
+  <span class="au">Bonggyun Ko<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Simulation of Sovereign CDS Market based on Interaction between Market Participant</span>.
+  <span class="ve"><i>Physica A: Statistical Mechanics and its Applications</i>, 479, 324–340 (2017.08) · SCIE, IF 1.785, JCR 2015 Q2</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[J2]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>†</sup>, Seen S Jung<sup>*</sup></span>. <span class="ti">Empirical Analysis of Structural Change in Credit Default Swap Volatility</span>.
+  <span class="ve"><i>Chaos Solitons &amp; Fractals</i>, 60, 56–67 (2014.03) · SCIE, IF 1.246, JCR 2012 Q2</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[J1]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Modeling Financial Crisis Period: A Volatility Perspective of Credit Default Swap Market</span>.
+  <span class="ve"><i>Physica A: Statistical Mechanics and its Applications</i>, 392(20), 4977–4988 (2013.10) · SCIE, IF 1.373, JCR 2011 Q2</span>
+  
+</div></div>
+
+
+<h3>Domestic Journals (KCI) — 8</h3>
+
+<div class="pub"><div class="id">[K8]</div><div>
+  <span class="au">Jaeheung Park<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">From Sentiment to Fundamentals: A Dynamic Deep Learning Framework for Exchange Rate Forecasting Integrating LLM-based Sentiment and Hybrid Architectures</span>.
+  <span class="ve"><i>The Korean Journal of Financial Management</i>, 43(2), 127–168 (2026.04) · KCI</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[K7]</div><div>
+  <span class="au">Soomin Shin<sup>*</sup>, <b>Kyungwon Kim</b></span>. <span class="ti">Changes and Prospects in Ageism Discourse in Korea&#39;s Super-Aged Society: Keyword Trends, Sentiment Analysis, and Interest Prediction Based on News Big Data</span>.
+  <span class="ve"><i>Korean Journal of Gerontological Social Welfare</i>, 81(1), 143–173 (2026.03) · KCI</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[K6]</div><div>
+  <span class="au">Soomin Shin<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Who Donates and Why: Conditions for Donation Revealed by Social Survey Big Data and Explainable Artificial Intelligence(XAI)</span>.
+  <span class="ve"><i>Journal of Korean Social Welfare Administration</i>, 28(1), 121–147 (2026.02) · KCI</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[K5]</div><div>
+  <span class="au">Eunji Cho<sup>†</sup>, Hyojung Yoo, Hyunseo Lee, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Explainable AI Decision Models for Non-formal Lifelong Learning Participation: Predictive Insights and Inclusive Policy in a Digital Aging World</span>.
+  <span class="ve"><i>Journal of the Korean Operations Research and Management Science Society</i>, 51(1), 31–50 (2026.02) · KCI</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[K4]</div><div>
+  <span class="au">Hyojung Yoo<sup>†</sup>, Eunji Cho, Hyunseo Lee, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Sustainable Lifelong Learning: Explainable AI-Driven Analytics for Informal Learning Effectiveness and Personalized Recommendations</span>.
+  <span class="ve"><i>The Korea Journal of BigData</i>, 10(2), 41–80 (2025.12) · KCI</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[K3]</div><div>
+  <span class="au">Jaeheung Park<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Business Analytics to Predict Seoul Subway Congestion and Policy Decision-making using Explainable AI</span>.
+  <span class="ve"><i>The Korea Journal of BigData</i>, 10(1), 15–32 (2025.06) · KCI</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[K2]</div><div>
+  <span class="au">Myungju Cha<sup>†</sup>, Youngtaek Oh, Seungyeon Lee, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Demand Forecast and Policy Decisions for KTX in 2025: An Empirical Forecasting Study based on XAI</span>.
+  <span class="ve"><i>The Korea Journal of BigData</i>, 10(1), 1–13 (2025.06) · KCI</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[K1]</div><div>
+  <span class="au">Soomin Shin<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">The Social Value of Urban Parks and their Connection to Community Child Well-being: Focusing on children&#39;s centers</span>.
+  <span class="ve"><i>Journal of the Korea Convergence Society</i>, 12(12), 449–466 (2023.12) · KCI</span>
+  
+</div></div>
+
+
+<h3>Conference Proceedings — 12</h3>
+
+<div class="pub"><div class="id">[C12]</div><div>
+  <span class="au">Jaeheung Park<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Reading Global Issues with AI: Event and Sentiment Fusion for Exchange Rate Prediction in Korea</span>.
+  <span class="ve"><i>Korean Financial Management Association (KFMA) Fall Conference</i> (2025.11)</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[C11]</div><div>
+  <span class="au">Eunji Cho<sup>†</sup>, Hyojung Yoo, Hyunseo Lee, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Explainable AI-Driven Lifelong Learning Policies: Digital and Aging Society Perspectives</span>.
+  <span class="ve"><i>Korean Operations Research and Management Science Society (KORMS) Fall Conference</i> (2025.11)</span>
+  <span class="tag gold">Best Paper Award</span>
+</div></div>
+
+<div class="pub"><div class="id">[C10]</div><div>
+  <span class="au">Soomin Shin<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">AI Analytics to Predict Donor Behavior: Public Data and XAI-Based Research</span>.
+  <span class="ve"><i>Korean Operations Research and Management Science Society (KORMS) Spring Joint Conference</i>, 3356–3356 (2025.06)</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[C9]</div><div>
+  <span class="au">Myungju Cha<sup>†</sup>, Youngtaek Oh, Seungyeon Lee, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Forecasting Future Transportation Demand with High-Performance Time-Series Deep Learning</span>.
+  <span class="ve"><i>Korean Operations Research and Management Science Society (KORMS) Spring Joint Conference</i>, 2668–2681 (2025.06)</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[C8]</div><div>
+  <span class="au">Soomin Shin<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Sentiment Analysis of Ageism in Korea&#39;s Super-Aged Society Using News Big Data</span>.
+  <span class="ve"><i>Spring Conference of the Korean Society for Social Welfare Studies for Critique and Alternatives (JCSW)</i>, 155–170 (2025.05)</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[C7]</div><div>
+  <span class="au">Soomin Shin<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">The Future of Giving in Korea: Using Donation Big Data and Explainable AI to Predict Donors</span>.
+  <span class="ve"><i>Association for Research on Nonprofit Organizations and Voluntary Action (ARNOVA)</i> (2024.06)</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[C6]</div><div>
+  <span class="au">Soomin Shin<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Possibility of Social Cooperative Growth in Child Care Social Services as Social Capital in the Post-COVID-19 Era</span>.
+  <span class="ve"><i>International Research Conference on Social Economy (CIRIEC)</i> (2023.07)</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[C5]</div><div>
+  <span class="au">Soomin Shin<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Prediction of Suicidal Ideation among Older Adults Using Machine Learning</span>.
+  <span class="ve"><i>Korean Society of Gerontological Social Welfare (KSGSW) Conference</i>, 2023(5), 68–87 (2023.05)</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[C4]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Cryptocurrency Market Efficiency for Time-Dependent Rebalancing Strategy</span>.
+  <span class="ve"><i>Korean Operations Research and Management Science Society (KORMS) Fall Conference</i> (2021.11)</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[C3]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>†</sup>, Jae Wook Song<sup>*</sup></span>. <span class="ti">Estimating Arbitrage Opportunity in the Real Estate Market via Binomial American Option Pricing Approach</span>.
+  <span class="ve"><i>Korean Institute of Industrial Engineers (KIIE) Spring Joint Conference</i>, 1380–1399 (2019.04)</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[C2]</div><div>
+  <span class="au">Dohyung Kim<sup>†</sup>, Hyochang Yang, Minki Chung, Sungzoon Cho<sup>*</sup>, Huijung Kim, Minhee Kim, <b>Kyungwon Kim</b>, Eunseok Kim</span>. <span class="ti">Squeezed Convolutional Variational AutoEncoder for Unsupervised Anomaly Detection in Edge Device Industrial Internet of Things</span>.
+  <span class="ve"><i>International Conference on Information and Computer Technologies (ICICT)</i>, 67–71 (2018.03)</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[C1]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Modeling Crisis Period and Testing Contagion Effect on Recent Financial Crisis with the Asia Credit Default Swap Markets</span>.
+  <span class="ve"><i>Korean Operations Research and Management Science Society (KORMS) Spring Joint Conference</i>, 1947–1958 (2013.05)</span>
+  
+</div></div>
+
+
+<h3>Books, Research Reports &amp; Professional Publications — 5</h3>
+
+<div class="pub"><div class="id">[B5]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Generative AI Verification Technologies</span>.
+  <span class="ve"><i>Communication Books</i>, ISBN 979-11-43025-53-1 (2026.05)</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[B4]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">AI Decision Making: We Decide, Machine Analyses</span>.
+  <span class="ve"><i>Seohaewon, Incheon National University Press</i>, ISBN 979-11-89007-34-8 (2026.01)</span>
+  <span class="tag gold">2026 Sejong Book Selection, Academic</span>
+</div></div>
+
+<div class="pub"><div class="id">[B3]</div><div>
+  <span class="au">Yuseon Cho<sup>†</sup>, Sejin Kim, <b>Chapter Author: Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">A Study on Public Conflict Management Strategies Across Policy Stages</span>.
+  <span class="ve"><i>Basic Research Report, Korea Institute of Public Administration</i>, ISBN 978-89-5704-837-5 (2025.12)</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[B2]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Focus Issue 1: Big Data, Artificial Intelligence, and the Emergence of Large Language Models</span>.
+  <span class="ve"><i>Public Administration Focus, Korea Institute of Public Administration</i>, 171, 8–15 (2024.11)</span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[B1]</div><div>
+  <span class="au">Sunggeun Lim<sup>†</sup>, Jaeho Eun, Junyoung Heo, Yuseon Cho, Byungyun Choi, Youngsun Seo, Shinjae Jang, Oijin Park, Jonghee Kim, Jongmyung Choi, Sugi Lee, <b>Kyungwon Kim</b><sup>*</sup>, Changyong Lee, Minhyu Kim, Deukjo Kong, Hyuntaek Lim, Sungho Shin</span>. <span class="ti">A Study on Establishment and Application of AI-based Conflict Management Database</span>.
+  <span class="ve"><i>Collaborative Research Report, National Research Council for Economics, Humanities and Social Sciences</i>, ISBN 979-11-5567-716-2 (2024.06)</span>
+  
+</div></div>
+
+
+<h3>Working Papers (Under Review / In Progress) — 6</h3>
+
+<div class="pub"><div class="id">[W6]</div><div>
+  <span class="au">Byounghwa Lee<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">A Decision Attribution Framework for Evaluating Robust Measurement Selection under Model Misspecification in Inventory and Maintenance Decision Support</span>.
+  <span class="ve"></span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[W5]</div><div>
+  <span class="au">Soomin Shin<sup>*</sup>, <b>Kyungwon Kim</b></span>. <span class="ti">Understanding Individual Donor Behavior Through Explainable AI and Big Data</span>.
+  <span class="ve"></span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[W4]</div><div>
+  <span class="au">Seungmin Kang<sup>†</sup>, <b>Kyungwon Kim</b>, Poongjin Cho<sup>*</sup></span>. <span class="ti">Beyond Default Detection: Risk-Aware Synthetic Minority Generation for Investment Candidate-Set Formation in P2P Lending</span>.
+  <span class="ve"></span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[W3]</div><div>
+  <span class="au">Byounghwa Lee<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">Sharp Bounds on Latent Temporal Dependence from Isolated Gold Audits: A Five-moment Identification Theorem and its Four-point Limit</span>.
+  <span class="ve"></span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[W2]</div><div>
+  <span class="au"><b>Kyungwon Kim</b><sup>*</sup>, Junhyung Lee</span>. <span class="ti">Context-Aware Conversion Intelligence: A Data-Centric and Resource-Efficient Framework for Ultra-Sparse Multichannel E-Commerce Interactions</span>.
+  <span class="ve"><i>International Conference on Ubi-Media Computing (Ubi-Media)</i></span>
+  
+</div></div>
+
+<div class="pub"><div class="id">[W1]</div><div>
+  <span class="au">Junhyung Lee<sup>†</sup>, <b>Kyungwon Kim</b><sup>*</sup></span>. <span class="ti">A Data-Centric AI Framework for E-Commerce Purchase Conversion Prediction via Dynamic Marketing Knowledge Integration</span>.
+  <span class="ve"><i>Korean Marketing Association</i></span>
+  
+</div></div>
+
+
+
+<h2>Research Funding &amp; Projects</h2>
+<h3>Sponsored Research Projects</h3>
+
+<div class="row"><div class="when">2025.04 – 2025.07</div><div class="what">
+  <span class="t">Big Data Analytics for Public Conflict Management and Policy Conflict Response Strategies</span><br><span class="o">Korea Institute of Public Administration (KIPA), National Research Council for Economics, Humanities and Social Sciences (NRC)</span>
+  <div><span class="role">Principal Investigator</span> <span class="m">· KRW 5M</span></div>
+</div></div>
+
+<div class="row"><div class="when">2024.08</div><div class="what">
+  <span class="t">Text Mining-based Citizen Opinion Summarization and Concept Analysis for the 2nd Incheon Child Survey</span><br><span class="o">Incheon Foundation for Women and Family</span>
+  <div><span class="role">Principal Investigator</span> <span class="m">· KRW 1M</span></div>
+</div></div>
+
+<div class="row"><div class="when">2024.04 – 2024.08</div><div class="what">
+  <span class="t">KTX Passenger Demand Forecasting for 2025 Using Advanced Artificial Intelligence Algorithms</span><br><span class="o">Korea Railroad Research Institute, Korea Railroad Corporation (KORAIL)</span>
+  <div><span class="role">Principal Investigator</span> <span class="m">· KRW 10M</span></div>
+</div></div>
+
+<div class="row"><div class="when">2024.01 – 2024.12</div><div class="what">
+  <span class="t">Explainable AI-based Prediction of Individual Donors Using Donation Big Data</span><br><span class="o">Sharing Culture Institute, Community Chest of Korea</span>
+  <div><span class="role">Principal Investigator</span> <span class="m">· KRW 10M</span></div>
+</div></div>
+
+<div class="row"><div class="when">2023.08 – 2024.04</div><div class="what">
+  <span class="t">Development and Operational Framework of an AI-based Conflict Management Database</span><br><span class="o">Korea Institute of Public Administration (KIPA), National Research Council for Economics, Humanities and Social Sciences (NRC)</span>
+  <div><span class="role">Research Investigator</span> <span class="m">· KRW 3M</span></div>
+</div></div>
+
+<div class="row"><div class="when">2023.02 – 2024.05</div><div class="what">
+  <span class="t">Big Data Analytics of Ageism and Intergenerational Conflict in Korean Society</span><br><span class="o">T&amp;C Foundation Interdisciplinary Research Program</span>
+  <div><span class="role">Principal Investigator</span> <span class="m">· KRW 100M</span></div>
+</div></div>
+
+<div class="row"><div class="when">2022.07 – 2022.11</div><div class="what">
+  <span class="t">Social Value of Urban Parks and Community Welfare Infrastructure: A Text Mining Approach</span><br><span class="o">Seoul Metropolitan Government Yongsan Park Research Grant Program</span>
+  <div><span class="role">Principal Investigator</span> <span class="m">· KRW 2M</span></div>
+</div></div>
+
+<h3>Research Grants</h3>
+
+<div class="row"><div class="when">2026.05 – 2027.04</div><div class="what">
+  <span class="t">Diagnosing the Generative AI Digital Divide with Explainable AI (XAI) and Building Inclusive User Experience (UX) Design Guidelines</span><br><span class="o">Incheon National University Research Grant [2026-0119]</span> · <span class="role">Principal Investigator</span>
+</div></div>
+
+<div class="row"><div class="when">2025.05 – 2026.04</div><div class="what">
+  <span class="t">Has Government Policy Activity Effectively Contributed to Resolving Public Conflicts?</span><br><span class="o">Incheon National University Research Grant [2025-0232]</span> · <span class="role">Principal Investigator</span>
+</div></div>
+
+<div class="row"><div class="when">2024.05 – 2025.04</div><div class="what">
+  <span class="t">XAI-based Donor Prediction and Engagement Strategies Using Social Capital for Sustainable Welfare Financing</span><br><span class="o">Incheon National University Research Grant [2024-0172]</span> · <span class="role">Principal Investigator</span>
+</div></div>
+
+<div class="row"><div class="when">2023.05 – 2024.04</div><div class="what">
+  <span class="t">Next-generation Portfolio Strategies Integrating Financial Engineering, Artificial Intelligence, Market Efficiency, and Forecast Uncertainty</span><br><span class="o">Incheon National University Research Grant [2023-0035]</span> · <span class="role">Principal Investigator</span>
+</div></div>
+
+<div class="row"><div class="when">2022.05 – 2023.04</div><div class="what">
+  <span class="t">Explainable AI Approaches to Predicting and Mitigating Problematic Smartphone Use in the Digital Era</span><br><span class="o">Incheon National University Research Grant [2022-0089]</span> · <span class="role">Principal Investigator</span>
+</div></div>
+
+<div class="row"><div class="when">2021.05 – 2022.04</div><div class="what">
+  <span class="t">AI Prediction and Social Data Analytics for Understanding Psychological Distress and Mental Health</span><br><span class="o">Incheon National University Research Grant [2021-0400]</span> · <span class="role">Principal Investigator</span>
+</div></div>
+
+<div class="row"><div class="when">2021.05 – 2022.04</div><div class="what">
+  <span class="t">Real-time Unsupervised Change Point Detection for Abnormal Financial Time-series Data</span><br><span class="o">Incheon National University Research Grant [2021-0118]</span> · <span class="role">Principal Investigator</span>
+</div></div>
+
+<h3>Industry Research Projects</h3>
+<div class="compact">
+
+<div class="row"><div class="when">2020.01 – 2020.10</div><div class="what">
+  <span class="t">Real-time Advertising Effectiveness Inference and Optimal Bidding Price Prediction</span> <span class="m">· Samsung Research AI Center · Senior Data Scientist</span>
+</div></div>
+
+<div class="row"><div class="when">2019.05 – 2020.02</div><div class="what">
+  <span class="t">Advertising Recommendation Analytics and Marketing Promotion Effectiveness Evaluation</span> <span class="m">· Samsung Research AI Center · Senior Data Scientist</span>
+</div></div>
+
+<div class="row"><div class="when">2019.01 – 2019.12</div><div class="what">
+  <span class="t">Process Optimization for Minimizing Slow-moving Inventory Costs of Product Components</span> <span class="m">· Samsung Research AI Center · Senior Data Scientist</span>
+</div></div>
+
+<div class="row"><div class="when">2018.01 – 2019.06</div><div class="what">
+  <span class="t">Marketing Channel Attribution Analysis and Portfolio Optimization Using Big Data</span> <span class="m">· Samsung Research AI Center · Senior Data Scientist</span>
+</div></div>
+
+<div class="row"><div class="when">2018.01 – 2018.09</div><div class="what">
+  <span class="t">Mid- to Long-term Product Sales Demand Forecasting for Revenue Maximization and Cost Minimization</span> <span class="m">· Samsung Research AI Center · Senior Data Scientist</span>
+</div></div>
+
+<div class="row"><div class="when">2018.01 – 2018.09</div><div class="what">
+  <span class="t">Promotion Effectiveness Prediction and ROI Improvement Strategy for 400 Million Customers in Southeast Asian Markets</span> <span class="m">· Samsung Research AI Center · Senior Data Scientist</span>
+</div></div>
+
+<div class="row"><div class="when">2017.09 – 2018.06</div><div class="what">
+  <span class="t">Data-driven Platform Optimization for Mobile Production Automation at a Vietnam Factory</span> <span class="m">· Samsung Electronics Software Center · Data Scientist</span>
+</div></div>
+
+<div class="row"><div class="when">2017.01 – 2017.12</div><div class="what">
+  <span class="t">Customer VOC Early Warning System for Complaint Prevention and Reduction</span> <span class="m">· Samsung Electronics Big Data Lab · Data Scientist</span>
+</div></div>
+
+<div class="row"><div class="when">2016.12 – 2017.04</div><div class="what">
+  <span class="t">Manufacturing Anomaly Detection and Equipment Lifetime Prediction for Mobile Production Lines</span> <span class="m">· Samsung Electronics Big Data Lab · Data Scientist</span>
+</div></div>
+
+<div class="row"><div class="when">2016.10 – 2016.12</div><div class="what">
+  <span class="t">Marketing Strategy for Personalized Promotions</span> <span class="m">· Samsung Electronics Big Data Lab · Data Scientist</span>
+</div></div>
+
+<div class="row"><div class="when">2016.01 – 2016.12</div><div class="what">
+  <span class="t">Customer Pattern Analysis for Improving Product Feature and App Usability</span> <span class="m">· Samsung Electronics Big Data Lab · Data Scientist</span>
+</div></div>
+
+<div class="row"><div class="when">2015.03 – 2015.12</div><div class="what">
+  <span class="t">Customer Promotion Strategy Based on Product Feature and App Usage Similarity</span> <span class="m">· Samsung Electronics Software Group · Data Scientist</span>
+</div></div>
+
+<div class="row"><div class="when">2014.10 – 2015.06</div><div class="what">
+  <span class="t">Consumer Age and Gender Prediction and Content Recommendation for Advertising Effectiveness</span> <span class="m">· Samsung Electronics Software Group · Data Scientist</span>
+</div></div>
+
+<div class="row"><div class="when">2014.05 – 2014.12</div><div class="what">
+  <span class="t">Real-time Churn Customer Detection for Improving Product Usability</span> <span class="m">· Samsung Electronics Software Group · Data Scientist</span>
+</div></div>
+
+</div>
+
+<h2>Honors &amp; Awards</h2>
+
+<div class="row"><div class="when">2026.09</div><div class="what"><span class="t">2026 Sejong Book Selection, Academic Category (AI Decision Making: We Decide, Machine Analyses)</span><br><span class="o">Korea Publication Industry Promotion Agency</span></div></div>
+
+<div class="row"><div class="when">2025.11</div><div class="what"><span class="t">Best Paper Award (1st Place), Fall Conference Competition Track</span><br><span class="o">Korean Operations Research and Management Science Society (KORMS)</span></div></div>
+
+<div class="row"><div class="when">2025.09</div><div class="what"><span class="t">Excellence Award (2nd Place among 90 Research Groups), Professor-Student Advanced Research Program (DIVE)</span><br><span class="o">Incheon National University</span></div></div>
+
+<div class="row"><div class="when">2022</div><div class="what"><span class="t">Excellence, Academic Research Award</span><br><span class="o">Incheon National University</span></div></div>
+
+<div class="row"><div class="when">2022</div><div class="what"><span class="t">Excellence, Fall Semester, Best Teaching Award at Graduate Schools</span><br><span class="o">Incheon National University</span></div></div>
+
+<h3>Competitive Grants</h3>
+
+<div class="row"><div class="when">2026.05</div><div class="what"><span class="t">Preliminary Startup Package Recipient</span>, <span class="o">Ministry of SMEs and Startups</span></div></div>
+
+<div class="row"><div class="when">2026.02</div><div class="what"><span class="t">Research Grant Recipient, Academic Research Program</span>, <span class="o">Center for Free Enterprise</span></div></div>
+
+<div class="row"><div class="when">2025.09</div><div class="what"><span class="t">Research Grant Recipient, Academic Research Program</span>, <span class="o">Center for Free Enterprise</span></div></div>
+
+
+<h2>Teaching Experience <small>Incheon National University · course evaluation range 4.35–5.00 / 5.00</small></h2>
+
+<h3>Data Science &amp; Business Analytics Track</h3>
+
+<div class="course"><div><b>AI-driven Decision Making</b> <span class="m">· Undergraduate · Spring 2026, Spring 2025</span></div><div class="ev">4.67–5.00</div></div>
+
+<div class="course"><div><b>Digital Business Analytics</b> <span class="m">· Undergraduate · Spring 2026, Spring 2025, Spring 2023</span></div><div class="ev">4.49–4.80</div></div>
+
+<div class="course"><div><b>Business Demand Forecasting</b> <span class="m">· Undergraduate · Fall 2025</span></div><div class="ev">4.49</div></div>
+
+<div class="course"><div><b>Big Data</b> <span class="m">· Undergraduate · Summer 2025, Spring 2022, Spring 2021</span></div><div class="ev">4.40–4.66</div></div>
+
+<div class="course"><div><b>Introduction to Data Science</b> <span class="m">· Undergraduate · Spring 2025</span></div><div class="ev">4.61</div></div>
+
+<div class="course"><div><b>Digital Economy Platform using Artificial Intelligence</b> <span class="m">· Graduate · Fall 2023, Fall 2022</span></div><div class="ev">4.89–5.00</div></div>
+
+
+<h3>Programming &amp; Computing Track</h3>
+
+<div class="course"><div><b>Business Data Science</b> <span class="m">· Undergraduate · Fall 2025, Fall 2024, Fall 2023</span></div><div class="ev">4.40–4.70</div></div>
+
+<div class="course"><div><b>Data Science Applications for Business Innovation</b> <span class="m">· Graduate · Spring 2023, Spring 2022</span></div><div class="ev">4.61–4.91</div></div>
+
+<div class="course"><div><b>E-Database</b> <span class="m">· Undergraduate · Spring 2023, Spring 2022</span></div><div class="ev">4.42–4.75</div></div>
+
+<div class="course"><div><b>E-Information System</b> <span class="m">· Undergraduate · Fall 2022, Fall 2021</span></div><div class="ev">4.35–4.77</div></div>
+
+
+
+<h2>Executive Education &amp; Corporate Training <small>29 programs</small></h2>
+<div class="compact">
+
+<div class="row"><div class="when">2026.03–</div><div class="what"><span class="t">Hyper-Personalized Marketing Decision-Making in Practice: Customer Data Analytics</span> <span class="m">· Hanbit+ · Lead Instructor</span></div></div>
+
+<div class="row"><div class="when">2025.06</div><div class="what"><span class="t">Generative AI Skill-Up by Job Function and Corporate Project Advisory (MX Business)</span> <span class="m">· Samsung Electronics · Project Advisor &amp; Instructor</span></div></div>
+
+<div class="row"><div class="when">2025.04.26</div><div class="what"><span class="t">Predicting Business Demand via Fusion of Time-Series Economic Indicators and Textual News Data</span> <span class="m">· NIA K-ICT Big Data Center · Keynote Lecturer</span></div></div>
+
+<div class="row"><div class="when">2025.04.12</div><div class="what"><span class="t">Target Marketing Frameworks and Justifications Utilizing Explainable AI (XAI)</span> <span class="m">· NIA K-ICT Big Data Center · Keynote Lecturer</span></div></div>
+
+<div class="row"><div class="when">2024.08</div><div class="what"><span class="t">Predictive Modeling for Corporate Human Accidents and Facility Incidents</span> <span class="m">· Samsung Electronics · Project Advisor</span></div></div>
+
+<div class="row"><div class="when">2024.05</div><div class="what"><span class="t">Citizen Data Scientist Nurturing Program and Data Analytics Project Evaluation</span> <span class="m">· Soulbrain Holdings · Project Evaluator &amp; Instructor</span></div></div>
+
+<div class="row"><div class="when">2024.04–2024.10</div><div class="what"><span class="t">Industrial AI Project Advisory based on Machine Learning, Computer Vision, and NLP Technologies</span> <span class="m">· Hyundai Mobis · AI Project Advisor</span></div></div>
+
+<div class="row"><div class="when">2023.07</div><div class="what"><span class="t">ML-based Business Project Consulting and Evaluation</span> <span class="m">· S-OIL · Project Advisor</span></div></div>
+
+<div class="row"><div class="when">2023.05</div><div class="what"><span class="t">Business Innovation and Practical Applications Using Python Machine Learning</span> <span class="m">· S-OIL · Lead Instructor</span></div></div>
+
+<div class="row"><div class="when">2023.05</div><div class="what"><span class="t">Applied Business Analytics with Artificial Intelligence for Enterprise Digital Transformation (DX)</span> <span class="m">· LG Energy Solution · Lead Instructor</span></div></div>
+
+<div class="row"><div class="when">2023.03</div><div class="what"><span class="t">Citizen Developer: Understanding Deep Learning and Core Project Deployment</span> <span class="m">· Samsung Electronics · Project Advisor &amp; Instructor</span></div></div>
+
+<div class="row"><div class="when">2023.03</div><div class="what"><span class="t">Citizen Developer: Understanding Deep Learning and Core Project Deployment</span> <span class="m">· Samsung Electronics · Project Advisor &amp; Instructor</span></div></div>
+
+<div class="row"><div class="when">2023.02</div><div class="what"><span class="t">Citizen Developer: Understanding Deep Learning and Core Project Deployment</span> <span class="m">· Samsung Electronics · Project Advisor &amp; Instructor</span></div></div>
+
+<div class="row"><div class="when">2022.12–2023.01</div><div class="what"><span class="t">ProDS Professional Data Scientist Question Authoring and Metric Design</span> <span class="m">· Samsung Multi-Campus · Evaluation Metric Author</span></div></div>
+
+<div class="row"><div class="when">2022.12.23</div><div class="what"><span class="t">PyTorch-based Time-Series Anomaly Detection for Telecommunications Equipment</span> <span class="m">· SKT · Lead Instructor</span></div></div>
+
+<div class="row"><div class="when">2022.10–2026.04</div><div class="what"><span class="t">Quant (Financial Engineering) Playbook: Data-Driven Algorithmic Trading &amp; Risk Analysis</span> <span class="m">· Fast Campus · Lead Instructor</span></div></div>
+
+<div class="row"><div class="when">2022.07–2022.11</div><div class="what"><span class="t">Enterprise Data Analytics Platform Development for Corporate Digital Transformation</span> <span class="m">· S-OIL · Platform Developer</span></div></div>
+
+<div class="row"><div class="when">2022.07.31</div><div class="what"><span class="t">Time-Series Based Anomaly Detection and Diagnostics for Telecommunications Equipment</span> <span class="m">· SKT · Lead Instructor</span></div></div>
+
+<div class="row"><div class="when">2022.06</div><div class="what"><span class="t">Validation and Evaluation of Time-Series Deep Learning R&amp;D Field Projects</span> <span class="m">· Hyundai Mobis · Project Evaluator</span></div></div>
+
+<div class="row"><div class="when">2022.06</div><div class="what"><span class="t">Business Consulting and Evaluation by Data Science Experts</span> <span class="m">· S-OIL · Project Advisor</span></div></div>
+
+<div class="row"><div class="when">2022.05</div><div class="what"><span class="t">Python Data Science Expert Nurturing and Advanced Optimization Program</span> <span class="m">· S-OIL · Lead Instructor</span></div></div>
+
+<div class="row"><div class="when">2021.10</div><div class="what"><span class="t">Digital Transformation (DX) Expert Nurturing Program</span> <span class="m">· LG Energy Solution · Lead Instructor</span></div></div>
+
+<div class="row"><div class="when">2021.05</div><div class="what"><span class="t">Python-based Industrial Time-Series Deep Learning Applications</span> <span class="m">· Hyundai Mobis · Lead Instructor</span></div></div>
+
+<div class="row"><div class="when">2021.01–2022.06</div><div class="what"><span class="t">Data Science and Statistical Inference, Machine Learning, and Time-Series Deep Learning</span> <span class="m">· Fast Campus · Lead Instructor</span></div></div>
+
+<div class="row"><div class="when">2020.10</div><div class="what"><span class="t">Digital Transformation Frameworks based on Data Science and Time-Series Analysis</span> <span class="m">· Daewoo Shipbuilding &amp; Marine Engineering · Lead Instructor</span></div></div>
+
+<div class="row"><div class="when">2020.09</div><div class="what"><span class="t">Statistical Data Analysis and Applied Data Mining for Automotive Engineering</span> <span class="m">· Hyundai Mobis · Lead Instructor</span></div></div>
+
+<div class="row"><div class="when">2019.02–2020.12</div><div class="what"><span class="t">Introduction to Statistical Analysis and Time-Series Modeling with Python</span> <span class="m">· Fast Campus · Lead Instructor</span></div></div>
+
+<div class="row"><div class="when">2014.01</div><div class="what"><span class="t">Advanced Business Statistics and Quantitative Analytics using SPSS</span> <span class="m">· Ewha Womans University, Graduate School of Business · Instructor</span></div></div>
+
+<div class="row"><div class="when">2010.09–2014.01</div><div class="what"><span class="t">Foreign Exchange Systems, Financial Derivatives Valuation, and IT Market Analysis</span> <span class="m">· Samsung SDS Multi-Campus · Lead Instructor</span></div></div>
+
+</div>
+
+<h2>Invited Talks &amp; Seminars <small>16 talks</small></h2>
+<div class="compact">
+
+<div class="row"><div class="when">2026.06.30</div><div class="what"><span class="t">An Explainable AI Framework for AX-Centric Digital Transformation</span> <span class="m">· Dongguk University, Department of Social Welfare · Guest Speaker</span></div></div>
+
+<div class="row"><div class="when">2026.04.28</div><div class="what"><span class="t">The Era of Data Sovereignty: Human Decides, Machine Analyzes — AI Master Strategy Proving Marketing ROI</span> <span class="m">· Hanbit+ Monthly AX · Keynote Speaker</span></div></div>
+
+<div class="row"><div class="when">2025.01.20, 2025.02.10</div><div class="what"><span class="t">Big Data and AI Utilization Strategies for Digital Advertising &amp; Marketing Competitiveness</span> <span class="m">· Dmate Communications · Invited Lecturer</span></div></div>
+
+<div class="row"><div class="when">2024.07.22</div><div class="what"><span class="t">Understanding Core Concepts, Real-world Use Cases, and Future Trends of Big Data</span> <span class="m">· Korea Culture Information Service · Invited Lecturer</span></div></div>
+
+<div class="row"><div class="when">2024.04.23</div><div class="what"><span class="t">Digital Issues and Technological R&amp;D Trends in the Insurance Industry</span> <span class="m">· Samsung Fire &amp; Marine Insurance Service · Invited Lecturer</span></div></div>
+
+<div class="row"><div class="when">2022.12.14</div><div class="what"><span class="t">Digital Mindset: Required Competencies and Attitudes for Professionals in the DT Era (Securities / Life / Fire)</span> <span class="m">· Samsung Financial Networks · Invited Lecturer</span></div></div>
+
+<div class="row"><div class="when">2022.11.01</div><div class="what"><span class="t">Digital Asset and Real-world Applications of Advanced Data Science</span> <span class="m">· Hanyang University, Department of Industrial Engineering · Guest Speaker</span></div></div>
+
+<div class="row"><div class="when">2022.07.07</div><div class="what"><span class="t">Core Principles of Artificial Intelligence and Future Directions for Corporate Innovation</span> <span class="m">· Samsung Life Insurance · Invited Lecturer</span></div></div>
+
+<div class="row"><div class="when">2022.01.12</div><div class="what"><span class="t">AI Business Models and Core Competencies in the Digital Economy</span> <span class="m">· Kangwon National University, School of Business · Guest Speaker</span></div></div>
+
+<div class="row"><div class="when">2021.11.25, 2021.12.07</div><div class="what"><span class="t">Digital Transformation and New Business Model Implementations</span> <span class="m">· Incheon National University, Graduate School of Small Business · Guest Speaker</span></div></div>
+
+<div class="row"><div class="when">2021.11.30</div><div class="what"><span class="t">Public Data Analytics and Data Utilization Strategies for Small Businesses</span> <span class="m">· Incheon National University, Graduate School of Small Business · Guest Speaker</span></div></div>
+
+<div class="row"><div class="when">2021.10.25</div><div class="what"><span class="t">Data Science and its Strategic Role in the Modern Digital Economy</span> <span class="m">· Incheon National University · Guest Speaker</span></div></div>
+
+<div class="row"><div class="when">2021.04.15</div><div class="what"><span class="t">Multivariate Nonlinear Time Sequence Analysis for Industrial Frameworks</span> <span class="m">· Hanyang University, Department of Industrial Engineering · Guest Speaker</span></div></div>
+
+<div class="row"><div class="when">2020.10.14</div><div class="what"><span class="t">Digital Asset Frameworks and Real-world Applications of Data Science</span> <span class="m">· Hanyang University, Department of Industrial Engineering · Guest Speaker</span></div></div>
+
+<div class="row"><div class="when">2020.09.23</div><div class="what"><span class="t">Predictive Analytics and Optimization Methods on Time Sequential Data</span> <span class="m">· Seoul National University of Science and Technology, Department of Data Science · Guest Speaker</span></div></div>
+
+<div class="row"><div class="when">2019.04.24</div><div class="what"><span class="t">The Real Data Science Paradigm and Core Artificial Intelligence Trends</span> <span class="m">· Kangwon National University, School of Business · Guest Speaker</span></div></div>
+
+</div>
+
+<h2>Public &amp; Government Advisory <small>22 appointments</small></h2>
+
+<h3>Government &amp; Public Sector Evaluation</h3>
+<div class="compact">
+
+<div class="row"><div class="when">2026.08</div><div class="what">Evaluation Committee Member, Final Evaluation and Performance Analysis of the Information Access Center for Developing Countries Project <span class="m">· National Information Society Agency</span></div></div>
+
+<div class="row"><div class="when">2026.07</div><div class="what">Evaluation Committee Member, NPU-based Intelligent Video Surveillance System Pilot Project (Navy) <span class="m">· National Information Society Agency</span></div></div>
+
+<div class="row"><div class="when">2026.05</div><div class="what">Evaluation Committee Member, CDN Service Project for Baeumnuriteo, Central Education Training Institute <span class="m">· Ministry of Education</span></div></div>
+
+<div class="row"><div class="when">2026.04</div><div class="what">Evaluation Committee Member, AI-based Government-wide Telephone Counseling Hub System BPR/ISP Project <span class="m">· Anti-Corruption &amp; Civil Rights Commission</span></div></div>
+
+<div class="row"><div class="when">2026.04</div><div class="what">Evaluation Committee Member, Privacy Impact Assessment for Digital Platform Government (DPG) Integrated Platform <span class="m">· National Information Society Agency</span></div></div>
+
+<div class="row"><div class="when">2026.03 – 2028.02</div><div class="what">AI Evaluation Committee Member, National Defense Information System Project Proposal Review <span class="m">· Ministry of National Defense</span></div></div>
+
+<div class="row"><div class="when">2025.12</div><div class="what">Evaluation Committee Member, Secure Zone Cloud Infrastructure Operation and Management Project <span class="m">· National Information Society Agency</span></div></div>
+
+<div class="row"><div class="when">2025.12</div><div class="what">Evaluation Committee Member, Data Voucher Program (Demand Company Track) <span class="m">· Korea Data Agency (K-data)</span></div></div>
+
+<div class="row"><div class="when">2025.11</div><div class="what">Evaluation Committee Member, Data Science Convergence Talent Development Program <span class="m">· National Research Foundation of Korea</span></div></div>
+
+<div class="row"><div class="when">2025.10</div><div class="what">Evaluation Committee Member, AI High-Performance Computing Support Program for Gyeonggi AI Companies <span class="m">· Advanced Institutes of Convergence Technology</span></div></div>
+
+<div class="row"><div class="when">2025.08</div><div class="what">Evaluation Committee Member, Independent Foundation AI Model Training Data and Evaluation Data Quality Verification Project <span class="m">· National Information Society Agency</span></div></div>
+
+<div class="row"><div class="when">2025.08</div><div class="what">Evaluation Committee Member, National Crisis Response Digital Support System Project Proposal Review <span class="m">· National Information Society Agency</span></div></div>
+
+<div class="row"><div class="when">2025.08</div><div class="what">Evaluation Committee Member, Seocho-gu Social Survey Project Proposal Review <span class="m">· Seocho City Office</span></div></div>
+
+<div class="row"><div class="when">2025.04</div><div class="what">Evaluation Committee Member, Data Voucher Program <span class="m">· Korea Data Agency (K-data)</span></div></div>
+
+<div class="row"><div class="when">2025.04</div><div class="what">Evaluation Committee Member, Cultural City Promotion Project (Marketing &amp; Promotion) <span class="m">· Suwon Cultural Foundation</span></div></div>
+
+</div>
+
+<h3>Academic Program Evaluation &amp; Advisory</h3>
+<div class="compact">
+
+<div class="row"><div class="when">2026.02 – 2026.03</div><div class="what">External Evaluator, 2nd-Year G-LAMP Project Evaluation <span class="m">· Chonnam National University</span></div></div>
+
+<div class="row"><div class="when">2025.09</div><div class="what">External Faculty Reviewer, Faculty Appointment Review, School of Interdisciplinary Autonomous Studies <span class="m">· Jeonbuk National University</span></div></div>
+
+<div class="row"><div class="when">2025.07</div><div class="what">Advisory Committee Member, Academic Research Support Program, Sharing Culture Institute <span class="m">· Community Chest of Korea</span></div></div>
+
+<div class="row"><div class="when">2025.06</div><div class="what">External Advisor, Advanced Software Curriculum Assessment Standards Review <span class="m">· Samsung Electronics</span></div></div>
+
+</div>
+
+<h3>Technology &amp; Innovation Evaluation</h3>
+<div class="compact">
+
+<div class="row"><div class="when">2026.02</div><div class="what">Expert Reviewer, 110th Jang Young-Sil Award Technology Innovation Committee <span class="m">· Korea Industrial Technology Association</span></div></div>
+
+<div class="row"><div class="when">2025.09 – 2025.12</div><div class="what">Expert Member, Broadcasting and Video AI Training Data Consortium <span class="m">· Korea Radio Promotion Association</span></div></div>
+
+<div class="row"><div class="when">2025.08</div><div class="what">Advisory Committee Member, Standard Contract Development for AI Training Data Utilization <span class="m">· Korea Radio Promotion Association</span></div></div>
+
+</div>
+
+
+<h2>Academic Service &amp; Memberships</h2>
+<div class="compact">
+
+<div class="row"><div class="when">2025.11 – Present</div><div class="what"><span class="t">Academic Editor</span>, <span class="o">PLOS One (Public Library of Science One)</span></div></div>
+
+<div class="row"><div class="when">2025.01 – 2026.12</div><div class="what"><span class="t">Board of Directors</span>, <span class="o">Korea Logistics Research Association (KLRA)</span></div></div>
+
+<div class="row"><div class="when">2025.03 – Present</div><div class="what"><span class="t">Life Membership</span>, <span class="o">Korean Financial Management Association (KFMA)</span></div></div>
+
+<div class="row"><div class="when">2023.01 – 2024.12</div><div class="what"><span class="t">Board of Directors</span>, <span class="o">Korean Society of Industrial and Systems Engineering (KSIE)</span></div></div>
+
+<div class="row"><div class="when">2022.12 – Present</div><div class="what"><span class="t">Life Membership</span>, <span class="o">Korean Society of Industrial and Systems Engineering (KSIE)</span></div></div>
+
+<div class="row"><div class="when">2022.12.03</div><div class="what"><span class="t">Debater</span>, <span class="o">Korea Logistics Research Association (KLRA)</span></div></div>
+
+<div class="row"><div class="when">2022.11.05</div><div class="what"><span class="t">Examiner</span>, <span class="o">Korean Institute of Industrial Engineers (KIIE)</span></div></div>
+
+<div class="row"><div class="when">2022.01 – 2024.12</div><div class="what"><span class="t">General Director</span>, <span class="o">Korea Logistics Research Association (KLRA)</span></div></div>
+
+<div class="row"><div class="when">2021.11 – Present</div><div class="what"><span class="t">Life Membership</span>, <span class="o">Korean Operations Research and Management Science Society (KORMS)</span></div></div>
+
+</div>
+<h3>Ad-hoc Reviewer for Academic Journals</h3>
+<div class="reviewer">
+<div class="k">SSCI</div><div>European Child &amp; Adolescent Psychiatry (Q1), Financial Innovation (Q1), Finance Research Letters (Q1), Frontiers in Psychology (Q1), Journal of Clinical Psychiatry (Q1), Journal of Theoretical and Applied Electronic Commerce Research (Q2), Risk Management and Healthcare Policy (Q2), Injury Prevention (Q3), International Journal of Mental Health Promotion (Q3)</div><div class="k">SCI</div><div>AIMS Mathematics (Q1), Artificial Intelligence Review (Q1), Fractal and Fractional (Q1), Journal of Medical Internet Research (Q1), Mathematics (Q1), PLOS One (Q1), Scientific Reports (Q1), Journal of Cloud Computing (Q2)</div><div class="k">ESCI</div><div>Frontiers in Artificial Intelligence (Q1), Forecasting (Q2), Journal of Risk and Financial Management (Q2)</div><div class="k">KCI</div><div>Korean Management Science Review, Journal of the Korean Operations Research and Management Science Society, Korea Logistics Research Association, Journal of Korean Society of Industrial and Systems Engineering, The Journal of Society for e-Business Studies</div>
+</div>
+
+</body>
+</html>
