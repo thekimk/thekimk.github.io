@@ -2010,6 +2010,11 @@ const DATA_I18N = {
    "org": "소득분위 계층별 소비구조 변화와 체감물가 부담의 분배적 분석"
   },
   {
+   "date": "2025.11",
+   "title": "한국경영과학회 추계학술대회 경쟁부문 최우수논문상(1위)",
+   "org": "설명가능한 AI 기반 평생학습 참여촉진 프로그램 정책 디지털 전환과 고령사회에서의 시사점"
+  },
+  {
    "date": "2025.09",
    "title": "공간정보 활용·아이디어 경진대회 최우수상(2위, 진흥원장상+100만원)",
    "org": "탑승 가능성 기반 광역버스 정류장 추천 서비스 안기다 버스(안기다리고 타는 버스)"
@@ -2643,7 +2648,7 @@ const DATA_I18N = {
   {
    "cohort": 2,
    "period": "2025",
-   "photo": "",
+   "photo": "images/members/16db5e44.png",
    "github": "",
    "email": "0901shc@naver.com",
    "name": "조성훈",
@@ -4881,6 +4886,11 @@ const DATA_I18N = {
    "org": "Distributional analysis of consumption shifts and perceived inflation burden by income quintile"
   },
   {
+   "date": "2025.11",
+   "title": "Best Paper Award (1st place), KORMS Fall Conference Competition Track",
+   "org": "Explainable AI-driven policy to promote lifelong learning participation: implications for digital transformation and an aging society"
+  },
+  {
    "date": "2025.09",
    "title": "Excellence Award (2nd place, President of the Spatial Information Industry Promotion Agency Award, KRW 1M), Spatial Information Idea Competition",
    "org": "Angida Bus: an express-bus stop recommendation service based on boarding availability"
@@ -5381,7 +5391,7 @@ const DATA_I18N = {
   {
    "cohort": 2,
    "period": "2025",
-   "photo": "",
+   "photo": "images/members/16db5e44.png",
    "github": "",
    "email": "0901shc@naver.com",
    "name": "Cho Sunghoon",
