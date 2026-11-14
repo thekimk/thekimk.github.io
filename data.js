@@ -344,9 +344,23 @@ const DATA_I18N = {
    ],
    "imgs": [
     "images/news/8-1.jpg",
-    "images/news/8-2.jpg"
+    "images/news/8-2.jpg",
+    "images/news/8-3.png"
    ],
    "img": "images/news/8-1.jpg"
+  },
+  {
+   "date": "2026.09",
+   "kind": "수상",
+   "title": "국립 인천대 김경원 교수 학부생 연구팀(DIVE), 국가데이터처 “2026 국가데이터 활용대회” 전국 2위 “우수상(국가데이터처장상)” 수상!",
+   "src": "보도자료",
+   "url": "",
+   "title_en": "Undergraduate team (DIVE) advised by INU Prof. Kyungwon Kim wins 2nd place nationwide at the 2026 National Data Utilization Contest",
+   "src_en": "Press release",
+   "imgs": [
+    "images/news/r8-1.png"
+   ],
+   "img": "images/news/r8-1.png"
   },
   {
    "date": "2026.09",
@@ -2758,6 +2772,118 @@ const DATA_I18N = {
    "tag": "학부연구생"
   }
  ],
+ "life": [
+  {
+   "date": "2026.09",
+   "kind": "award",
+   "title": "제1회 무역통계 활용분석 경진대회 최우수상(1위, 관세청장상+300만원)",
+   "text": "무역 흐름 지표 기반 반덤핑관세 우회 의심 케이스의 관측치 단위 사전 스크리닝",
+   "img": "images/life/2026_09_무역_흐름_지표_기반_반덤핑관세_우회_의심_케이스의_관측치_단위_사전_스크리닝.png",
+   "links": [
+    [
+     "발표 영상",
+     "https://www.youtube.com/watch?v=jkp51pRQ4ns"
+    ]
+   ]
+  },
+  {
+   "date": "2026.08",
+   "kind": "award",
+   "title": "2026년 국가데이터 활용대회 우수상(2위, 150만원)",
+   "text": "소득분위 계층별 소비구조 변화와 체감물가 부담의 분배적 분석",
+   "img": "images/life/2026_08_소득분위_계층별_소비구조_변화와_체감물가_부담의_분배적_분석.png",
+   "links": []
+  },
+  {
+   "date": "2025.11",
+   "kind": "award",
+   "title": "한국경영과학회 추계학술대회 경쟁부문 최우수논문상(1위)",
+   "text": "설명가능한 AI 기반 평생학습 참여촉진 프로그램 정책 디지털 전환과 고령사회에서의 시사점",
+   "img": "images/life/2025_11_설명가능한_AI_기반_평생학습_참여촉진_프로그램_정책_디지털_전환과_고령사회에서의_시사점.png",
+   "links": []
+  },
+  {
+   "date": "2025.09",
+   "kind": "award",
+   "title": "공간정보 활용·아이디어 경진대회 최우수상(2위, 진흥원장상+100만원)",
+   "text": "탑승 가능성 기반 광역버스 정류장 추천 서비스 안기다 버스(안기다리고 타는 버스)",
+   "img": "images/life/2025_09_탑승_가능성_기반_광역버스_정류장_추천_서비스_안기다_버스_안기다리고_타는_버스_.png",
+   "links": []
+  },
+  {
+   "date": "2025.09",
+   "kind": "paper",
+   "title": "정보과학회논문지",
+   "text": "딥러닝과 은닉 마르코프 모델을 연계한 연속적인손 제스처 적출에 관한 연구",
+   "img": "images/life/2025_09_딥러닝과_은닉_마르코프_모델을_연계한_연속적인손_제스처_적출에_관한_연구.png",
+   "links": []
+  },
+  {
+   "date": "2025.08",
+   "kind": "award",
+   "title": "실리콘밸리 하계 테커 부트캠프 최우수상(1위)",
+   "text": "AI 가상피팅 쇼핑몰",
+   "img": "https://i.ytimg.com/vi/1QpcfX3ojxg/hqdefault.jpg",
+   "links": [
+    [
+     "발표 영상",
+     "https://youtu.be/1QpcfX3ojxg?si=RpBKt5byKPpe2dWR"
+    ],
+    [
+     "Github",
+     "https://github.com/2025-Techeer-Summer-Bootcamp-Team-C"
+    ]
+   ]
+  },
+  {
+   "date": "2025.08",
+   "kind": "award",
+   "title": "인문사회융합인재사업단 AI경진대회 장려상(3위)",
+   "text": "뿌리 기업 맞춤형 정책 지원 챗봇",
+   "img": "images/life/2025_08_뿌리_기업_맞춤형_정책_지원_챗봇.png",
+   "links": []
+  },
+  {
+   "date": "2025.07",
+   "kind": "award",
+   "title": "인천대 산학 캡스톤디지인 경진대회 금상(2위)",
+   "text": "인천 e음 카드 소비 패턴 예측 및 캐시백 최적화",
+   "img": "images/life/2025_07_인천_e음_카드_소비_패턴_예측_및_캐시백_최적화.png",
+   "links": []
+  },
+  {
+   "date": "2025.06",
+   "kind": "paper",
+   "title": "한국경영과학회 춘계공동학술대회",
+   "text": "고성능 시계열 딥러닝 알고리즘을 활용한 미래 교통수요 예측",
+   "img": "images/life/2025_06_고성능_시계열_딥러닝_알고리즘을_활용한_미래_교통수요_예측.png",
+   "links": []
+  },
+  {
+   "date": "2025.06",
+   "kind": "paper",
+   "title": "한국빅데이터학회 학회지",
+   "text": "2025년도 KTX 수요 예측 및 정책적 의사결정 XAI 기반 실증적 예측연구",
+   "img": "images/life/2025_06_2025년도_KTX_수요_예측_및_정책적_의사결정_XAI_기반_실증적_예측연구.png",
+   "links": []
+  },
+  {
+   "date": "2025.06",
+   "kind": "paper",
+   "title": "한국빅데이터학회 학회지",
+   "text": "설명가능한 인공지능 활용 서울시 지하철 혼잡도 예측과  정책적 의사결정 지원을 위한 비즈니스 애널리틱스",
+   "img": "images/life/2025_06_설명가능한_인공지능_활용_서울시_지하철_혼잡도_예측과_정책적_의사결정_지원을_위한_비즈니스_애널리틱스.png",
+   "links": []
+  },
+  {
+   "date": "2024.06",
+   "kind": "project",
+   "title": "SK T&C 재단 보고서",
+   "text": "Ageism 문제의식 공감대 확산을 위한 한국 사회의 세대간 갈등 트렌드 빅데이터 분석 및 텍스트마이닝 분석",
+   "img": "images/life/2024_06_Ageism_문제의식_공감대_확산을_위한_한국_사회의_세대간_갈등_트렌드_빅데이터_분석_및_텍스트마이닝_분석.png",
+   "links": []
+  }
+ ],
  "inuLogo": "images/inu-emblem.png"
 },
 "en": {
@@ -3103,9 +3229,23 @@ const DATA_I18N = {
    ],
    "imgs": [
     "images/news/8-1.jpg",
-    "images/news/8-2.jpg"
+    "images/news/8-2.jpg",
+    "images/news/8-3.png"
    ],
    "img": "images/news/8-1.jpg"
+  },
+  {
+   "date": "2026.09",
+   "kind": "Award",
+   "title": "Undergraduate team (DIVE) advised by INU Prof. Kyungwon Kim wins 2nd place nationwide at the 2026 National Data Utilization Contest",
+   "src": "Press release",
+   "url": "",
+   "title_en": "Undergraduate team (DIVE) advised by INU Prof. Kyungwon Kim wins 2nd place nationwide at the 2026 National Data Utilization Contest",
+   "src_en": "Press release",
+   "imgs": [
+    "images/news/r8-1.png"
+   ],
+   "img": "images/news/r8-1.png"
   },
   {
    "date": "2026.09",
@@ -5297,6 +5437,118 @@ const DATA_I18N = {
    "career": [],
    "ach": [],
    "tag": "Undergraduate intern"
+  }
+ ],
+ "life": [
+  {
+   "date": "2026.09",
+   "kind": "award",
+   "title": "Grand Prize (1st place, Commissioner of the Korea Customs Service Award, KRW 3M), 1st Trade Statistics Analytics Competition",
+   "text": "Observation-level pre-screening of suspected anti-dumping duty circumvention using trade-flow indicators",
+   "img": "images/life/2026_09_무역_흐름_지표_기반_반덤핑관세_우회_의심_케이스의_관측치_단위_사전_스크리닝.png",
+   "links": [
+    [
+     "Presentation video",
+     "https://www.youtube.com/watch?v=jkp51pRQ4ns"
+    ]
+   ]
+  },
+  {
+   "date": "2026.08",
+   "kind": "award",
+   "title": "Excellence Award (2nd place, KRW 1.5M), 2026 National Data Utilization Contest",
+   "text": "Distributional analysis of consumption shifts and perceived inflation burden by income quintile",
+   "img": "images/life/2026_08_소득분위_계층별_소비구조_변화와_체감물가_부담의_분배적_분석.png",
+   "links": []
+  },
+  {
+   "date": "2025.11",
+   "kind": "award",
+   "title": "Best Paper Award (1st place), KORMS Fall Conference Competition Track",
+   "text": "Explainable AI-driven policy to promote lifelong learning participation: implications for digital transformation and an aging society",
+   "img": "images/life/2025_11_설명가능한_AI_기반_평생학습_참여촉진_프로그램_정책_디지털_전환과_고령사회에서의_시사점.png",
+   "links": []
+  },
+  {
+   "date": "2025.09",
+   "kind": "award",
+   "title": "Excellence Award (2nd place, President of the Spatial Information Industry Promotion Agency Award, KRW 1M), Spatial Information Idea Competition",
+   "text": "Angida Bus: an express-bus stop recommendation service based on boarding availability",
+   "img": "images/life/2025_09_탑승_가능성_기반_광역버스_정류장_추천_서비스_안기다_버스_안기다리고_타는_버스_.png",
+   "links": []
+  },
+  {
+   "date": "2025.09",
+   "kind": "paper",
+   "title": "Journal of KIISE",
+   "text": "Continuous hand gesture spotting combining deep learning and hidden Markov models",
+   "img": "images/life/2025_09_딥러닝과_은닉_마르코프_모델을_연계한_연속적인손_제스처_적출에_관한_연구.png",
+   "links": []
+  },
+  {
+   "date": "2025.08",
+   "kind": "award",
+   "title": "Grand Prize (1st place), Techeer Silicon Valley Summer Bootcamp",
+   "text": "AI virtual try-on shopping mall",
+   "img": "https://i.ytimg.com/vi/1QpcfX3ojxg/hqdefault.jpg",
+   "links": [
+    [
+     "Presentation video",
+     "https://youtu.be/1QpcfX3ojxg?si=RpBKt5byKPpe2dWR"
+    ],
+    [
+     "Github",
+     "https://github.com/2025-Techeer-Summer-Bootcamp-Team-C"
+    ]
+   ]
+  },
+  {
+   "date": "2025.08",
+   "kind": "award",
+   "title": "Encouragement Award (3rd place), HUSS AI Competition",
+   "text": "al-Poli: a policy support chatbot tailored to root-industry companies",
+   "img": "images/life/2025_08_뿌리_기업_맞춤형_정책_지원_챗봇.png",
+   "links": []
+  },
+  {
+   "date": "2025.07",
+   "kind": "award",
+   "title": "Gold Prize (2nd place), INU Industry-Academia Capstone Design Competition",
+   "text": "Predicting Incheon e-Eum card spending patterns and optimizing cashback",
+   "img": "images/life/2025_07_인천_e음_카드_소비_패턴_예측_및_캐시백_최적화.png",
+   "links": []
+  },
+  {
+   "date": "2025.06",
+   "kind": "paper",
+   "title": "KORMS Spring Joint Conference",
+   "text": "Forecasting future transportation demand with high-performance time-series deep learning",
+   "img": "images/life/2025_06_고성능_시계열_딥러닝_알고리즘을_활용한_미래_교통수요_예측.png",
+   "links": []
+  },
+  {
+   "date": "2025.06",
+   "kind": "paper",
+   "title": "Journal of the Korean Big Data Society",
+   "text": "Forecasting 2025 KTX demand for policy decisions: an empirical XAI study",
+   "img": "images/life/2025_06_2025년도_KTX_수요_예측_및_정책적_의사결정_XAI_기반_실증적_예측연구.png",
+   "links": []
+  },
+  {
+   "date": "2025.06",
+   "kind": "paper",
+   "title": "Journal of the Korean Big Data Society",
+   "text": "Business analytics for predicting Seoul subway congestion and supporting policy decisions with explainable AI",
+   "img": "images/life/2025_06_설명가능한_인공지능_활용_서울시_지하철_혼잡도_예측과_정책적_의사결정_지원을_위한_비즈니스_애널리틱스.png",
+   "links": []
+  },
+  {
+   "date": "2024.06",
+   "kind": "project",
+   "title": "SK T&C Foundation research report",
+   "text": "Big data and text mining of intergenerational conflict trends in Korea to build shared awareness of ageism",
+   "img": "images/life/2024_06_Ageism_문제의식_공감대_확산을_위한_한국_사회의_세대간_갈등_트렌드_빅데이터_분석_및_텍스트마이닝_분석.png",
+   "links": []
   }
  ],
  "inuLogo": "images/inu-emblem.png"

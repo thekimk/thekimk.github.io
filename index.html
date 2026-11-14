@@ -370,6 +370,10 @@ html[data-page=log] #log-sec{padding-top:clamp(2rem,6vw,4rem)}
 .life-caption .meta{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;color:var(--ink-3);font-size:.88rem}
 .life-caption h3{font-size:clamp(1.25rem,2.4vw,1.6rem);letter-spacing:-.02em;line-height:1.3;margin:.7rem 0 .6rem}
 .life-caption p{margin:0;color:var(--ink-2);line-height:1.75}
+.life-links{display:flex;flex-wrap:wrap;gap:.5rem 1rem;margin-top:1rem!important;font-size:.9rem}
+.life-links a{color:var(--signal-ink);text-decoration:none;border-bottom:1px solid currentColor}
+.life-wrap{margin-top:clamp(2rem,5vw,3rem);margin-bottom:clamp(2rem,5vw,3rem)}
+.slide img{object-fit:contain!important;background:var(--surface)}
 .life-hint{margin-top:1.5rem;font-size:.84rem;color:var(--ink-3);padding-top:1rem;border-top:1px dashed var(--line)}
 .life-hint code{font-family:inherit;font-size:.8rem;padding:.05rem .4rem;border-radius:5px;background:var(--surface-2);color:var(--ink-2)}
 
@@ -930,14 +934,11 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
         <p data-en="We are looking for students who want to do research that connects industry and academia, technology and society. Ph.D., M.S., integrated B.S.-M.S. students, undergraduate research interns and small groups are all welcome.">산업과 학문, 기술과 사회를 잇는 연구를 함께할 학생을 찾습니다. 박사과정, 석사과정, 학석사연계과정, 학부연구생, 소그룹 모두 지원할 수 있습니다.</p>
       </div>
 
-      <div class="members-head">
-        <h3 id="members-title">Members</h3>
-        <p id="members-sub"></p>
-      </div>
-      <div id="members"></div>
-
-
       <div id="life" class="life-wrap">
+      <div class="members-head">
+        <h3 id="life-title">Lab Life</h3>
+        <p data-en="Competitions, papers and projects done together with our students.">학생들과 함께 해낸 경진대회·논문·프로젝트.</p>
+      </div>
       <div class="life">
         <div>
           <div class="stage" id="stage" tabindex="0" aria-roledescription="carousel" aria-label="연구실 사진 (좌우 화살표 키로 넘기기)">
@@ -953,6 +954,12 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
         <div class="life-caption" id="life-caption" aria-live="polite"></div>
       </div>
       </div>
+
+      <div class="members-head">
+        <h3 id="members-title">Members</h3>
+        <p id="members-sub"></p>
+      </div>
+      <div id="members"></div>
     </div>
   </section>
 
@@ -1027,34 +1034,15 @@ document.documentElement.lang = LANG;
 </script>
 <!-- DATA:BEGIN -->
 <!-- 홈페이지 내용(DATA)은 엑셀 → build.py → site/data.js 로 자동 생성됩니다. 이 파일은 템플릿이라 단독으로 열면 내용이 비어 보입니다. site/index.html을 여세요. -->
-<script src="data.js?v=202611142319"></script>
+<script src="data.js?v=202611142331"></script>
 <!-- DATA:END -->
 <script>
 /* =====================================================================
    수동 관리 블록 — 엑셀에 없는 내용만 여기서 고칩니다. (TODO.md 참고)
    - 구성원 사진: Image/Members/이름.jpg 로 넣고 build.py를 실행하면 자동 연결됩니다.
-   - Lab Life 사진: img에 "images/..." 경로를 적습니다.
    ===================================================================== */
 /* 구성원은 Researchers_KK.xlsx + Image/Researchers/ 에서 build.py가 자동으로 만듭니다 (DATA.members). */
-// TODO: Lab Life 사진·설명 업데이트 예정
-DATA.life = [
-    { title: "한국경영과학회 추계학술대회 경쟁부문 최우수논문상", date: "2025.11", place: "연세대학교 신촌캠퍼스", text: "조은지, 유효정, 이현서 학생과 함께 설명가능한 AI 기반 평생학습 참여촉진 정책 연구로 경쟁부문 1위를 받았습니다.", img: "", award: true,
-      en: { title: "Best Paper Award, KORMS Fall Conference Competition Track", place: "Yonsei University, Sinchon Campus", text: "With students Eunji Jo, Hyojeong Yu and Hyeonseo Lee, our study on explainable-AI policy to promote lifelong-learning participation took first place in the competition track." } },
-    { title: "관세청 무역통계 활용·분석 경진대회 전국 1위", date: "2026.09", place: "서울세관", text: "학부생 연구팀 ‘노웨이아웃’이 172개 팀 가운데 1위에 올라 관세청장 최우수상을 받았습니다.", img: "", award: true,
-      en: { title: "1st Place Nationwide, Korea Customs Service Trade Statistics Competition", place: "Seoul Customs", text: "Undergraduate team ‘No Way Out’ placed first among 172 teams and received the Commissioner of Korea Customs Service Grand Prize." } },
-    { title: "『AI 의사결정』 2026 세종도서 학술부문 선정", date: "2026.09", place: "서해원(인천대학교 출판부)", text: "결정은 사람이, 분석은 기계가 맡는다는 관점으로 쓴 책이 세종도서 학술부문에 선정되었습니다.", img: "",
-      en: { title: "AI Decision Making selected as a 2026 Sejong Book (Academic)", place: "Seohaewon (Incheon National University Press)", text: "Our book, written from the view that people decide and machines analyze, was selected for the Sejong Books academic category." } },
-    { title: "DIVE 소그룹 성과 최우수상", date: "2025.09", place: "인천대학교", text: "2025 교수-학생 전공심화 연구모임 90개 그룹 가운데 2위로 최우수상을 받았습니다.", img: "", award: true,
-      en: { title: "Excellence Award, DIVE Small Group", place: "Incheon National University", text: "Ranked second among 90 groups in the 2025 faculty-student advanced research program." } },
-    { title: "공간정보 활용·아이디어 경진대회 최우수상", date: "2025.09", place: "", text: "차명주 학생이 탑승 가능성 기반 광역버스 정류장 추천 서비스 “안기다 버스”로 최우수상(2위)을 받았습니다.", img: "", award: true,
-      en: { title: "Excellence Award, Spatial Information Utilization & Idea Competition", text: "Myeongju Cha won the Excellence Award (2nd place) with “Angida Bus”, an express-bus stop recommendation service based on boarding availability." } },
-    { title: "산학 캡스톤디자인 경진대회 금상", date: "2025.07", place: "인천대학교", text: "이준형 학생이 인천e음 카드 소비 패턴 예측과 캐시백 최적화 프로젝트로 금상(2위)을 받았습니다.", img: "", award: true,
-      en: { title: "Gold Prize, Industry-Academia Capstone Design Competition", place: "Incheon National University", text: "Junhyeong Lee won the Gold Prize (2nd place) for predicting Incheon e-Eum card spending patterns and optimizing cashback." } }
-  ];
-if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭은 한글 이름 key로) */
-  const loc = o => Object.assign({ key: o.name }, o, o.en || {});
-  DATA.life = DATA.life.map(loc);
-}
+/* Lab Life는 Image/LabLife/ 폴더에서 build.py가 자동으로 만듭니다 (DATA.life). */
 
 /* =====================================================================
    아래는 화면을 그리는 코드입니다. 보통은 고칠 필요가 없습니다.
@@ -1428,11 +1416,12 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
     thumbs.forEach((t, j) => t.setAttribute("aria-current", j === cur ? "true" : "false"));
     const s = life[cur];
     $("#slide-count").textContent = (cur + 1) + " / " + life.length;
+    const KIND = { award: [T("수상", "Award"), "tag award"], paper: [T("논문", "Paper"), "tag"], project: [T("연구", "Project"), "tag"] };
+    const kd = KIND[s.kind] || KIND.project;
     $("#life-caption").innerHTML =
-      '<div class="meta">' + (s.award ? '<span class="tag award">' + T("수상", "Award") + "</span>" : "") + '<span class="num">' + esc(s.date) + "</span>" + (s.place ? "<span>" + esc(s.place) + "</span>" : "") + "</div>" +
+      '<div class="meta"><span class="' + kd[1] + '">' + kd[0] + '</span><span class="num">' + esc(s.date) + "</span></div>" +
       "<h3>" + esc(s.title) + "</h3><p>" + esc(s.text) + "</p>" +
-      (s.img ? "" : '<p class="life-hint">' + T("사진은 <code>images/life-" + pad2(cur) + ".jpg</code>처럼 넣고 index_KK.html 수동 블록의 DATA.life img에 경로를 적으면 나타납니다.",
-      "Photo coming soon.") + "</p>");
+      (s.links && s.links.length ? '<p class="life-links">' + s.links.map(([l, u]) => "<a" + ext(u) + ">" + esc(l) + " ↗</a>").join("") + "</p>" : "");
   }
   $("#prev-btn").addEventListener("click", () => go(cur - 1));
   $("#next-btn").addEventListener("click", () => go(cur + 1));
