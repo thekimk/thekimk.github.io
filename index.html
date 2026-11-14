@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" data-page="home">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -133,6 +133,15 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .series-area{fill:var(--accent);opacity:.07}
 .cp-band{fill:var(--signal);opacity:.08}
 .cp-line{stroke:var(--signal);stroke-width:1.5;stroke-dasharray:4 4;vector-effect:non-scaling-stroke}
+.annos{position:absolute;inset:0}
+.anno{position:absolute;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;background:var(--bg);border:2px solid var(--gold)}
+.anno-txt{position:absolute;left:50%;bottom:calc(100% + 6px);transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0;padding:.15rem .5rem .2rem;border-left:0;white-space:nowrap;font-size:.72rem;line-height:1.25;color:var(--ink-2);background:color-mix(in srgb,var(--bg) 82%,transparent);border-radius:6px}
+.anno-txt::after{content:"";position:absolute;left:50%;top:100%;width:1px;height:6px;background:var(--gold)}
+.anno.below .anno-txt{bottom:auto;top:calc(100% + 6px)}
+.anno.below .anno-txt::after{top:auto;bottom:100%}
+.anno-txt b{font-size:1.35rem;font-weight:700;color:var(--gold);letter-spacing:-.02em;line-height:1.1}
+.anno-txt b small{font-size:.6em;font-weight:500;color:var(--ink-3)}
+@media (max-width:860px){.annos{display:none}}
 .cp-label{position:absolute;bottom:.55rem;transform:translateX(.45rem);font-size:.85rem;font-weight:600;color:var(--signal-ink);background:var(--signal-soft);padding:.05rem .45rem;border-radius:6px;white-space:nowrap}
 @media (prefers-reduced-motion:no-preference){
   .series{clip-path:inset(0 100% 0 0);animation:reveal 2s cubic-bezier(.35,.65,.2,1) .25s forwards}
@@ -218,6 +227,16 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .rcard{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
 .rcard-art{position:relative;height:150px;background:var(--surface-2);border-bottom:1px solid var(--line-2)}
 .rcard-art svg{display:block;width:100%;height:100%}
+.rcard-art.has-fig{height:190px;background:#fff}
+.rcard-fig{display:block;width:100%;height:100%;padding:.6rem;border:0;background:none;cursor:zoom-in}
+.rcard-fig img{display:block;width:100%;height:100%;object-fit:contain}
+.rcard-art.has-fig{height:210px;padding-bottom:1.3rem}
+.fig-src{position:absolute;left:0;right:0;bottom:0;padding:.25rem .8rem;font-size:.72rem;color:#5b6472;background:#fff;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kp-count{margin:0 0 .45rem;font-size:.82rem;color:var(--ink-3)}
+.kp-count b{font-size:1.15rem;color:var(--gold);font-weight:700}
+.kp-list{list-style:none;margin:0;padding:0;display:grid;gap:.55rem}
+.rcard .keypaper .kp-list a{display:block;margin:0;font-size:.88rem;font-weight:600;line-height:1.4}
+.kp-venue{display:block;margin-top:.1rem;font-size:.75rem;color:var(--ink-3)}
 .rcard-no{position:absolute;left:14px;top:12px;z-index:1;font-size:.8rem;font-weight:600;font-variant-numeric:tabular-nums;padding:.2rem .55rem;border-radius:999px;background:var(--surface);color:var(--ink);border:1px solid var(--line)}
 .rcard-body{display:flex;flex-direction:column;flex:1;padding:1.4rem 1.4rem 1.5rem}
 .rcard h3{margin:0 0 .7rem;font-size:clamp(1.2rem,1.9vw,1.42rem);line-height:1.3;letter-spacing:-.02em}
@@ -256,7 +275,10 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .section{padding:clamp(3.5rem,8vw,6rem) 0;border-top:1px solid var(--line-2)}
 .section.alt{background:var(--surface)}
 .sec-head{display:grid;grid-template-columns:auto minmax(0,1fr);gap:0 1.3rem;align-items:baseline;margin-bottom:clamp(1.6rem,4vw,2.4rem)}
-.sec-num{font-size:clamp(2.6rem,6vw,4rem);font-weight:300;color:var(--gold);line-height:.9;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.sec-head{position:relative;padding-top:1.6rem}
+.sec-head::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--gold);opacity:.55}
+.sec-num{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:clamp(2.6rem,6vw,4rem);font-weight:400;color:var(--gold);line-height:.9;letter-spacing:-.02em;white-space:nowrap}
+.sec-num sub{font-family:var(--font);font-style:normal;font-weight:500;font-size:.4em;vertical-align:baseline;position:relative;top:.12em;margin-left:.06em;letter-spacing:0}
 .sec-head h2{font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0;letter-spacing:-.03em;font-weight:700;line-height:1.15}
 .sec-head p{grid-column:2;margin:.45rem 0 0;color:var(--ink-2);max-width:62ch}
 
@@ -266,6 +288,35 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 
 /* News */
 .news-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+/* Decision log */
+html[data-page=log] main>*:not(#log-sec){display:none}
+html:not([data-page=log]) #log-sec{display:none}
+html[data-page=log] #log-sec{padding-top:clamp(2rem,6vw,4rem)}
+.log-link{margin:1.2rem 0 0}
+.nav-links .nav-log{color:var(--gold);font-weight:600}
+:root{--mono:ui-monospace,"Cascadia Mono",Consolas,"SFMono-Regular",monospace}
+.log-filters{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 1rem}
+.log-filters button{font:inherit;font-size:.84rem;padding:.3rem .75rem;border:1px solid var(--line);border-radius:6px;background:none;color:var(--ink-2);cursor:pointer}
+.log-filters button:hover{border-color:var(--ink-3)}
+.log-filters button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.log-filters .n{margin-left:.4rem;opacity:.6;font-family:var(--mono);font-size:.78rem}
+.log{list-style:none;margin:0;padding:0;border-left:1px solid var(--line);padding-left:1.1rem}
+.log-year{position:relative;display:flex;align-items:center;gap:.8rem;margin:1.3rem 0 .2rem;font-family:var(--mono);font-size:.82rem;font-weight:600;color:var(--gold)}
+.log-year:first-child{margin-top:.2rem}
+.log-year::before{content:"";position:absolute;left:calc(-1.1rem - 4px);width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.log-year::after{content:"";flex:1;height:1px;background:var(--line-2)}
+.log-row{display:grid;grid-template-columns:4.4rem 5.2rem minmax(0,1fr);gap:.9rem;padding:.7rem 0;border-bottom:1px dashed var(--line-2);align-items:baseline}
+.log-row time,.log-type{font-family:var(--mono);font-size:.8rem;color:var(--ink-3);font-variant-numeric:tabular-nums;white-space:nowrap}
+.log-type{color:var(--signal-ink)}
+.log-row[data-type=award] .log-type,.log-row[data-type=notice] .log-type{color:var(--gold)}
+.log-row[data-type=notice]{background:var(--surface);margin-left:-.6rem;padding-left:.6rem;border-radius:8px;border-bottom-color:transparent}
+.log-title{margin:0;font-weight:500;line-height:1.5}
+.log-title a,.log-title button{color:var(--ink);text-decoration:none;font:inherit;background:none;border:0;padding:0;text-align:left;cursor:pointer}
+.log-title a:hover,.log-title button:hover{color:var(--signal-ink);text-decoration:underline;text-underline-offset:3px}
+.log-ev{margin:.15rem 0 0;font-size:.84rem;color:var(--ink-3);line-height:1.45}
+.log-ev::before{content:"↳ ";font-family:var(--mono)}
+.list-more{margin-top:1rem}
+@media (max-width:640px){.log-row{grid-template-columns:auto minmax(0,1fr);gap:.2rem .7rem}.log-body{grid-column:1 / -1}}
 .news-item{display:grid;grid-template-columns:6.5rem 3.6rem minmax(0,1fr) auto;gap:1rem;padding:1.05rem 0;border-bottom:1px solid var(--line-2);align-items:baseline}
 .news-date{font-variant-numeric:tabular-nums;color:var(--ink-3);font-size:.9rem}
 .news-title{margin:0;font-weight:500;line-height:1.5}
@@ -630,6 +681,7 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
       <li><a href="#teaching">Teaching</a></li>
       <li><a href="#recognition">Recognition</a></li>
       <li><a href="#people">People</a></li>
+      <li><a href="log.html" class="nav-log">Decision Log</a></li>
     </ul>
     <div class="nav-actions">
       <button class="btn primary join-btn" type="button" data-open-notice>Join us</button>
@@ -689,6 +741,7 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
         <g class="cp"><line class="cp-line" id="cp-line" x1="640" y1="0" x2="640" y2="200"/></g>
       </svg>
       <span class="cp cp-label" id="cp-label" style="left:64%">τ̂</span>
+      <div class="annos" id="annos"></div>
     </div>
   </section>
 
@@ -701,7 +754,7 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
   <section class="section" id="bio" aria-labelledby="bio-title">
     <div class="wrap">
       <header class="sec-head">
-        <span class="sec-num" aria-hidden="true">01</span>
+        <span class="sec-num" aria-hidden="true">τ<sub>1</sub></span>
         <h2 id="bio-title">About</h2>
         <p data-en="Profile, experience and education of the principal investigator.">연구책임자 소개와 경력, 학력입니다.</p>
       </header>
@@ -729,11 +782,12 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
   <section class="section alt" id="news" aria-labelledby="news-title">
     <div class="wrap">
       <header class="sec-head">
-        <span class="sec-num" aria-hidden="true">02</span>
+        <span class="sec-num" aria-hidden="true">τ<sub>2</sub></span>
         <h2 id="news-title">News &amp; Notice</h2>
         <p data-en="Lab notices, awards and press coverage.">연구실 공지와 수상, 언론 보도를 모았습니다.</p>
       </header>
       <ul class="news-list" id="news-list"></ul>
+      <p class="log-link"><a class="btn small" href="log.html" data-en="See the full Decision Log →">전체 기록 보기: Decision Log →</a></p>
     </div>
   </section>
 
@@ -741,7 +795,7 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
   <section class="section" id="research" aria-labelledby="research-title">
     <div class="wrap">
       <header class="sec-head">
-        <span class="sec-num" aria-hidden="true">03</span>
+        <span class="sec-num" aria-hidden="true">τ<sub>3</sub></span>
         <h2 id="research-title">Research</h2>
         <p id="research-sub"></p>
       </header>
@@ -764,7 +818,7 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
   <section class="section alt" id="publications" aria-labelledby="pub-title">
     <div class="wrap">
       <header class="sec-head">
-        <span class="sec-num" aria-hidden="true">04</span>
+        <span class="sec-num" aria-hidden="true">τ<sub>4</sub></span>
         <h2 id="pub-title">Publications</h2>
         <p data-en="Representative work covers social-risk prediction, market forecasting with portfolio recommendation, and click-through-rate prediction for online advertising. * marks the corresponding author; click a title to open the paper.">사회적 위험 예측, 시장 예측과 포트폴리오 추천, 온라인 광고 CTR 예측이 대표 연구입니다. 저자 옆 *는 교신저자이며, 제목을 누르면 원문으로 이동합니다.</p>
       </header>
@@ -785,7 +839,7 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
   <section class="section" id="projects" aria-labelledby="proj-title">
     <div class="wrap">
       <header class="sec-head">
-        <span class="sec-num" aria-hidden="true">05</span>
+        <span class="sec-num" aria-hidden="true">τ<sub>5</sub></span>
         <h2 id="proj-title">Research Projects</h2>
         <p data-en="From public-conflict management and railway demand forecasting to donor behavior and the social value of urban parks: research carried out for real decisions by government, foundations and industry.">공공갈등 관리, 철도 수요 예측, 기부자 행동, 도시공원의 사회적 가치까지. 정부·재단·산업체의 실제 의사결정을 위해 수행한 연구입니다.</p>
       </header>
@@ -809,7 +863,7 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
   <section class="section alt" id="teaching" aria-labelledby="teach-title">
     <div class="wrap">
       <header class="sec-head">
-        <span class="sec-num" aria-hidden="true">06</span>
+        <span class="sec-num" aria-hidden="true">τ<sub>6</sub></span>
         <h2 id="teach-title">Teaching</h2>
         <p data-en="Hands-on courses from business data science to AI-driven decision making, AI training and advisory for Samsung Electronics, Hyundai Mobis, S-OIL and LG Energy Solution, and lectures on FastCampus (rated 4.89/5), Hanbit+ and NIA.">비즈니스 데이터 사이언스부터 AI 의사결정까지 현업에서 바로 쓰는 과목을 가르칩니다. 삼성전자, 현대모비스, S-OIL, LG에너지솔루션의 AI 교육과 자문을 맡고, 패스트캠퍼스(강의평점 4.89/5), 한빛+, NIA에서도 강의합니다.</p>
       </header>
@@ -836,7 +890,7 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
   <section class="section" id="recognition" aria-labelledby="rec-title">
     <div class="wrap">
       <header class="sec-head">
-        <span class="sec-num" aria-hidden="true">07</span>
+        <span class="sec-num" aria-hidden="true">τ<sub>7</sub></span>
         <h2 id="rec-title">Recognition &amp; Service</h2>
         <p data-en="Awards, competitive grants, academic service and evaluation committees.">수상, 연구 지원 선정, 학회 활동과 평가위원 활동.</p>
       </header>
@@ -848,7 +902,7 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
   <section class="section alt" id="people" aria-labelledby="people-title">
     <div class="wrap">
       <header class="sec-head">
-        <span class="sec-num" aria-hidden="true">08</span>
+        <span class="sec-num" aria-hidden="true">τ<sub>8</sub></span>
         <h2 id="people-title">People &amp; Lab Life</h2>
         <p data-en="Our members, plus conferences, competitions and everyday life in the lab.">함께 연구하는 구성원과 학회, 경진대회, 연구실의 일상.</p>
       </header>
@@ -886,6 +940,19 @@ details.more .svc-group li{break-inside:avoid;grid-template-columns:4.2rem minma
         <div class="life-caption" id="life-caption" aria-live="polite"></div>
       </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ===== Decision Log (log.html 전용 페이지) ===== -->
+  <section class="section" id="log-sec" aria-labelledby="log-title">
+    <div class="wrap">
+      <header class="sec-head">
+        <span class="sec-num" aria-hidden="true">τ</span>
+        <h2 id="log-title">Decision Log</h2>
+        <p data-en="News, papers, projects, awards and talks, logged in time order with the evidence behind each.">뉴스·논문·과제·수상·강연을 시간순으로 기록하고, 각 항목의 근거를 함께 남깁니다.</p>
+      </header>
+      <div class="log-filters" id="log-filters" role="group" aria-label="Filter"></div>
+      <ol class="log" id="log"></ol>
     </div>
   </section>
 </main>
@@ -947,7 +1014,7 @@ document.documentElement.lang = LANG;
 </script>
 <!-- DATA:BEGIN -->
 <!-- 홈페이지 내용(DATA)은 엑셀 → build.py → site/data.js 로 자동 생성됩니다. 이 파일은 템플릿이라 단독으로 열면 내용이 비어 보입니다. site/index.html을 여세요. -->
-<script src="data.js?v=202611142052"></script>
+<script src="data.js?v=202611142138"></script>
 <!-- DATA:END -->
 <script>
 /* =====================================================================
@@ -1199,9 +1266,19 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
   $("#r-intro").textContent = DATA.lab.intro;
   $("#rcards").style.setProperty("--n", DATA.interests.length);
   $("#rcards").innerHTML = DATA.interests.map((it, i) => {
+    const papers = (it.papers || []).map(id => pubById[id]).filter(Boolean);
     const k = pubById[it.key];
-    const keyHTML = k ? '<div class="keypaper">' + (k.type === "book" ? T("대표 저서", "Key book") : T("대표 논문", "Key paper")) + " · " + esc(k.type === "book" ? k.venue || "" : k.venue) + " (" + esc(k.date.slice(0, 4)) + ")<a" + ext(k.url) + ">" + (k.type === "book" ? "『" + esc(k.title) + "』" : esc(k.title)) + "</a></div>" : "";
-    return '<article class="rcard"><div class="rcard-art"><span class="rcard-no">' + String(i + 1).padStart(2, "0") + '</span><svg viewBox="0 0 300 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">' + (ART[it.art] || ART.regime)() + "</svg></div>" +
+    const keyHTML = papers.length
+      ? '<div class="keypaper"><p class="kp-count">' + T("관련 논문 <b>" + papers.length + "</b>편", "<b>" + papers.length + "</b> related paper" + (papers.length > 1 ? "s" : "")) + '</p><ol class="kp-list">' +
+        papers.slice(0, 3).map(p => "<li><a" + ext(p.url) + ">" + esc(p.title) + '</a><span class="kp-venue">' + esc(p.venue) + " · " + esc(String(p.date).slice(0, 4)) + "</span></li>").join("") + "</ol></div>"
+      : k ? '<div class="keypaper">' + (k.type === "book" ? T("대표 저서", "Key book") : T("대표 논문", "Key paper")) + " · " + esc(k.type === "book" ? k.venue || "" : k.venue) + " (" + esc(k.date.slice(0, 4)) + ")<a" + ext(k.url) + ">" + (k.type === "book" ? "『" + esc(k.title) + "』" : esc(k.title)) + "</a></div>" : "";
+    if (it.img) GAL["rc-" + i] = [it.img];
+    const fp = it.figFrom && pubById[it.figFrom];
+    const art = it.img
+      ? '<button type="button" class="rcard-fig" data-gal="rc-' + i + '" data-i="0" aria-label="' + T("대표 논문 그림 크게 보기", "Enlarge key-paper figure") + '"><img src="' + esc(it.img) + '" alt="" loading="lazy"></button>'
+      : '<svg viewBox="0 0 300 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">' + (ART[it.art] || ART.regime)() + "</svg>";
+    return '<article class="rcard"><div class="rcard-art' + (it.img ? " has-fig" : "") + '"><span class="rcard-no">' + String(i + 1).padStart(2, "0") + "</span>" + art +
+      (fp ? '<span class="fig-src">' + T("그림: ", "Figure: ") + esc(fp.venue) + " (" + esc(String(fp.date).slice(0, 4)) + ")</span>" : "") + "</div>" +
       '<div class="rcard-body"><h3>' + esc(it.title) + "</h3><p>" + esc(it.text) + '</p><div class="rtags">' + it.tags.map(t => "<span>" + esc(t) + "</span>").join("") + "</div>" + keyHTML + "</div></article>";
   }).join("");
   $("#lab-areas").innerHTML = DATA.labAreas.map(a =>
@@ -1210,6 +1287,14 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
   $("#r-interests").innerHTML = DATA.researchInterests.map(g =>
     '<h4 class="ri-group">' + esc(g.group) + '</h4><dl class="ri">' +
     g.rows.map(r => "<div><dt>" + esc(r.name) + "</dt><dd>" + r.kw.map(esc).join(" · ") + "</dd></div>").join("") + "</dl>").join("");
+
+  /* ---------- Page mode: index.html(home) / log.html(Decision Log) ---------- */
+  const PAGE = document.documentElement.getAttribute("data-page") || "home";
+  if (PAGE === "log") {
+    $$('a[href^="#"]').forEach(a => { if (a.closest(".nav-inner")) a.setAttribute("href", "index.html" + (a.getAttribute("href") === "#about" ? "" : a.getAttribute("href"))); });
+    const nl = $(".nav-log"); if (nl) nl.setAttribute("aria-current", "page");
+    document.title = "Decision Log | DAX Lab";
+  }
 
   /* ---------- Stats ---------- */
   const count = t => DATA.pubs.filter(p => p.type === t).length;
@@ -1241,6 +1326,66 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
         "</ul></details>" : "") +
       '</div><span class="news-src">' + esc(n.src) + "</span></li>";
   }).join("");
+  /* ---------- Decision Log page (log.html): news + papers + projects + awards + talks ---------- */
+  if (PAGE === "log") {
+  const ym = d => { const m = String(d || "").match(/(\d{4})(?:[.\-](\d{1,2}))?/); return m ? m[1] + (m[2] ? "." + m[2].padStart(2, "0") : "") : ""; };
+  const LOGT = {
+    notice: T("공지", "Notice"), news: T("뉴스", "News"), paper: T("논문", "Paper"), book: T("저서", "Book"),
+    project: T("과제", "Project"), award: T("수상", "Award"), talk: T("강연", "Talk")
+  };
+  const LOG = [], seen = new Set();
+  DATA.news.forEach((n, ni) => {
+    [n.url, ...(n.more || []).map(m => m.url)].filter(Boolean).forEach(u => seen.add(u));
+    const extra =
+      (n.imgs && n.imgs.length ? '<button type="button" class="news-photos" data-gal="news-' + ni + '" data-i="0">' + T("사진 " + n.imgs.length + "장 보기", "View " + n.imgs.length + " photo" + (n.imgs.length > 1 ? "s" : "")) + "</button>" : "") +
+      (n.more && n.more.length ? '<details class="news-more"><summary>' + T("관련 보도 " + n.more.length + "건 더 보기", n.more.length + " more press report" + (n.more.length > 1 ? "s" : "")) + "</summary><ul>" +
+        n.more.map(m => "<li><a" + ext(m.url) + ">" + esc(m.title) + '</a> <span class="news-src">' + esc(m.src) + "</span></li>").join("") + "</ul></details>" : "");
+    LOG.push({
+      d: n.pinned ? "" : ym(n.date), type: n.pinned ? "notice" : "news", pinned: !!n.pinned,
+      title: n.action === "notice" ? '<button type="button" data-open-notice>' + esc(n.title) + "</button>" : n.url ? "<a" + ext(n.url) + ">" + esc(n.title) + "</a>" : esc(n.title),
+      ev: n.src, extra
+    });
+  });
+  const link = (u, s) => u ? "<a" + ext(u) + ">" + esc(s) + "</a>" : esc(s);
+  DATA.pubs.filter(p => p.type !== "wp").forEach(p =>
+    LOG.push({ d: ym(p.date), type: p.type === "book" ? "book" : "paper", title: link(p.url, p.type === "book" ? "『" + p.title + "』" : p.title), ev: p.venue }));
+  [...DATA.projects.external, ...DATA.projects.internal].forEach(p =>
+    LOG.push({ d: ym(p.period), type: "project", title: link(p.url, p.title), ev: [p.org, p.role].filter(Boolean).join(" · ") }));
+  [...DATA.awards, ...DATA.studentAwards, ...DATA.grants].forEach(a => {
+    if (a.url && seen.has(a.url)) return;
+    LOG.push({ d: ym(a.date), type: "award", title: link(a.url, a.title), ev: a.org });
+  });
+  DATA.talks.forEach(x => LOG.push({ d: ym(x.when), type: "talk", title: link(x.url, x.title), ev: [x.org, x.role].filter(Boolean).join(" · ") }));
+  LOG.forEach((e, k) => { e.k = k; });
+  LOG.sort((a, b) => (+!!b.pinned - +!!a.pinned) || (b.d < a.d ? -1 : b.d > a.d ? 1 : a.k - b.k));
+
+  const LOG_FILTERS = [["all", T("전체", "All")], ["news", LOGT.news], ["paper", T("논문·저서", "Papers & books")], ["project", LOGT.project], ["award", LOGT.award], ["talk", LOGT.talk]];
+  const inF = (e, f) => f === "all" || e.type === f || (f === "paper" && e.type === "book") || (f === "news" && e.type === "notice");
+  let logF = "all";
+  const logRow = e =>
+    '<li class="log-row" data-type="' + e.type + '"><time>' + (e.pinned ? T("상시", "Open") : esc(e.d)) + '</time><span class="log-type">[' + LOGT[e.type] + "]</span>" +
+    '<div class="log-body"><p class="log-title">' + e.title + "</p>" + (e.ev ? '<p class="log-ev">' + esc(e.ev) + "</p>" : "") + (e.extra || "") + "</div></li>";
+  const drawLog = () => {
+    const shown = LOG.filter(e => inF(e, logF));
+    let html = "", yr = null;
+    shown.forEach(e => {
+      const y = e.pinned ? "" : e.d.slice(0, 4);
+      if (y && y !== yr) { html += '<li class="log-year" aria-hidden="true">' + y + "</li>"; yr = y; }
+      html += logRow(e);
+    });
+    $("#log").innerHTML = html;
+  };
+  $("#log-filters").innerHTML = LOG_FILTERS.map(([k, label]) =>
+    '<button type="button" data-f="' + k + '" aria-pressed="' + (k === "all") + '">' + esc(label) + '<span class="n">' + LOG.filter(e => inF(e, k)).length + "</span></button>").join("");
+  $("#log-filters").addEventListener("click", ev => {
+    const b = ev.target.closest("button[data-f]"); if (!b) return;
+    logF = b.dataset.f;
+    $$("#log-filters button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    drawLog();
+  });
+  drawLog();
+  }
+
   const latest = DATA.news.find(n => !n.pinned);
   if (latest) {
     $("#latest-slot").innerHTML = '<a class="latest" href="#news"><span class="' + kindClass(latest.kind) + '">Latest</span><span>' + esc(latest.title) + "</span></a>";
@@ -1510,6 +1655,12 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
     $("#cp-line").setAttribute("x1", cx.toFixed(1));
     $("#cp-line").setAttribute("x2", cx.toFixed(1));
     $("#cp-label").style.left = (cx / W * 100).toFixed(2) + "%";
+    // 실적 숫자를 그래프 위 주석(관측점)으로 표시합니다. 통계띠는 그대로 둡니다.
+    const fr = [.04, .14, .24, .34, .44, .56];
+    $("#annos").innerHTML = stats.map(([n, l], k) => {
+      const i = Math.round(fr[k] * (N - 1)), px = X(i) / W * 100, py = Y(ys[i]) / H * 100;
+      return '<span class="anno' + (py < 68 ? " below" : "") + '" style="left:' + px.toFixed(2) + "%;top:" + py.toFixed(2) + '%"><span class="anno-txt"><b>' + n + "</b>" + esc(l) + "</span></span>";
+    }).join("");
   })();
 
   /* ---------- Restore scroll after language switch ---------- */
@@ -1548,7 +1699,7 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
   }
   menuBtn.addEventListener("click", () => setMenu(header.getAttribute("data-open") !== "true"));
   $$("#nav-links a").forEach(a => a.addEventListener("click", () => setMenu(false)));
-  const navMap = new Map($$("#nav-links a").map(a => [a.getAttribute("href").slice(1), a]));
+  const navMap = new Map($$("#nav-links a").filter(a => a.getAttribute("href").startsWith("#")).map(a => [a.getAttribute("href").slice(1), a]));
   if ("IntersectionObserver" in window) {
     const io = new IntersectionObserver(entries => {
       entries.forEach(en => {
@@ -1596,7 +1747,7 @@ if (LANG === "en") {  /* 영어 화면: en 값으로 덮어쓰기 (사진 매칭
     }
   });
   const hideUntil = Number(store.get(KEY) || 0);
-  if (DATA.notice.enabled && Date.now() > hideUntil) setTimeout(openNotice, 900);
+  if (PAGE === "home" && DATA.notice.enabled && Date.now() > hideUntil) setTimeout(openNotice, 900);
 })();
 </script>
 </body>

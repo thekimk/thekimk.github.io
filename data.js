@@ -90,7 +90,24 @@ const DATA_I18N = {
     "Portfolio Rebalancing"
    ],
    "key": "J13",
-   "art": "regime"
+   "art": "regime",
+   "papers": [
+    "K8",
+    "J13",
+    "K3",
+    "K2",
+    "J10",
+    "J9",
+    "J8",
+    "J6",
+    "J5",
+    "J4",
+    "J3",
+    "J2",
+    "J1"
+   ],
+   "img": "images/rcards/K8.png",
+   "figFrom": "K8"
   },
   {
    "title": "Causal & Explainable AI for Social Policy",
@@ -101,7 +118,18 @@ const DATA_I18N = {
     "Public Policy"
    ],
    "key": "J11",
-   "art": "bars"
+   "art": "bars",
+   "papers": [
+    "K7",
+    "K6",
+    "K5",
+    "K4",
+    "J12",
+    "K1",
+    "J11"
+   ],
+   "img": "images/rcards/K7.png",
+   "figFrom": "K7"
   },
   {
    "title": "Causal Marketing & Trustworthy AX",
@@ -112,7 +140,12 @@ const DATA_I18N = {
     "AI Verification"
    ],
    "key": "J7",
-   "art": "wave"
+   "art": "wave",
+   "papers": [
+    "J7"
+   ],
+   "img": "images/rcards/J7.png",
+   "figFrom": "J7"
   }
  ],
  "lab": {
@@ -2777,7 +2810,24 @@ const DATA_I18N = {
     "Portfolio Rebalancing"
    ],
    "key": "J13",
-   "art": "regime"
+   "art": "regime",
+   "papers": [
+    "K8",
+    "J13",
+    "K3",
+    "K2",
+    "J10",
+    "J9",
+    "J8",
+    "J6",
+    "J5",
+    "J4",
+    "J3",
+    "J2",
+    "J1"
+   ],
+   "img": "images/rcards/K8.png",
+   "figFrom": "K8"
   },
   {
    "title": "Causal & Explainable AI for Social Policy",
@@ -2788,7 +2838,18 @@ const DATA_I18N = {
     "Public Policy"
    ],
    "key": "J11",
-   "art": "bars"
+   "art": "bars",
+   "papers": [
+    "K7",
+    "K6",
+    "K5",
+    "K4",
+    "J12",
+    "K1",
+    "J11"
+   ],
+   "img": "images/rcards/K7.png",
+   "figFrom": "K7"
   },
   {
    "title": "Causal Marketing & Trustworthy AX",
@@ -2799,7 +2860,12 @@ const DATA_I18N = {
     "AI Verification"
    ],
    "key": "J7",
-   "art": "wave"
+   "art": "wave",
+   "papers": [
+    "J7"
+   ],
+   "img": "images/rcards/J7.png",
+   "figFrom": "J7"
   }
  ],
  "lab": {
