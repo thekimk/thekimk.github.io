@@ -2359,7 +2359,7 @@ const DATA_I18N = {
   {
    "cohort": 3,
    "period": "2025-",
-   "photo": "",
+   "photo": "images/members/46622a78.jpg",
    "github": "mathsjm32",
    "email": "sigtd32@inu.ac.kr",
    "name": "서정민",
@@ -2372,7 +2372,7 @@ const DATA_I18N = {
     [
      "2026.08",
      "국가데이터처 2026년 국가데이터 활용대회 우수상(2위)",
-     "비형식 평생학습 참여 예측을 위한 설명가능한 AI 의사결정: 디지털·고령사회에서의 참여자 예측과 포용적 교육정책"
+     "소득분위 계층별 소비구조 변화와 체감물가 부담의 분배적 분석"
     ]
    ],
    "tag": ""
@@ -5235,7 +5235,7 @@ const DATA_I18N = {
   {
    "cohort": 3,
    "period": "2025-",
-   "photo": "",
+   "photo": "images/members/46622a78.jpg",
    "github": "mathsjm32",
    "email": "sigtd32@inu.ac.kr",
    "name": "Seo Jeongmin",
