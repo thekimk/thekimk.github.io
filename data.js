@@ -2448,7 +2448,7 @@ const DATA_I18N = {
   {
    "cohort": 3,
    "period": "2025-",
-   "photo": "",
+   "photo": "images/members/42f18d33.jpg",
    "github": "hisunhelloo",
    "email": "hisunhelloo@gmail.com",
    "name": "박희선",
@@ -5300,7 +5300,7 @@ const DATA_I18N = {
   {
    "cohort": 3,
    "period": "2025-",
-   "photo": "",
+   "photo": "images/members/42f18d33.jpg",
    "github": "hisunhelloo",
    "email": "hisunhelloo@gmail.com",
    "name": "Park Heeseon",
