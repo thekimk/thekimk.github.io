@@ -1907,7 +1907,7 @@ const DATA_I18N = {
  ],
  "experience": [
   {
-   "period": "2025.07 - Present",
+   "period": "2026.07 - Present",
    "role": "Founder & CEO",
    "org": "DeciPhi Inc.",
    "note": "마케팅 예산 포트폴리오 추천 AI SaaS",
@@ -4783,7 +4783,7 @@ const DATA_I18N = {
  ],
  "experience": [
   {
-   "period": "2025.07 - Present",
+   "period": "2026.07 - Present",
    "role": "Founder & CEO",
    "org": "DeciPhi Inc.",
    "note": "Marketing Portfolio Recommendation",
